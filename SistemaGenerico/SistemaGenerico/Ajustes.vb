@@ -31,15 +31,18 @@ Public Class Ajustes
                 Inicio.img_logo.BackgroundImage.Dispose()
                 Inicio.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
-            If Usuario.IsDisposed Then
-                Usuario.img_logo.BackgroundImage.Dispose()
-                Usuario.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+            If PanelUsuario.IsDisposed Then
+                PanelUsuario.img_logo.BackgroundImage.Dispose()
+                PanelUsuario.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
             If Clientes.IsDisposed Then
                 Clientes.img_logo.BackgroundImage.Dispose()
                 Clientes.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
-
+            If GestionarUsuarios.IsDisposed Then
+                GestionarUsuarios.img_logo.BackgroundImage.Dispose()
+                GestionarUsuarios.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+            End If
             InicioSesion.img_logo.BackgroundImage.Dispose()
             InicioSesion.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
 
@@ -84,5 +87,10 @@ Public Class Ajustes
 
 
         End If
+    End Sub
+
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+        Me.Hide()
+        GestionarUsuarios.Show()
     End Sub
 End Class

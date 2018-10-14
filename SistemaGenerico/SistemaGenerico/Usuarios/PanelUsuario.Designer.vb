@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Usuario
+Partial Class PanelUsuario
     Inherits SistemaGenerico.MenuBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -314,14 +314,14 @@ Partial Class Usuario
         Me.Label16.TabIndex = 8
         Me.Label16.Text = "Nueva Contraseña"
         '
-        'Usuario
+        'PanelUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "Usuario"
+        Me.Name = "PanelUsuario"
         Me.Text = "Usuario"
         Me.Controls.SetChildIndex(Me.GroupBox1, 0)
         Me.Controls.SetChildIndex(Me.GroupBox2, 0)

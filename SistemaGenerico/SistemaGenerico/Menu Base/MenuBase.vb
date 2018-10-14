@@ -43,18 +43,18 @@ Public Class MenuBase
     End Sub
 
     Private Sub lbl_nom_user_Click(sender As System.Object, e As System.EventArgs) Handles lbl_nom_user.Click
-        If Not Me.Equals(Usuario) Then
+        If Not Me.Equals(PanelUsuario) Then
             Me.Hide()
-            Usuario.Show()
+            PanelUsuario.Show()
 
 
         End If
     End Sub
 
     Private Sub img_user_Click(sender As System.Object, e As System.EventArgs) Handles img_user.Click
-        If Not Me.Equals(Usuario) Then
+        If Not Me.Equals(PanelUsuario) Then
             Me.Hide()
-            Usuario.Show()
+            PanelUsuario.Show()
 
 
         End If
@@ -84,9 +84,4 @@ Public Class MenuBase
 
     End Sub
 
-    Private Sub MenuBase_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-
-
-    End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Usuario
+﻿Public Class PanelUsuario
     Inherits SistemaGenerico.MenuBase
 
 
