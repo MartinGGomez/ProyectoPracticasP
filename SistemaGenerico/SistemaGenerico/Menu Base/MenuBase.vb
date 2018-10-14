@@ -1,4 +1,7 @@
-﻿Public Class MenuBase
+﻿Imports System.IO
+
+Public Class MenuBase
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cerrar.Click
 
@@ -10,9 +13,10 @@
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_inicio.Click
 
         If Not Me.Equals(Inicio) Then
-            Inicio.Show()
             Me.Hide()
-       
+            Inicio.Show()
+
+
         End If
 
 
@@ -26,8 +30,9 @@
     Private Sub btn_clientes_Click(sender As System.Object, e As System.EventArgs) Handles btn_clientes.Click
 
         If Not Me.Equals(Clientes) Then
-            Clientes.Show()
             Me.Hide()
+            Clientes.Show()
+
 
         End If
     End Sub
@@ -39,17 +44,49 @@
 
     Private Sub lbl_nom_user_Click(sender As System.Object, e As System.EventArgs) Handles lbl_nom_user.Click
         If Not Me.Equals(Usuario) Then
-            Usuario.Show()
             Me.Hide()
+            Usuario.Show()
+
 
         End If
     End Sub
 
     Private Sub img_user_Click(sender As System.Object, e As System.EventArgs) Handles img_user.Click
         If Not Me.Equals(Usuario) Then
-            Usuario.Show()
             Me.Hide()
+            Usuario.Show()
+
 
         End If
+    End Sub
+
+    Private Sub btn_ajustes_Click(sender As System.Object, e As System.EventArgs) Handles btn_ajustes.Click
+        If Not Me.Equals(Ajustes) Then
+            Me.Hide()
+            Ajustes.Show()
+
+
+        End If
+    End Sub
+
+    Public Sub logo()
+
+
+        If File.Exists(Utilidades.pathLogo) Then
+
+            img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogo)
+
+        ElseIf File.Exists(Utilidades.pathLogoDefault) Then
+
+            img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+
+        End If
+
+    End Sub
+
+    Private Sub MenuBase_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+
+
     End Sub
 End Class

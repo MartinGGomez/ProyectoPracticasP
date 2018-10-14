@@ -21,3 +21,4 @@ C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGener
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Usuario.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources

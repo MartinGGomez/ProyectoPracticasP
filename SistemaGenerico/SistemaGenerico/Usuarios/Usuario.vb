@@ -4,6 +4,7 @@
 
     Private Sub Inicio_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         lblTitulo.Text = "Panel de Usuario"
+        logo()
     End Sub
 
     Private Sub lblTitulo_Click(sender As System.Object, e As System.EventArgs)

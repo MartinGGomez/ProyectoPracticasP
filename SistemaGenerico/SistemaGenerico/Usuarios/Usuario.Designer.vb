@@ -53,7 +53,7 @@ Partial Class Usuario
         Me.lbl_usuario.AutoSize = True
         Me.lbl_usuario.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_usuario.ForeColor = System.Drawing.Color.Orange
-        Me.lbl_usuario.Location = New System.Drawing.Point(50, 28)
+        Me.lbl_usuario.Location = New System.Drawing.Point(51, 55)
         Me.lbl_usuario.Name = "lbl_usuario"
         Me.lbl_usuario.Size = New System.Drawing.Size(54, 20)
         Me.lbl_usuario.TabIndex = 4
@@ -64,7 +64,7 @@ Partial Class Usuario
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Orange
-        Me.Label3.Location = New System.Drawing.Point(50, 160)
+        Me.Label3.Location = New System.Drawing.Point(51, 187)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 20)
         Me.Label3.TabIndex = 6
@@ -75,7 +75,7 @@ Partial Class Usuario
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Orange
-        Me.Label4.Location = New System.Drawing.Point(188, 28)
+        Me.Label4.Location = New System.Drawing.Point(189, 55)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 20)
         Me.Label4.TabIndex = 7
@@ -86,7 +86,7 @@ Partial Class Usuario
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Orange
-        Me.Label5.Location = New System.Drawing.Point(50, 92)
+        Me.Label5.Location = New System.Drawing.Point(51, 119)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(36, 20)
         Me.Label5.TabIndex = 8
@@ -97,7 +97,7 @@ Partial Class Usuario
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(50, 48)
+        Me.Label2.Location = New System.Drawing.Point(51, 75)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 24)
         Me.Label2.TabIndex = 9
@@ -108,7 +108,7 @@ Partial Class Usuario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(188, 48)
+        Me.Label6.Location = New System.Drawing.Point(189, 75)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(68, 24)
         Me.Label6.TabIndex = 10
@@ -119,7 +119,7 @@ Partial Class Usuario
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(50, 112)
+        Me.Label7.Location = New System.Drawing.Point(51, 139)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(223, 24)
         Me.Label7.TabIndex = 11
@@ -130,7 +130,7 @@ Partial Class Usuario
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(50, 180)
+        Me.Label8.Location = New System.Drawing.Point(51, 207)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(120, 24)
         Me.Label8.TabIndex = 12
@@ -145,7 +145,7 @@ Partial Class Usuario
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btneditar.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btneditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btneditar.Location = New System.Drawing.Point(129, 236)
+        Me.btneditar.Location = New System.Drawing.Point(130, 263)
         Me.btneditar.Name = "btneditar"
         Me.btneditar.Size = New System.Drawing.Size(103, 35)
         Me.btneditar.TabIndex = 13
@@ -161,7 +161,7 @@ Partial Class Usuario
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(54, 236)
+        Me.Button2.Location = New System.Drawing.Point(54, 263)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 35)
         Me.Button2.TabIndex = 14
@@ -183,16 +183,19 @@ Partial Class Usuario
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.btncambios)
+        Me.GroupBox1.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(332, 127)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(351, 292)
+        Me.GroupBox1.Size = New System.Drawing.Size(351, 343)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Informacíon del Usuario"
         '
         'txtmail
         '
         Me.txtmail.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmail.Location = New System.Drawing.Point(54, 114)
+        Me.txtmail.Location = New System.Drawing.Point(55, 141)
         Me.txtmail.Name = "txtmail"
         Me.txtmail.Size = New System.Drawing.Size(250, 28)
         Me.txtmail.TabIndex = 20
@@ -202,7 +205,7 @@ Partial Class Usuario
         'txtape
         '
         Me.txtape.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtape.Location = New System.Drawing.Point(192, 48)
+        Me.txtape.Location = New System.Drawing.Point(193, 75)
         Me.txtape.Name = "txtape"
         Me.txtape.Size = New System.Drawing.Size(112, 28)
         Me.txtape.TabIndex = 19
@@ -212,7 +215,7 @@ Partial Class Usuario
         'txtnom
         '
         Me.txtnom.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnom.Location = New System.Drawing.Point(54, 48)
+        Me.txtnom.Location = New System.Drawing.Point(55, 75)
         Me.txtnom.Name = "txtnom"
         Me.txtnom.Size = New System.Drawing.Size(104, 28)
         Me.txtnom.TabIndex = 18
@@ -228,7 +231,7 @@ Partial Class Usuario
         Me.btncambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncambios.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncambios.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btncambios.Location = New System.Drawing.Point(54, 236)
+        Me.btncambios.Location = New System.Drawing.Point(55, 263)
         Me.btncambios.Name = "btncambios"
         Me.btncambios.Size = New System.Drawing.Size(242, 35)
         Me.btncambios.TabIndex = 21
@@ -245,16 +248,19 @@ Partial Class Usuario
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox2.Location = New System.Drawing.Point(725, 127)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(325, 292)
+        Me.GroupBox2.Size = New System.Drawing.Size(325, 343)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Cambiar Contraseña"
         '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(54, 183)
+        Me.TextBox3.Location = New System.Drawing.Point(54, 210)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(219, 28)
         Me.TextBox3.TabIndex = 17
@@ -262,7 +268,7 @@ Partial Class Usuario
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(54, 115)
+        Me.TextBox2.Location = New System.Drawing.Point(54, 142)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(219, 28)
         Me.TextBox2.TabIndex = 16
@@ -270,7 +276,7 @@ Partial Class Usuario
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(54, 51)
+        Me.TextBox1.Location = New System.Drawing.Point(54, 78)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(219, 28)
         Me.TextBox1.TabIndex = 15
@@ -280,7 +286,7 @@ Partial Class Usuario
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Orange
-        Me.Label9.Location = New System.Drawing.Point(50, 28)
+        Me.Label9.Location = New System.Drawing.Point(50, 55)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(110, 20)
         Me.Label9.TabIndex = 4
@@ -291,7 +297,7 @@ Partial Class Usuario
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Orange
-        Me.Label13.Location = New System.Drawing.Point(50, 160)
+        Me.Label13.Location = New System.Drawing.Point(50, 187)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(159, 20)
         Me.Label13.TabIndex = 6
@@ -302,7 +308,7 @@ Partial Class Usuario
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Gobold Thin Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.Orange
-        Me.Label16.Location = New System.Drawing.Point(50, 92)
+        Me.Label16.Location = New System.Drawing.Point(50, 119)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(114, 20)
         Me.Label16.TabIndex = 8

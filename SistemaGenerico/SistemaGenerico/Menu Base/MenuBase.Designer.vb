@@ -144,7 +144,6 @@ Partial Class MenuBase
         'img_logo
         '
         Me.img_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.img_logo.Image = CType(resources.GetObject("img_logo.Image"), System.Drawing.Image)
         Me.img_logo.Location = New System.Drawing.Point(39, 18)
         Me.img_logo.Name = "img_logo"
         Me.img_logo.Size = New System.Drawing.Size(157, 146)

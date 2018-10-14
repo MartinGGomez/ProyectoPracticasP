@@ -1,4 +1,8 @@
-﻿Module Utilidades
+﻿Imports System.IO
+
+Module Utilidades
+    Public pathLogo As String = obtenerPathBase() + "Resources\Logo\logo.png"
+    Public pathLogoDefault As String = obtenerPathBase() + "Resources\Logo\logodefault.png"
 
 
     Public Function obtenerPathBase()
@@ -19,5 +23,7 @@
         Return pathBase
 
     End Function
+
+   
 
 End Module
