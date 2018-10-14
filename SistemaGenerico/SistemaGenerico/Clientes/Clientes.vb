@@ -2,9 +2,9 @@
     Inherits SistemaGenerico.MenuBase
 
     Private Sub Clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblTitulo.Text = "PANTALLA HEREDADA"
+        lblTitulo.Text = "GESTIÓN DE CLIENTES"
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     End Sub
 End Class
