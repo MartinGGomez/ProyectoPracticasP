@@ -8,3 +8,6 @@ D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
