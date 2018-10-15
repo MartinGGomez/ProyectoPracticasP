@@ -95,44 +95,44 @@ Partial Class PanelUsuario
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Location = New System.Drawing.Point(51, 75)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(74, 24)
+        Me.Label2.Size = New System.Drawing.Size(74, 23)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Federico"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label6.Location = New System.Drawing.Point(189, 75)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 24)
+        Me.Label6.Size = New System.Drawing.Size(65, 23)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Markus"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label7.Location = New System.Drawing.Point(51, 139)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(223, 24)
+        Me.Label7.Size = New System.Drawing.Size(217, 23)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "federicomarkus@gmail.com"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label8.Location = New System.Drawing.Point(51, 207)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(120, 24)
+        Me.Label8.Size = New System.Drawing.Size(115, 23)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Administrador"
         '
@@ -194,30 +194,30 @@ Partial Class PanelUsuario
         '
         'txtmail
         '
-        Me.txtmail.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmail.Location = New System.Drawing.Point(55, 141)
+        Me.txtmail.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmail.Location = New System.Drawing.Point(55, 142)
         Me.txtmail.Name = "txtmail"
-        Me.txtmail.Size = New System.Drawing.Size(250, 28)
+        Me.txtmail.Size = New System.Drawing.Size(250, 27)
         Me.txtmail.TabIndex = 20
         Me.txtmail.Text = "federicomarkus@gmail.com"
         Me.txtmail.Visible = False
         '
         'txtape
         '
-        Me.txtape.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtape.Location = New System.Drawing.Point(193, 75)
+        Me.txtape.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtape.Location = New System.Drawing.Point(193, 76)
         Me.txtape.Name = "txtape"
-        Me.txtape.Size = New System.Drawing.Size(112, 28)
+        Me.txtape.Size = New System.Drawing.Size(112, 27)
         Me.txtape.TabIndex = 19
         Me.txtape.Text = "Markus"
         Me.txtape.Visible = False
         '
         'txtnom
         '
-        Me.txtnom.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnom.Location = New System.Drawing.Point(55, 75)
+        Me.txtnom.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnom.Location = New System.Drawing.Point(55, 76)
         Me.txtnom.Name = "txtnom"
-        Me.txtnom.Size = New System.Drawing.Size(104, 28)
+        Me.txtnom.Size = New System.Drawing.Size(104, 27)
         Me.txtnom.TabIndex = 18
         Me.txtnom.Text = "Federico"
         Me.txtnom.Visible = False
@@ -259,26 +259,26 @@ Partial Class PanelUsuario
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(54, 210)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(219, 28)
+        Me.TextBox3.Size = New System.Drawing.Size(219, 27)
         Me.TextBox3.TabIndex = 17
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(54, 142)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(219, 28)
+        Me.TextBox2.Size = New System.Drawing.Size(219, 27)
         Me.TextBox2.TabIndex = 16
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(54, 78)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(219, 28)
+        Me.TextBox1.Size = New System.Drawing.Size(219, 27)
         Me.TextBox1.TabIndex = 15
         '
         'Label9

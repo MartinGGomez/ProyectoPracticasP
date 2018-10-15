@@ -24,6 +24,20 @@ Module Utilidades
 
     End Function
 
+    Public Function estaAbiertoElFormulario(form As String)
+
+        Dim abierto As Boolean = False
+
+        For Each f As Form In Application.OpenForms
+            If f.Name.Equals(form) Then
+                abierto = True
+            End If
+        Next
+
+        Return abierto
+
+    End Function
+
    
 
 End Module

@@ -25,24 +25,30 @@ Public Class Ajustes
 
             img_logo.BackgroundImage.Dispose()
             img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+
             img_logo_ajustes.BackgroundImage.Dispose()
             img_logo_ajustes.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-            If Inicio.IsDisposed Then
+
+            If Utilidades.estaAbiertoElFormulario("Inicio") Then
                 Inicio.img_logo.BackgroundImage.Dispose()
                 Inicio.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+
             End If
-            If PanelUsuario.IsDisposed Then
+            If Utilidades.estaAbiertoElFormulario("PanelUsuario") Then
                 PanelUsuario.img_logo.BackgroundImage.Dispose()
                 PanelUsuario.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
-            If Clientes.IsDisposed Then
+
+            If Utilidades.estaAbiertoElFormulario("Clientes") Then
                 Clientes.img_logo.BackgroundImage.Dispose()
                 Clientes.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
-            If GestionarUsuarios.IsDisposed Then
+
+            If Utilidades.estaAbiertoElFormulario("GestionarUsuarios") Then
                 GestionarUsuarios.img_logo.BackgroundImage.Dispose()
                 GestionarUsuarios.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
             End If
+
             InicioSesion.img_logo.BackgroundImage.Dispose()
             InicioSesion.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
 
