@@ -21,6 +21,8 @@ Nombre varchar(100),
 constraint PK_TipoTrabajo primary key (idTipo)
 )ENGINE=InnoDB;
 
+insert into TipoTrabajo values('',"Administrador");
+
 create table Empleados(
 idEmpleado int auto_increment, 
 DNI varchar(20),
@@ -33,6 +35,8 @@ constraint PK_Empleados primary key (idEmpleado),
 constraint FK_Empleados foreign key (idTipo) references TipoTrabajo (idTipo)
 )ENGINE=InnoDB;
 
+insert into Empleados values ('',"","Admin","","",1,"Disponible");
+
 create table Usuarios(
 idUsuario int auto_increment, 
 idEmpleado int,
@@ -42,6 +46,10 @@ Administrador boolean,
 constraint PK_Usuarios primary key (idUsuario),
 constraint FK_Usuarios foreign key (idEmpleado) references Empleados (idEmpleado)
 )ENGINE=InnoDB;
+
+insert into Usuarios values ('',1,"admin","admin1234",true);
+
+
 
 create table Productos(
 idProducto int auto_increment, 

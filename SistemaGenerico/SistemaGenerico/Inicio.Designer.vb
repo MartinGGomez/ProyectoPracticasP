@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Clientes
+Partial Class Inicio
     Inherits SistemaGenerico.MenuBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,13 +24,13 @@ Partial Class Clientes
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Clientes
+        'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
-        Me.Name = "Clientes"
-        Me.Text = "Clientes"
+        Me.Name = "Inicio"
+        Me.Text = "Inicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

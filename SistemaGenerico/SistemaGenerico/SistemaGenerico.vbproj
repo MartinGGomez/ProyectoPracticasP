@@ -72,10 +72,34 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajustes.Designer.vb">
+      <DependentUpon>Ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Clientes\Clientes.Designer.vb">
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Clientes\Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.vb">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Base\FormularioBase.Designer.vb">
+      <DependentUpon>FormularioBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Base\FormularioBase.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu Base\MenuBase.vb">
@@ -100,10 +124,41 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Usuarios\FormularioUsuario.Designer.vb">
+      <DependentUpon>FormularioUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\FormularioUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\GestionarUsuarios.Designer.vb">
+      <DependentUpon>GestionarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\GestionarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\PanelUsuario.Designer.vb">
+      <DependentUpon>PanelUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\PanelUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilidades\Utilidades.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ajustes.resx">
+      <DependentUpon>Ajustes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Base\FormularioBase.resx">
+      <DependentUpon>FormularioBase.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Base\MenuBase.resx">
       <DependentUpon>MenuBase.vb</DependentUpon>
@@ -113,6 +168,15 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\FormularioUsuario.resx">
+      <DependentUpon>FormularioUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\GestionarUsuarios.resx">
+      <DependentUpon>GestionarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\PanelUsuario.resx">
+      <DependentUpon>PanelUsuario.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +197,6 @@
     <Folder Include="Personalizacion\" />
     <Folder Include="Presupuesto\" />
     <Folder Include="Productos\" />
-    <Folder Include="Usuarios\" />
     <Folder Include="Ventas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
