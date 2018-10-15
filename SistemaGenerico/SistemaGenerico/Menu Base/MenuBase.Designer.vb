@@ -101,6 +101,7 @@ Partial Class MenuBase
         Me.img_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.img_user.BackgroundImage = CType(resources.GetObject("img_user.BackgroundImage"), System.Drawing.Image)
         Me.img_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.img_user.Cursor = System.Windows.Forms.Cursors.Hand
         Me.img_user.Location = New System.Drawing.Point(12, 567)
         Me.img_user.Name = "img_user"
         Me.img_user.Size = New System.Drawing.Size(70, 60)
@@ -111,6 +112,7 @@ Partial Class MenuBase
         '
         Me.btn_ajustes.BackgroundImage = CType(resources.GetObject("btn_ajustes.BackgroundImage"), System.Drawing.Image)
         Me.btn_ajustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_ajustes.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_ajustes.FlatAppearance.BorderSize = 0
         Me.btn_ajustes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_ajustes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -128,6 +130,7 @@ Partial Class MenuBase
         '
         Me.btn_estadisticas.BackgroundImage = CType(resources.GetObject("btn_estadisticas.BackgroundImage"), System.Drawing.Image)
         Me.btn_estadisticas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_estadisticas.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_estadisticas.FlatAppearance.BorderSize = 0
         Me.btn_estadisticas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_estadisticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -155,6 +158,7 @@ Partial Class MenuBase
         '
         Me.btn_gastos.BackgroundImage = CType(resources.GetObject("btn_gastos.BackgroundImage"), System.Drawing.Image)
         Me.btn_gastos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_gastos.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_gastos.FlatAppearance.BorderSize = 0
         Me.btn_gastos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_gastos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -172,6 +176,7 @@ Partial Class MenuBase
         '
         Me.btn_ventas.BackgroundImage = CType(resources.GetObject("btn_ventas.BackgroundImage"), System.Drawing.Image)
         Me.btn_ventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_ventas.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_ventas.FlatAppearance.BorderSize = 0
         Me.btn_ventas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -189,6 +194,7 @@ Partial Class MenuBase
         '
         Me.btn_compras.BackgroundImage = CType(resources.GetObject("btn_compras.BackgroundImage"), System.Drawing.Image)
         Me.btn_compras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_compras.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_compras.FlatAppearance.BorderSize = 0
         Me.btn_compras.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_compras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -204,8 +210,10 @@ Partial Class MenuBase
         '
         'btn_productos
         '
+        Me.btn_productos.BackColor = System.Drawing.SystemColors.Highlight
         Me.btn_productos.BackgroundImage = CType(resources.GetObject("btn_productos.BackgroundImage"), System.Drawing.Image)
         Me.btn_productos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_productos.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_productos.FlatAppearance.BorderSize = 0
         Me.btn_productos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_productos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -217,12 +225,13 @@ Partial Class MenuBase
         Me.btn_productos.Name = "btn_productos"
         Me.btn_productos.Size = New System.Drawing.Size(231, 35)
         Me.btn_productos.TabIndex = 3
-        Me.btn_productos.UseVisualStyleBackColor = True
+        Me.btn_productos.UseVisualStyleBackColor = False
         '
         'btn_proveedores
         '
         Me.btn_proveedores.BackgroundImage = CType(resources.GetObject("btn_proveedores.BackgroundImage"), System.Drawing.Image)
         Me.btn_proveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_proveedores.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_proveedores.FlatAppearance.BorderSize = 0
         Me.btn_proveedores.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_proveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -240,6 +249,7 @@ Partial Class MenuBase
         '
         Me.btn_clientes.BackgroundImage = CType(resources.GetObject("btn_clientes.BackgroundImage"), System.Drawing.Image)
         Me.btn_clientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_clientes.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_clientes.FlatAppearance.BorderSize = 0
         Me.btn_clientes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -257,6 +267,7 @@ Partial Class MenuBase
         '
         Me.btn_inicio.BackgroundImage = CType(resources.GetObject("btn_inicio.BackgroundImage"), System.Drawing.Image)
         Me.btn_inicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btn_inicio.Cursor = System.Windows.Forms.Cursors.Default
         Me.btn_inicio.FlatAppearance.BorderSize = 0
         Me.btn_inicio.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight
         Me.btn_inicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
@@ -286,6 +297,7 @@ Partial Class MenuBase
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Font = New System.Drawing.Font("Gobold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Tomato
         Me.Label1.Location = New System.Drawing.Point(89, 55)
@@ -298,6 +310,7 @@ Partial Class MenuBase
         '
         Me.lbl_nom_user.AutoSize = True
         Me.lbl_nom_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbl_nom_user.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_nom_user.Font = New System.Drawing.Font("Gobold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_nom_user.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_nom_user.Location = New System.Drawing.Point(88, 16)

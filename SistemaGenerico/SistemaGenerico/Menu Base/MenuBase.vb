@@ -84,4 +84,11 @@ Public Class MenuBase
 
     End Sub
 
+    Private Sub btn_productos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_productos.Click
+        If Not Me.Equals(Productos) Then
+            Me.Hide()
+            Productos.Show()
+
+        End If
+    End Sub
 End Class
