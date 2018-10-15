@@ -124,10 +124,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Usuarios\AgregarUsuario.Designer.vb">
-      <DependentUpon>AgregarUsuario.vb</DependentUpon>
+    <Compile Include="Usuarios\FormularioUsuario.Designer.vb">
+      <DependentUpon>FormularioUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\AgregarUsuario.vb">
+    <Compile Include="Usuarios\FormularioUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios\GestionarUsuarios.Designer.vb">
@@ -169,8 +169,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\AgregarUsuario.resx">
-      <DependentUpon>AgregarUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="Usuarios\FormularioUsuario.resx">
+      <DependentUpon>FormularioUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\GestionarUsuarios.resx">
       <DependentUpon>GestionarUsuarios.vb</DependentUpon>

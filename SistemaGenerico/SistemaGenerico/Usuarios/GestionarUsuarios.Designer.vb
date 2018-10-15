@@ -51,7 +51,7 @@ Partial Class GestionarUsuarios
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(265, 521)
+        Me.GroupBox1.Location = New System.Drawing.Point(265, 534)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(844, 85)
         Me.GroupBox1.TabIndex = 21
@@ -113,7 +113,7 @@ Partial Class GestionarUsuarios
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox2.Location = New System.Drawing.Point(265, 78)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(844, 437)
+        Me.GroupBox2.Size = New System.Drawing.Size(844, 450)
         Me.GroupBox2.TabIndex = 22
         Me.GroupBox2.TabStop = False
         '

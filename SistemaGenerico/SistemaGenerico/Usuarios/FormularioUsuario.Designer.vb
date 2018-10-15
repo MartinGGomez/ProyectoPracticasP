@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AgregarUsuario
+Partial Class FormularioUsuario
     Inherits SistemaGenerico.FormularioBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,6 +23,7 @@ Partial Class AgregarUsuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.txtmail = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class AgregarUsuario
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btneditar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,6 +58,22 @@ Partial Class AgregarUsuario
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Informacíon del Usuario"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Location = New System.Drawing.Point(54, 312)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(252, 35)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "AGREGAR USUARIO"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Highlight
@@ -76,6 +92,7 @@ Partial Class AgregarUsuario
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(53, 267)
@@ -167,30 +184,14 @@ Partial Class AgregarUsuario
         Me.btneditar.Text = "VOLVER"
         Me.btneditar.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(54, 312)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(252, 35)
-        Me.Button1.TabIndex = 19
-        Me.Button1.Text = "AGREGAR USUARIO"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'AgregarUsuario
+        'FormularioUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(698, 527)
         Me.Controls.Add(Me.btneditar)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "AgregarUsuario"
+        Me.Name = "FormularioUsuario"
         Me.Text = "AgregarUsuario"
         Me.Controls.SetChildIndex(Me.GroupBox1, 0)
         Me.Controls.SetChildIndex(Me.btneditar, 0)

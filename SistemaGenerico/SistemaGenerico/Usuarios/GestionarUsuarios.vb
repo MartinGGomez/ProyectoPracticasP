@@ -31,7 +31,20 @@
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+
         Me.Enabled = False
-        AgregarUsuario.Show()
+        FormularioUsuario.Show()
+        FormularioUsuario.lblTitulo.Text = "AGREGAR USUARIO"
+    End Sub
+
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+        Me.Enabled = False
+        FormularioUsuario.Show()
+        FormularioUsuario.lblTitulo.Text = "EDITAR USUARIO"
+        FormularioUsuario.txtnom.Text = "Federico"
+        FormularioUsuario.txtape.Text = "Markus"
+        FormularioUsuario.txtmail.Text = "federicomarkus@gmail.com"
+        FormularioUsuario.ComboBox1.Items.Add("Administrador")
+        FormularioUsuario.ComboBox1.Text = "Administrador"
     End Sub
 End Class
