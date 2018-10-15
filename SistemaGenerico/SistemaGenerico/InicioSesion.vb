@@ -9,7 +9,7 @@ Public Class InicioSesion
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
 
         Me.Hide()
-        Ajustes.Show()
+        Inicio.Show()
     End Sub
 
     Private Sub btn_minimizar_Click(sender As System.Object, e As System.EventArgs) Handles btn_minimizar.Click

@@ -8,11 +8,9 @@ D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
-<<<<<<< HEAD
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
-=======
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
@@ -30,4 +28,3 @@ C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGener
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
 C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
->>>>>>> 98b11a5b8d20409843b6bd50b01dc621b06b469c
