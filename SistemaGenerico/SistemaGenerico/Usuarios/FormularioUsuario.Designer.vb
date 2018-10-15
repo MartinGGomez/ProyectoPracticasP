@@ -93,35 +93,35 @@ Partial Class FormularioUsuario
         'ComboBox1
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(53, 267)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(253, 29)
+        Me.ComboBox1.Size = New System.Drawing.Size(253, 27)
         Me.ComboBox1.TabIndex = 22
         '
         'txtmail
         '
-        Me.txtmail.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmail.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtmail.Location = New System.Drawing.Point(53, 189)
         Me.txtmail.Name = "txtmail"
-        Me.txtmail.Size = New System.Drawing.Size(253, 28)
+        Me.txtmail.Size = New System.Drawing.Size(253, 27)
         Me.txtmail.TabIndex = 20
         '
         'txtape
         '
-        Me.txtape.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtape.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtape.Location = New System.Drawing.Point(54, 125)
         Me.txtape.Name = "txtape"
-        Me.txtape.Size = New System.Drawing.Size(252, 28)
+        Me.txtape.Size = New System.Drawing.Size(252, 27)
         Me.txtape.TabIndex = 19
         '
         'txtnom
         '
-        Me.txtnom.Font = New System.Drawing.Font("Gobold Thin Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnom.Font = New System.Drawing.Font("Bahnschrift Light SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnom.Location = New System.Drawing.Point(54, 61)
         Me.txtnom.Name = "txtnom"
-        Me.txtnom.Size = New System.Drawing.Size(252, 28)
+        Me.txtnom.Size = New System.Drawing.Size(252, 27)
         Me.txtnom.TabIndex = 18
         '
         'lbl_usuario
