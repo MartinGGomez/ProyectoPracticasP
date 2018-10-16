@@ -47,3 +47,22 @@ C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache

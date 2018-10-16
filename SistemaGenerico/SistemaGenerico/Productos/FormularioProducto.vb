@@ -13,14 +13,14 @@ Public Class FormularioProducto
     Private Sub FormularioProducto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If editar Then
             lblTitulo.Text = "Editar Producto"
-            btnAgregarP.Visible = True
-            btnRemoverP.Visible = True
-            btnAgregarProv.Visible = False
+            'btnAgregarP.Visible = True
+            'btnRemoverP.Visible = True
+            'btnAgregarProv.Visible = False
         Else
             lblTitulo.Text = "Cargar Producto"
-            btnAgregarP.Visible = False
-            btnRemoverP.Visible = False
-            btnAgregarProv.Visible = True
+            'btnAgregarP.Visible = False
+            'btnRemoverP.Visible = False
+            'btnAgregarProv.Visible = True
         End If
     End Sub
 
@@ -103,21 +103,6 @@ Public Class FormularioProducto
 
     End Sub
 
-    Private Sub btnAgregarProv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarProv.Click
-        If cboProveedores.Text <> "" Then
-            lstProveedores.Items.Add(cboProveedores.Text)
-
-            sql = "select idproveedor from proveedores where nombre = '" & cboProveedores.Text & "'"
-            rs = Funciones.consulta(sql)
-            If rs.Read Then
-                provSeleccionados.Add(rs(0))
-            End If
-
-
-        End If
-        cargarProveedores()
-    End Sub
-
     Private Sub btnAgregarP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarP.Click
         If cboProveedores.Text <> "" Then
             lstProveedores.Items.Add(cboProveedores.Text)
@@ -126,8 +111,6 @@ Public Class FormularioProducto
             rs = Funciones.consulta(sql)
             If rs.Read Then
                 provSeleccionados.Add(rs(0))
-                sql = "insert into productoproveedor values (" & idProducto & ", " & rs(0) & ")"
-                Funciones.consulta(sql)
             End If
 
         Else
@@ -138,20 +121,37 @@ Public Class FormularioProducto
     End Sub
 
     Private Sub btnRemoverP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRemoverP.Click
-        If Not lstProveedores.SelectedItem = Nothing Then
-            sql = "select idproveedor from proveedores where nombre = '" & lstProveedores.SelectedItem & "'"
-            rs = Funciones.consulta(sql)
-            If rs.Read Then
-                provSeleccionados.Remove(rs(0))
-                sql = "delete from productoproveedor where idproducto=" & idProducto & " and idproveedor=" & rs(0) & ""
-                Funciones.consulta(sql)
-                lstProveedores.Items.Remove(lstProveedores.SelectedItem)
-            End If
+        If editar Then
 
+            If Not lstProveedores.SelectedItem = Nothing Then
+                sql = "select idproveedor from proveedores where nombre = '" & lstProveedores.SelectedItem & "'"
+                rs = Funciones.consulta(sql)
+                If rs.Read Then
+                    provSeleccionados.Remove(rs(0))
+                    sql = "delete from productoproveedor where idproducto=" & idProducto & " and idproveedor=" & rs(0) & ""
+                    Funciones.consulta(sql)
+                    lstProveedores.Items.Remove(lstProveedores.SelectedItem)
+                End If
+
+            Else
+                MsgBox("Seleccione un proveedor")
+
+            End If
         Else
-            MsgBox("Seleccione un proveedor")
+
+            provSeleccionados.RemoveAt(lstProveedores.SelectedIndex)
+            lstProveedores.Items.RemoveAt(lstProveedores.SelectedIndex)
 
         End If
+
         cargarProveedores()
+    End Sub
+
+    Private Sub btnVerProveedores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVerProveedores.Click
+        GestionarUsuarios.Show()
+        Me.Enabled = False
+
+
+        GestionarUsuarios.Panel1.Visible = False
     End Sub
 End Class

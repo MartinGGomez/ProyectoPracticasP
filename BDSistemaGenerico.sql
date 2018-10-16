@@ -55,6 +55,7 @@ create table Productos(
 idProducto int auto_increment, 
 Descripcion varchar(100),
 Stock int,
+PuntoPedido int,
 Precio float,
 Estado varchar(20),
 constraint PK_Productos primary key (idProducto)

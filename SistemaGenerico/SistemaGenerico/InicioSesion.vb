@@ -27,7 +27,8 @@ Public Class InicioSesion
 
     End Sub
 
-    Private Sub InicioSesion_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub InicioSesion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Funciones.conexion()
         If File.Exists(Utilidades.pathLogo) Then
 
             img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogo)

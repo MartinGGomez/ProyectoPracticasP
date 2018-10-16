@@ -25,12 +25,12 @@ Partial Class FormularioBase
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormularioBase))
         Me.btn_minimizar = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
-        Me.SuspendLayout
+        Me.SuspendLayout()
         '
         'btn_minimizar
         '
         Me.btn_minimizar.BackColor = System.Drawing.Color.Transparent
-        Me.btn_minimizar.BackgroundImage = CType(resources.GetObject("btn_minimizar.BackgroundImage"),System.Drawing.Image)
+        Me.btn_minimizar.BackgroundImage = CType(resources.GetObject("btn_minimizar.BackgroundImage"), System.Drawing.Image)
         Me.btn_minimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_minimizar.FlatAppearance.BorderSize = 0
         Me.btn_minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
@@ -40,22 +40,22 @@ Partial Class FormularioBase
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
         Me.btn_minimizar.TabIndex = 4
-        Me.btn_minimizar.UseVisualStyleBackColor = false
+        Me.btn_minimizar.UseVisualStyleBackColor = False
         '
         'lblTitulo
         '
-        Me.lblTitulo.AutoSize = true
-        Me.lblTitulo.Font = New System.Drawing.Font("Gobold", 24!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Font = New System.Drawing.Font("SansSerif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(198, 20)
+        Me.lblTitulo.Location = New System.Drawing.Point(139, 20)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(307, 41)
+        Me.lblTitulo.Size = New System.Drawing.Size(405, 37)
         Me.lblTitulo.TabIndex = 5
         Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
         '
         'FormularioBase
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.SystemColors.ControlDark
@@ -63,15 +63,15 @@ Partial Class FormularioBase
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.btn_minimizar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = false
-        Me.MinimizeBox = false
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormularioBase"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        Me.ResumeLayout(false)
-        Me.PerformLayout
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
-End Sub
+    End Sub
     Friend WithEvents btn_minimizar As System.Windows.Forms.Button
     Friend WithEvents lblTitulo As System.Windows.Forms.Label
 End Class

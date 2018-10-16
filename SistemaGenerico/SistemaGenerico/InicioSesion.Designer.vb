@@ -61,49 +61,49 @@ Partial Class InicioSesion
         'lbl_usuario
         '
         Me.lbl_usuario.AutoSize = True
-        Me.lbl_usuario.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_usuario.Location = New System.Drawing.Point(371, 108)
         Me.lbl_usuario.Name = "lbl_usuario"
-        Me.lbl_usuario.Size = New System.Drawing.Size(72, 24)
+        Me.lbl_usuario.Size = New System.Drawing.Size(79, 24)
         Me.lbl_usuario.TabIndex = 1
         Me.lbl_usuario.Text = "Usuario:"
         '
         'lbl_contra
         '
         Me.lbl_contra.AutoSize = True
-        Me.lbl_contra.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_contra.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_contra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_contra.Location = New System.Drawing.Point(341, 173)
         Me.lbl_contra.Name = "lbl_contra"
-        Me.lbl_contra.Size = New System.Drawing.Size(102, 24)
+        Me.lbl_contra.Size = New System.Drawing.Size(111, 24)
         Me.lbl_contra.TabIndex = 2
         Me.lbl_contra.Text = "Contraseña:"
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(449, 105)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(196, 32)
+        Me.TextBox1.Size = New System.Drawing.Size(196, 29)
         Me.TextBox1.TabIndex = 3
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Gobold Thin Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(449, 170)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(196, 32)
+        Me.TextBox2.Size = New System.Drawing.Size(196, 29)
         Me.TextBox2.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Gobold Thin Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Gobold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(407, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(209, 41)
+        Me.Label1.Size = New System.Drawing.Size(230, 41)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "INICIO DE SESIÓN"
         '

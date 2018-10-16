@@ -11,8 +11,6 @@ Public Class Productos
         lblTitulo.Text = "Gestion de Productos"
         logo()
         btn_productos.BackColor = Color.Black
-        Funciones.conexion()
-        cargarProductos()
     End Sub
 
     Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged
