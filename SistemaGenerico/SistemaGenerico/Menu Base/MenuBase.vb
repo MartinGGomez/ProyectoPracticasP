@@ -92,4 +92,10 @@ Public Class MenuBase
             Productos.Show()
         End If
     End Sub
+
+    Private Sub btn_proveedores_Click(sender As System.Object, e As System.EventArgs) Handles btn_proveedores.Click
+        Me.Hide()
+        Proveedores.cargarProveedores()
+        Proveedores.Show()
+    End Sub
 End Class

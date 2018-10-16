@@ -45,11 +45,11 @@ Partial Class FormularioBase
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
-        Me.lblTitulo.Font = New System.Drawing.Font("SansSerif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.lblTitulo.Font = New System.Drawing.Font("Gobold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(139, 20)
+        Me.lblTitulo.Location = New System.Drawing.Point(194, 27)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(405, 37)
+        Me.lblTitulo.Size = New System.Drawing.Size(307, 41)
         Me.lblTitulo.TabIndex = 5
         Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
         '

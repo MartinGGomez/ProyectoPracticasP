@@ -130,3 +130,13 @@ constraint PK_Gastos primary key (idGasto)
 )ENGINE=InnoDB;
 
 
+
+insert into Proveedores values 
+('', "Proveedor 1" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
+('', "Proveedor 2" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
+('', "Proveedor 3" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo");
+
+
+
+update Proveedores set nombre = " modificado ", " modificado ", " modificado ", " modificado " where idProveedor =1;
+

@@ -138,6 +138,18 @@
     <Compile Include="Productos\Productos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proveedores\Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\FormularioProveedores.Designer.vb">
+      <DependentUpon>FormularioProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\FormularioProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\FormularioUsuario.Designer.vb">
       <DependentUpon>FormularioUsuario.vb</DependentUpon>
     </Compile>
@@ -188,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Productos\Productos.resx">
       <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\FormularioProveedores.resx">
+      <DependentUpon>FormularioProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\FormularioUsuario.resx">
       <DependentUpon>FormularioUsuario.vb</DependentUpon>
