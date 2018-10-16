@@ -13,18 +13,13 @@ Public Class FormularioProducto
     Private Sub FormularioProducto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If editar Then
             lblTitulo.Text = "Editar Producto"
-            'btnAgregarP.Visible = True
-            'btnRemoverP.Visible = True
-            'btnAgregarProv.Visible = False
         Else
             lblTitulo.Text = "Cargar Producto"
-            'btnAgregarP.Visible = False
-            'btnRemoverP.Visible = False
-            'btnAgregarProv.Visible = True
         End If
     End Sub
 
     Public Sub cargarDatos()
+        lblError.Text = ""
         sql = "select descripcion, stock, precio from productos where idProducto = " & idProducto & ""
         rs = Funciones.consulta(sql)
         If rs.Read Then
@@ -37,10 +32,10 @@ Public Class FormularioProducto
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         If txtDescripcion.Text = "" Or txtStock.Text = "" Or txtPrecio.Text = "" Then
-            MsgBox("Hay campos vacios. Completar Campos.", MsgBoxStyle.Critical)
+            lblError.Text = "Hay campos vacios. Completar Campos."
 
         Else
-
+            lblError.Text = ""
             sql = "insert into productos values ('', '" & txtDescripcion.Text & "', " & txtStock.Text & ", " & txtPrecio.Text & ", 'Activo')"
             Funciones.consulta(sql)
 
@@ -55,6 +50,9 @@ Public Class FormularioProducto
                     Funciones.consulta(sql)
                 Next
 
+                Me.Close()
+                Productos.cargarProductos()
+                Productos.Enabled = True
 
             End If
 
@@ -148,10 +146,44 @@ Public Class FormularioProducto
     End Sub
 
     Private Sub btnVerProveedores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVerProveedores.Click
-        GestionarUsuarios.Show()
+        Lista.cargarLista("select idProveedor ID, Nombre, Telefono, Mail, Direccion from proveedores where estado='Activo'", Me, "Proveedores")
+        Lista.Show()
         Me.Enabled = False
+    End Sub
 
+    Private Sub txtPrecio_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPrecio.KeyPress
+        If Not IsNumeric(txtPrecio.Text) And txtPrecio.Text <> "" Then
+            ErrorProvider.SetError(txtPrecio, "Solo pueden ser datos numericos.")
+            btnAgregar.Enabled = False
+        Else
+            ErrorProvider.SetError(txtPrecio, "")
+            If IsNumeric(txtStock.Text) And IsNumeric(txtPuntoP.Text) Then
+                btnAgregar.Enabled = True
+            End If
+        End If
+    End Sub
 
-        GestionarUsuarios.Panel1.Visible = False
+    Private Sub txtStock_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtStock.TextChanged
+        If Not IsNumeric(txtStock.Text) And txtStock.Text <> "" Then
+            ErrorProvider.SetError(txtStock, "Solo pueden ser datos numericos.")
+            btnAgregar.Enabled = False
+        Else
+            ErrorProvider.SetError(txtStock, "")
+            If IsNumeric(txtPrecio.Text) And IsNumeric(txtPuntoP.Text) Then
+                btnAgregar.Enabled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub txtPuntoP_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtPuntoP.TextChanged
+        If Not IsNumeric(txtStock.Text) And txtStock.Text <> "" Then
+            ErrorProvider.SetError(txtPuntoP, "Solo pueden ser datos numericos.")
+            btnAgregar.Enabled = False
+        Else
+            ErrorProvider.SetError(txtStock, "")
+            If IsNumeric(txtPrecio.Text) And IsNumeric(txtStock.Text) Then
+                btnAgregar.Enabled = True
+            End If
+        End If
     End Sub
 End Class
