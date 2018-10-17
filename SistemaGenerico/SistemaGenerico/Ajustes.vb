@@ -19,47 +19,24 @@ Public Class Ajustes
 
     End Sub
 
-    Private Sub reutaurarLogo()
+
+    Public Sub logoAjustes()
 
         If File.Exists(Utilidades.pathLogo) Then
 
-            img_logo.BackgroundImage.Dispose()
-            img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+            img_logo_ajustes.BackgroundImage = Image.FromFile(Utilidades.pathLogo)
 
-            img_logo_ajustes.BackgroundImage.Dispose()
+        ElseIf File.Exists(Utilidades.pathLogoDefault) Then
+
             img_logo_ajustes.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-
-            If Utilidades.estaAbiertoElFormulario("Inicio") Then
-                Inicio.img_logo.BackgroundImage.Dispose()
-                Inicio.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-
-            End If
-            If Utilidades.estaAbiertoElFormulario("PanelUsuario") Then
-                PanelUsuario.img_logo.BackgroundImage.Dispose()
-                PanelUsuario.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-            End If
-
-            If Utilidades.estaAbiertoElFormulario("Clientes") Then
-                Clientes.img_logo.BackgroundImage.Dispose()
-                Clientes.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-            End If
-
-            If Utilidades.estaAbiertoElFormulario("GestionarUsuarios") Then
-                GestionarUsuarios.img_logo.BackgroundImage.Dispose()
-                GestionarUsuarios.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-            End If
-
-            InicioSesion.img_logo.BackgroundImage.Dispose()
-            InicioSesion.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
-
-            File.Delete(Utilidades.pathLogo)
 
         End If
 
     End Sub
 
+
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        reutaurarLogo()
+        Utilidades.restaurarLogo()
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
@@ -80,12 +57,13 @@ Public Class Ajustes
             Dim fileInfo As New FileInfo(filename)
 
             If fileInfo.Extension.EndsWith("jpg") Or fileInfo.Extension.EndsWith("png") Then
-                reutaurarLogo()
+
+                Utilidades.restaurarLogo()
+
                 img_logo_ajustes.BackgroundImage = Image.FromFile(filename)
                 img_logo_ajustes.BackgroundImage.Save(pathLogo, System.Drawing.Imaging.ImageFormat.Png)
 
-                img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogo)
-                InicioSesion.img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogo)
+                Utilidades.refrescarLogo()
 
             Else
                 MsgBox("ARCHIVO INVALIDO")

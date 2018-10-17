@@ -22,23 +22,18 @@ Partial Class GestionarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.tabla_empleados = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.APELLIDO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EMAIL = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TRABAJO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ADMIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.txtBuscador = New System.Windows.Forms.TextBox()
+        Me.lblBuscar = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.tabla_empleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,7 +102,9 @@ Partial Class GestionarUsuarios
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.txtBuscador)
         Me.GroupBox2.Controls.Add(Me.tabla_empleados)
+        Me.GroupBox2.Controls.Add(Me.lblBuscar)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -127,16 +124,15 @@ Partial Class GestionarUsuarios
         Me.tabla_empleados.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tabla_empleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.tabla_empleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.tabla_empleados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.MenuBar
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.tabla_empleados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.tabla_empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tabla_empleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.NOMBRE, Me.APELLIDO, Me.EMAIL, Me.TRABAJO, Me.ADMIN})
         Me.tabla_empleados.Cursor = System.Windows.Forms.Cursors.Default
         Me.tabla_empleados.EnableHeadersVisualStyles = False
         Me.tabla_empleados.GridColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -144,63 +140,23 @@ Partial Class GestionarUsuarios
         Me.tabla_empleados.Name = "tabla_empleados"
         Me.tabla_empleados.ReadOnly = True
         Me.tabla_empleados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InfoText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.tabla_empleados.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.InfoText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.tabla_empleados.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.tabla_empleados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        Me.tabla_empleados.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.tabla_empleados.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.tabla_empleados.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.tabla_empleados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.tabla_empleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.tabla_empleados.Size = New System.Drawing.Size(797, 355)
         Me.tabla_empleados.TabIndex = 17
-        '
-        'ID
-        '
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Gobold Thin Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        Me.ID.DefaultCellStyle = DataGridViewCellStyle2
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'NOMBRE
-        '
-        Me.NOMBRE.HeaderText = "NOMBRE"
-        Me.NOMBRE.Name = "NOMBRE"
-        Me.NOMBRE.ReadOnly = True
-        '
-        'APELLIDO
-        '
-        Me.APELLIDO.HeaderText = "APELLIDO"
-        Me.APELLIDO.Name = "APELLIDO"
-        Me.APELLIDO.ReadOnly = True
-        '
-        'EMAIL
-        '
-        Me.EMAIL.HeaderText = "EMAIL"
-        Me.EMAIL.Name = "EMAIL"
-        Me.EMAIL.ReadOnly = True
-        '
-        'TRABAJO
-        '
-        Me.TRABAJO.HeaderText = "TRABAJO"
-        Me.TRABAJO.Name = "TRABAJO"
-        Me.TRABAJO.ReadOnly = True
-        '
-        'ADMIN
-        '
-        Me.ADMIN.HeaderText = "ADMIN"
-        Me.ADMIN.Name = "ADMIN"
-        Me.ADMIN.ReadOnly = True
         '
         'Button3
         '
@@ -218,6 +174,25 @@ Partial Class GestionarUsuarios
         Me.Button3.Text = "AGREGAR NUEVO USUARIO"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'txtBuscador
+        '
+        Me.txtBuscador.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 12.0!)
+        Me.txtBuscador.Location = New System.Drawing.Point(20, 39)
+        Me.txtBuscador.Name = "txtBuscador"
+        Me.txtBuscador.Size = New System.Drawing.Size(187, 27)
+        Me.txtBuscador.TabIndex = 24
+        '
+        'lblBuscar
+        '
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!)
+        Me.lblBuscar.ForeColor = System.Drawing.Color.Orange
+        Me.lblBuscar.Location = New System.Drawing.Point(16, 16)
+        Me.lblBuscar.Name = "lblBuscar"
+        Me.lblBuscar.Size = New System.Drawing.Size(129, 23)
+        Me.lblBuscar.TabIndex = 23
+        Me.lblBuscar.Text = "Buscar por nombre"
+        '
         'GestionarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -231,6 +206,7 @@ Partial Class GestionarUsuarios
         Me.Controls.SetChildIndex(Me.GroupBox2, 0)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.tabla_empleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -243,10 +219,6 @@ Partial Class GestionarUsuarios
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents tabla_empleados As System.Windows.Forms.DataGridView
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents ID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NOMBRE As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents APELLIDO As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EMAIL As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TRABAJO As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ADMIN As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
+    Friend WithEvents lblBuscar As System.Windows.Forms.Label
 End Class

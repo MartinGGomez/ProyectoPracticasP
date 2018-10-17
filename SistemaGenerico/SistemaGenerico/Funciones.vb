@@ -5,13 +5,16 @@ Module Funciones
     Private cnn As OdbcConnection
     Private cmd As OdbcCommand
 
+
+
     Public Sub conexion()
 
         Try
             cnn = New OdbcConnection("DSN=SistemaGenerico")
             cnn.Open()
         Catch ex As Exception
-            MsgBox("Error", MsgBoxStyle.Critical)
+            MsgBox("Error en la conexion a la base de datos", MsgBoxStyle.Critical)
+            Application.Exit()
         End Try
 
     End Sub

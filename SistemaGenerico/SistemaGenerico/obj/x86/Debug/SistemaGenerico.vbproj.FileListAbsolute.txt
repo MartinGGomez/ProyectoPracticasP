@@ -84,3 +84,7 @@ C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources

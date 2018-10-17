@@ -98,4 +98,10 @@ Public Class MenuBase
         Proveedores.cargarProveedores()
         Proveedores.Show()
     End Sub
+
+    Private Sub MenuBase_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        lbl_nom_user.Text = Utilidades.nombreUsuario
+        lbl_tipo_trab.Text = Utilidades.tipoUsuario
+
+    End Sub
 End Class

@@ -92,9 +92,8 @@ Partial Class MenuBase
         Me.lbl_tipo_trab.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_tipo_trab.Location = New System.Drawing.Point(89, 591)
         Me.lbl_tipo_trab.Name = "lbl_tipo_trab"
-        Me.lbl_tipo_trab.Size = New System.Drawing.Size(81, 15)
+        Me.lbl_tipo_trab.Size = New System.Drawing.Size(0, 15)
         Me.lbl_tipo_trab.TabIndex = 10
-        Me.lbl_tipo_trab.Text = "administrador"
         '
         'img_user
         '
@@ -315,9 +314,8 @@ Partial Class MenuBase
         Me.lbl_nom_user.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_nom_user.Location = New System.Drawing.Point(88, 16)
         Me.lbl_nom_user.Name = "lbl_nom_user"
-        Me.lbl_nom_user.Size = New System.Drawing.Size(120, 20)
+        Me.lbl_nom_user.Size = New System.Drawing.Size(0, 20)
         Me.lbl_nom_user.TabIndex = 4
-        Me.lbl_nom_user.Text = "FEDERICO MARKUS"
         '
         'lblTitulo
         '

@@ -1,32 +1,33 @@
-﻿Public Class GestionarUsuarios
+﻿Imports System.Data.Odbc
+
+Public Class GestionarUsuarios
     Inherits MenuBase
+
+    Dim sql, busqueda As String
+    Dim idEmpleado As Integer
+    Dim rs As OdbcDataReader
 
     Private Sub GestionarUsuarios_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         lblTitulo.Text = "Gestionar Usuarios"
         logo()
 
-        tabla_empleados.Columns(0).Width = 40 'id'
-        tabla_empleados.Columns(1).Width = 120 'nombre'
-        tabla_empleados.Columns(2).Width = 120 'apellido'
-        tabla_empleados.Columns(3).Width = 250 'email'
-        tabla_empleados.Columns(4).Width = 150 'trabajo'
-
-        tabla_empleados.Rows.Add("1", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("2", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("3", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("4", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("5", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("6", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("7", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("8", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("9", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("10", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("11", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("12", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
-        tabla_empleados.Rows.Add("13", "Federico", "Markus", "federicomarkus@gmail.com", "Administrador", "True")
+        cargarUsuarios()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tabla_empleados.CellContentClick
+    Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged
+        cargarUsuarios()
+    End Sub
+
+    Public Sub cargarUsuarios()
+        sql = "select e.idEmpleado ID, Nombre, Apellido, Dni, mail, Estado, u.Administrador  from empleados e, usuarios u where estado = 'Activo' and e.idempleado = u.idempleado"
+        busqueda = sql
+        If Not String.IsNullOrEmpty(txtBuscador.Text) Then
+            busqueda &= " and nombre like '%" & txtBuscador.Text & "%' or apellido like '%" & txtBuscador.Text & "%' "
+            tabla_empleados.DataSource = Funciones.llenarGrilla(busqueda)
+        Else
+            tabla_empleados.DataSource = Funciones.llenarGrilla(sql)
+        End If
+
 
     End Sub
 

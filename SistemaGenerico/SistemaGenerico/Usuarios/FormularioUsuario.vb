@@ -6,5 +6,6 @@
         GestionarUsuarios.Show()
         GestionarUsuarios.Enabled = True
         Me.Close()
+
     End Sub
 End Class

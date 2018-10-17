@@ -27,14 +27,15 @@ Partial Class InicioSesion
         Me.img_logo = New System.Windows.Forms.PictureBox()
         Me.lbl_usuario = New System.Windows.Forms.Label()
         Me.lbl_contra = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtusuario = New System.Windows.Forms.TextBox()
+        Me.txtcontraseña = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_minimizar = New System.Windows.Forms.Button()
         Me.btn_cerrar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnver = New System.Windows.Forms.Button()
+        Me.lblerror = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.img_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -63,7 +64,7 @@ Partial Class InicioSesion
         Me.lbl_usuario.AutoSize = True
         Me.lbl_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbl_usuario.Location = New System.Drawing.Point(371, 108)
+        Me.lbl_usuario.Location = New System.Drawing.Point(368, 106)
         Me.lbl_usuario.Name = "lbl_usuario"
         Me.lbl_usuario.Size = New System.Drawing.Size(79, 24)
         Me.lbl_usuario.TabIndex = 1
@@ -74,27 +75,30 @@ Partial Class InicioSesion
         Me.lbl_contra.AutoSize = True
         Me.lbl_contra.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_contra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbl_contra.Location = New System.Drawing.Point(341, 173)
+        Me.lbl_contra.Location = New System.Drawing.Point(338, 171)
         Me.lbl_contra.Name = "lbl_contra"
         Me.lbl_contra.Size = New System.Drawing.Size(111, 24)
         Me.lbl_contra.TabIndex = 2
         Me.lbl_contra.Text = "Contraseña:"
         '
-        'TextBox1
+        'txtusuario
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(449, 105)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(196, 29)
-        Me.TextBox1.TabIndex = 3
+        Me.txtusuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtusuario.Location = New System.Drawing.Point(449, 105)
+        Me.txtusuario.Name = "txtusuario"
+        Me.txtusuario.Size = New System.Drawing.Size(196, 29)
+        Me.txtusuario.TabIndex = 3
+        Me.txtusuario.Text = "admin"
         '
-        'TextBox2
+        'txtcontraseña
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(449, 170)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(196, 29)
-        Me.TextBox2.TabIndex = 4
+        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcontraseña.Location = New System.Drawing.Point(449, 170)
+        Me.txtcontraseña.Name = "txtcontraseña"
+        Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txtcontraseña.Size = New System.Drawing.Size(196, 29)
+        Me.txtcontraseña.TabIndex = 4
+        Me.txtcontraseña.Text = "admin1234"
         '
         'Label1
         '
@@ -146,7 +150,7 @@ Partial Class InicioSesion
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(387, 233)
+        Me.Button1.Location = New System.Drawing.Point(391, 242)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 35)
         Me.Button1.TabIndex = 8
@@ -162,27 +166,38 @@ Partial Class InicioSesion
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(541, 233)
+        Me.Button2.Location = New System.Drawing.Point(541, 242)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(104, 35)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnver
         '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(652, 175)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(28, 23)
-        Me.Button3.TabIndex = 10
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnver.BackColor = System.Drawing.Color.Transparent
+        Me.btnver.BackgroundImage = CType(resources.GetObject("btnver.BackgroundImage"), System.Drawing.Image)
+        Me.btnver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnver.FlatAppearance.BorderSize = 0
+        Me.btnver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnver.Location = New System.Drawing.Point(652, 175)
+        Me.btnver.Name = "btnver"
+        Me.btnver.Size = New System.Drawing.Size(28, 23)
+        Me.btnver.TabIndex = 10
+        Me.btnver.UseVisualStyleBackColor = False
+        '
+        'lblerror
+        '
+        Me.lblerror.AutoSize = True
+        Me.lblerror.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblerror.ForeColor = System.Drawing.Color.Tomato
+        Me.lblerror.Location = New System.Drawing.Point(339, 214)
+        Me.lblerror.Name = "lblerror"
+        Me.lblerror.Size = New System.Drawing.Size(0, 18)
+        Me.lblerror.TabIndex = 11
+        Me.lblerror.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'InicioSesion
         '
@@ -190,14 +205,15 @@ Partial Class InicioSesion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(702, 300)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.lblerror)
+        Me.Controls.Add(Me.btnver)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_minimizar)
         Me.Controls.Add(Me.btn_cerrar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtcontraseña)
+        Me.Controls.Add(Me.txtusuario)
         Me.Controls.Add(Me.lbl_contra)
         Me.Controls.Add(Me.lbl_usuario)
         Me.Controls.Add(Me.Panel1)
@@ -215,12 +231,13 @@ Partial Class InicioSesion
     Friend WithEvents img_logo As System.Windows.Forms.PictureBox
     Friend WithEvents lbl_usuario As System.Windows.Forms.Label
     Friend WithEvents lbl_contra As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtusuario As System.Windows.Forms.TextBox
+    Friend WithEvents txtcontraseña As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btn_minimizar As System.Windows.Forms.Button
     Friend WithEvents btn_cerrar As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnver As System.Windows.Forms.Button
+    Friend WithEvents lblerror As System.Windows.Forms.Label
 End Class
