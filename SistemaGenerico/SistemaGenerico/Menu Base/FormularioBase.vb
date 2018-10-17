@@ -15,4 +15,8 @@
     Private Sub FormularioBase_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btn_minimizar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_minimizar.Click
+
+    End Sub
 End Class

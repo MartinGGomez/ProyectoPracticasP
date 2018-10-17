@@ -36,7 +36,7 @@ Partial Class FormularioBase
         Me.btn_minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btn_minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btn_minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_minimizar.Location = New System.Drawing.Point(666, 3)
+        Me.btn_minimizar.Location = New System.Drawing.Point(668, 5)
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
         Me.btn_minimizar.TabIndex = 4
