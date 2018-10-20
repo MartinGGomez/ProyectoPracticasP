@@ -94,14 +94,25 @@ Public Class MenuBase
     End Sub
 
     Private Sub btn_proveedores_Click(sender As System.Object, e As System.EventArgs) Handles btn_proveedores.Click
-        Me.Hide()
-        Proveedores.cargarProveedores()
-        Proveedores.Show()
+        If Not Me.Equals(Proveedores) Then
+            Me.Hide()
+            Proveedores.cargarProveedores()
+            Proveedores.Show()
+        End If
+
     End Sub
 
     Private Sub MenuBase_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         lbl_nom_user.Text = Utilidades.nombreUsuario
         lbl_tipo_trab.Text = Utilidades.tipoUsuario
 
+    End Sub
+
+    Private Sub btn_compras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_compras.Click
+        If Not Me.Equals(Compras) Then
+            Me.Hide()
+            Compras.cargarCompras()
+            Compras.Show()
+        End If
     End Sub
 End Class

@@ -85,6 +85,12 @@
     <Compile Include="Clientes\Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Compras\Compras.Designer.vb">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Funciones.vb" />
     <Compile Include="Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
@@ -96,12 +102,6 @@
       <DependentUpon>InicioSesion.vb</DependentUpon>
     </Compile>
     <Compile Include="InicioSesion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Listas\Lista.Designer.vb">
-      <DependentUpon>Lista.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Listas\Lista.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu Base\FormularioBase.Designer.vb">
@@ -156,6 +156,12 @@
     <Compile Include="Proveedores\FormularioProveedores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Usuarios\FormularioTipoTrabajo.Designer.vb">
+      <DependentUpon>FormularioTipoTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\FormularioTipoTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Usuarios\FormularioUsuario.Designer.vb">
       <DependentUpon>FormularioUsuario.vb</DependentUpon>
     </Compile>
@@ -183,14 +189,14 @@
     <EmbeddedResource Include="Clientes\Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Compras.resx">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Listas\Lista.resx">
-      <DependentUpon>Lista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Base\FormularioBase.resx">
       <DependentUpon>FormularioBase.vb</DependentUpon>
@@ -216,6 +222,9 @@
     <EmbeddedResource Include="Proveedores\Proveedores.resx">
       <DependentUpon>Proveedores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\FormularioTipoTrabajo.resx">
+      <DependentUpon>FormularioTipoTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\FormularioUsuario.resx">
       <DependentUpon>FormularioUsuario.vb</DependentUpon>
     </EmbeddedResource>
@@ -238,7 +247,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Compras\" />
     <Folder Include="Estadisticas\" />
     <Folder Include="Gastos\" />
     <Folder Include="Personalizacion\" />

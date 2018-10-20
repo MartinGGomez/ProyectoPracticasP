@@ -88,7 +88,7 @@ Partial Class MenuBase
         '
         Me.lbl_tipo_trab.AutoSize = True
         Me.lbl_tipo_trab.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lbl_tipo_trab.Font = New System.Drawing.Font("Gobold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_tipo_trab.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_tipo_trab.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_tipo_trab.Location = New System.Drawing.Point(89, 591)
         Me.lbl_tipo_trab.Name = "lbl_tipo_trab"
@@ -297,11 +297,11 @@ Partial Class MenuBase
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label1.Font = New System.Drawing.Font("Gobold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Tomato
         Me.Label1.Location = New System.Drawing.Point(89, 55)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 15)
+        Me.Label1.Size = New System.Drawing.Size(105, 15)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "CERRAR SESIÓN"
         '
@@ -310,21 +310,21 @@ Partial Class MenuBase
         Me.lbl_nom_user.AutoSize = True
         Me.lbl_nom_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_nom_user.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbl_nom_user.Font = New System.Drawing.Font("Gobold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nom_user.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_nom_user.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_nom_user.Location = New System.Drawing.Point(88, 16)
         Me.lbl_nom_user.Name = "lbl_nom_user"
-        Me.lbl_nom_user.Size = New System.Drawing.Size(0, 20)
+        Me.lbl_nom_user.Size = New System.Drawing.Size(0, 18)
         Me.lbl_nom_user.TabIndex = 4
         '
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
-        Me.lblTitulo.Font = New System.Drawing.Font("Gobold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
         Me.lblTitulo.Location = New System.Drawing.Point(565, 18)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(309, 41)
+        Me.lblTitulo.Size = New System.Drawing.Size(299, 37)
         Me.lblTitulo.TabIndex = 2
         Me.lblTitulo.Text = "Titulo de la Pantalla"
         '

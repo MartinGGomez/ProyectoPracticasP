@@ -74,7 +74,7 @@ Public Class Ajustes
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
-        Me.Hide()
-        GestionarUsuarios.Show()
+        'Me.Hide()
+        'GestionarUsuarios.Show()
     End Sub
 End Class

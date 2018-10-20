@@ -1,4 +1,4 @@
-﻿D:\Sistema\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+D:\Sistema\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
 D:\Sistema\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
 D:\Sistema\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
 D:\Sistema\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
@@ -91,4 +91,9 @@ C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGener
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
-
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources

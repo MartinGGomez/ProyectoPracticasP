@@ -25,6 +25,7 @@ Partial Class FormularioBase
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormularioBase))
         Me.btn_minimizar = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_minimizar
@@ -53,6 +54,22 @@ Partial Class FormularioBase
         Me.lblTitulo.TabIndex = 5
         Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
         '
+        'btnVolver
+        '
+        Me.btnVolver.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnVolver.Location = New System.Drawing.Point(583, 480)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(103, 35)
+        Me.btnVolver.TabIndex = 20
+        Me.btnVolver.Text = "VOLVER"
+        Me.btnVolver.UseVisualStyleBackColor = False
+        '
         'FormularioBase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -60,6 +77,7 @@ Partial Class FormularioBase
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(698, 527)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.btn_minimizar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -74,4 +92,5 @@ Partial Class FormularioBase
     End Sub
     Friend WithEvents btn_minimizar As System.Windows.Forms.Button
     Friend WithEvents lblTitulo As System.Windows.Forms.Label
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
 End Class

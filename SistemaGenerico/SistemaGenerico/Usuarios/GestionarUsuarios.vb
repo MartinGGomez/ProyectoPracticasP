@@ -18,6 +18,13 @@ Public Class GestionarUsuarios
         cargarUsuarios()
     End Sub
 
+    Private Sub tabla_empleados_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles tabla_empleados.CellClick
+        Try
+            idUsuario = tabla_empleados.Rows(e.RowIndex).Cells(0).Value.ToString
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Public Sub cargarUsuarios()
         sql = "select e.idEmpleado ID, Nombre, Apellido, Dni, mail, Estado, u.Administrador  from empleados e, usuarios u where estado = 'Activo' and e.idempleado = u.idempleado"
         busqueda = sql
@@ -32,20 +39,21 @@ Public Class GestionarUsuarios
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+        FormularioUsuario.txtape.Text = ""
+        FormularioUsuario.txtnom.Text = ""
+        FormularioUsuario.txtdni.Text = ""
+        FormularioUsuario.txtmail.Text = ""
+
 
         Me.Enabled = False
         FormularioUsuario.Show()
         FormularioUsuario.lblTitulo.Text = "AGREGAR USUARIO"
+        FormularioUsuario.pantallaAnterior = Me
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         Me.Enabled = False
         FormularioUsuario.Show()
-        FormularioUsuario.lblTitulo.Text = "EDITAR USUARIO"
-        FormularioUsuario.txtnom.Text = "Federico"
-        FormularioUsuario.txtape.Text = "Markus"
-        FormularioUsuario.txtmail.Text = "federicomarkus@gmail.com"
-        FormularioUsuario.ComboBox1.Items.Add("Administrador")
-        FormularioUsuario.ComboBox1.Text = "Administrador"
+     
     End Sub
 End Class

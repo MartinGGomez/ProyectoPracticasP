@@ -20,8 +20,10 @@
         If Not String.IsNullOrEmpty(txtBuscador.Text) Then
             busqueda &= " and nombre like '%" & txtBuscador.Text & "%' "
             dgvGrilla.DataSource = Funciones.llenarGrilla(busqueda)
+
         Else
-            dgvGrilla.DataSource = Funciones.llenarGrilla(Sql)
+            dgvGrilla.DataSource = Funciones.llenarGrilla(sql)
+
         End If
 
 

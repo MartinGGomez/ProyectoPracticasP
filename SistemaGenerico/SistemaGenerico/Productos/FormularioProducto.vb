@@ -146,8 +146,8 @@ Public Class FormularioProducto
     End Sub
 
     Private Sub btnVerProveedores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVerProveedores.Click
-        Lista.cargarLista("select idProveedor ID, Nombre, Telefono, Mail, Direccion from proveedores where estado='Activo'", Me, "Proveedores")
-        Lista.Show()
+        '  Lista.cargarLista("select idProveedor ID, Nombre, Telefono, Mail, Direccion from proveedores where estado='Activo'", Me, "Proveedores")
+        ' Lista.Show()
         Me.Enabled = False
     End Sub
 
@@ -180,6 +180,7 @@ Public Class FormularioProducto
             ErrorProvider.SetError(txtPuntoP, "Solo pueden ser datos numericos.")
             btnAgregar.Enabled = False
         Else
+            'Ver si se puede poner en funcion'
             ErrorProvider.SetError(txtStock, "")
             If IsNumeric(txtPrecio.Text) And IsNumeric(txtStock.Text) Then
                 btnAgregar.Enabled = True
