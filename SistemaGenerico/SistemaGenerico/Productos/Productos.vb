@@ -22,9 +22,9 @@ Public Class Productos
         busqueda = sql
         If Not String.IsNullOrEmpty(txtBuscador.Text) Then
             busqueda &= " and descripcion like '%" & txtBuscador.Text & "%' "
-            dgvGrilla.DataSource = Funciones.llenarGrilla(busqueda)
+            Funciones.llenarGrilla(busqueda, dgvGrilla)
         Else
-            dgvGrilla.DataSource = Funciones.llenarGrilla(sql)
+            Funciones.llenarGrilla(sql, dgvGrilla)
         End If
 
 

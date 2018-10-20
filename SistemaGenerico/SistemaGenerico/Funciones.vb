@@ -45,6 +45,21 @@ Module Funciones
 
     End Function
 
+    Public Sub llenarGrilla(ByVal sql As String, ByVal dgv As DataGridView)
+        Dim ds As DataSet
+        Dim adp As OdbcDataAdapter
+
+        ds = New DataSet("Tabla")
+        ds.Tables.Add("Tabla")
+        adp = New OdbcDataAdapter(sql, cnn)
+        adp.Fill(ds.Tables("Tabla"))
+        dgv.DataSource = ds.Tables("Tabla")
+        If dgv.Rows.Count > 0 Then
+            dgv.Rows(0).Selected = False
+        End If
+    End Sub
+
+
     Public Sub onlyNum(ByVal e)
 
         If Char.IsDigit(e.KeyChar) Then

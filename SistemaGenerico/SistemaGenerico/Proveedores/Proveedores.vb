@@ -14,19 +14,14 @@
     End Sub
 
     Public Sub cargarProveedores()
-
         sql = "select idProveedor ID, nombre Nombre_Proveedor, telefono Tel, mail Mail, direccion Direccion from Proveedores where estado = 'Activo'"
         busqueda = Sql
         If Not String.IsNullOrEmpty(txtBuscador.Text) Then
             busqueda &= " and nombre like '%" & txtBuscador.Text & "%' "
-            dgvGrilla.DataSource = Funciones.llenarGrilla(busqueda)
-
+            Funciones.llenarGrilla(busqueda, dgvGrilla)
         Else
-            dgvGrilla.DataSource = Funciones.llenarGrilla(sql)
-
+            Funciones.llenarGrilla(sql, dgvGrilla)
         End If
-
-
     End Sub
     Private Sub btnAgregar_Click(sender As System.Object, e As System.EventArgs) Handles btnAgregar.Click
 
