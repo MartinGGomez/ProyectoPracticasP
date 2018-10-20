@@ -63,7 +63,7 @@ Partial Class FormularioBase
         Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVolver.Location = New System.Drawing.Point(583, 480)
+        Me.btnVolver.Location = New System.Drawing.Point(583, 493)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(103, 35)
         Me.btnVolver.TabIndex = 20
@@ -76,7 +76,7 @@ Partial Class FormularioBase
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(698, 527)
+        Me.ClientSize = New System.Drawing.Size(698, 542)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.btn_minimizar)

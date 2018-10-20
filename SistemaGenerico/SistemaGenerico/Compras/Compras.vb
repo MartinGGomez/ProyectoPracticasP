@@ -1,35 +1,37 @@
-﻿Public Class Compras
+﻿Imports System.Data.Odbc
+
+Public Class Compras
     Inherits MenuBase
 
     Dim sql, busqueda As String
+    Dim rs As OdbcDataReader
 
 
     Public Sub cargarCompras()
-        sql = "select * from compras"
-        busqueda = Sql
+        lblTitulo.Text = "Gestion de Compras"
+        cargarProveedores()
+
+        sql = "select idCompra ID, nombre Proveedor, Descripcion, Fecha, MontoTotal, c.estado Estado from compras c, proveedores p where c.idproveedor = p.idproveedor"
+        busqueda = sql
         If Not String.IsNullOrEmpty(cboProveedores.Text) Then
-            busqueda &= " and descripcion like '%" & cboProveedores.Text & "%' "
-            dgvProveedores.DataSource = Funciones.llenarGrilla(busqueda)
+            busqueda &= " and p.nombre like '%" & cboProveedores.Text & "%' "
+            Funciones.llenarGrilla(busqueda, dgvProveedores)
         Else
-            dgvProveedores.DataSource = Funciones.llenarGrilla(sql)
+            Funciones.llenarGrilla(sql, dgvProveedores)
         End If
-  
+
 
     End Sub
 
-    Private Sub Compras_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-
-
-    Private Sub dgvProveedores_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvProveedores.CellDoubleClick
-
+    Private Sub cargarProveedores()
+        sql = "select Nombre from proveedores where estado = 'Activo'"
+        rs = Funciones.consulta(sql)
+        Do While rs.Read
+            cboProveedores.Items.Add(rs(0))
+        Loop
     End Sub
 
     Private Sub dgvProveedores_CellToolTipTextNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs) Handles dgvProveedores.CellToolTipTextNeeded
-
         e.ToolTipText = "Doble click para ver el detalle"
-
     End Sub
 End Class

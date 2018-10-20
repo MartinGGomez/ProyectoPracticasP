@@ -19,9 +19,5 @@
         pantallaAnterior.Show()
         pantallaAnterior.Enabled = True
         Me.Hide()
-
-
-
-
     End Sub
 End Class

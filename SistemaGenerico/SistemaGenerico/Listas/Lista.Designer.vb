@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Lista
-    Inherits System.Windows.Forms.Form
+    Inherits SistemaGenerico.FormularioBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -22,71 +22,25 @@ Partial Class Lista
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Lista))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.btn_minimizar = New System.Windows.Forms.Button()
-        Me.btnVolver = New System.Windows.Forms.Button()
-        Me.lblTitulo = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.gbxProveedores = New System.Windows.Forms.GroupBox()
         Me.dgvGrilla = New System.Windows.Forms.DataGridView()
-        Me.GroupBox2.SuspendLayout()
+        Me.gbxProveedores.SuspendLayout()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btn_minimizar
+        'gbxProveedores
         '
-        Me.btn_minimizar.BackColor = System.Drawing.Color.Transparent
-        Me.btn_minimizar.BackgroundImage = CType(resources.GetObject("btn_minimizar.BackgroundImage"), System.Drawing.Image)
-        Me.btn_minimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_minimizar.FlatAppearance.BorderSize = 0
-        Me.btn_minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btn_minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btn_minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_minimizar.Location = New System.Drawing.Point(731, 9)
-        Me.btn_minimizar.Name = "btn_minimizar"
-        Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
-        Me.btn_minimizar.TabIndex = 5
-        Me.btn_minimizar.UseVisualStyleBackColor = False
-        '
-        'btnVolver
-        '
-        Me.btnVolver.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnVolver.FlatAppearance.BorderSize = 0
-        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVolver.Location = New System.Drawing.Point(645, 535)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(103, 35)
-        Me.btnVolver.TabIndex = 20
-        Me.btnVolver.Text = "VOLVER"
-        Me.btnVolver.UseVisualStyleBackColor = False
-        '
-        'lblTitulo
-        '
-        Me.lblTitulo.AutoSize = True
-        Me.lblTitulo.Font = New System.Drawing.Font("Gobold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(223, 29)
-        Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(307, 41)
-        Me.lblTitulo.TabIndex = 21
-        Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.dgvGrilla)
-        Me.GroupBox2.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 89)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(736, 431)
-        Me.GroupBox2.TabIndex = 23
-        Me.GroupBox2.TabStop = False
+        Me.gbxProveedores.Controls.Add(Me.dgvGrilla)
+        Me.gbxProveedores.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxProveedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.gbxProveedores.Location = New System.Drawing.Point(12, 71)
+        Me.gbxProveedores.Name = "gbxProveedores"
+        Me.gbxProveedores.Size = New System.Drawing.Size(674, 402)
+        Me.gbxProveedores.TabIndex = 26
+        Me.gbxProveedores.TabStop = False
         '
         'dgvGrilla
         '
@@ -98,64 +52,55 @@ Partial Class Lista
         Me.dgvGrilla.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvGrilla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.dgvGrilla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvGrilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.MenuBar
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvGrilla.Cursor = System.Windows.Forms.Cursors.Default
         Me.dgvGrilla.EnableHeadersVisualStyles = False
         Me.dgvGrilla.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvGrilla.Location = New System.Drawing.Point(20, 29)
+        Me.dgvGrilla.Location = New System.Drawing.Point(17, 28)
         Me.dgvGrilla.Name = "dgvGrilla"
         Me.dgvGrilla.ReadOnly = True
         Me.dgvGrilla.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InfoText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvGrilla.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.InfoText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.dgvGrilla.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        Me.dgvGrilla.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvGrilla.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        Me.dgvGrilla.RowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgvGrilla.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvGrilla.Size = New System.Drawing.Size(696, 384)
+        Me.dgvGrilla.Size = New System.Drawing.Size(639, 358)
         Me.dgvGrilla.TabIndex = 17
         '
         'Lista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(760, 582)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.lblTitulo)
-        Me.Controls.Add(Me.btnVolver)
-        Me.Controls.Add(Me.btn_minimizar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.ClientSize = New System.Drawing.Size(698, 542)
+        Me.Controls.Add(Me.gbxProveedores)
         Me.Name = "Lista"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lista"
-        Me.GroupBox2.ResumeLayout(False)
+        Me.Controls.SetChildIndex(Me.gbxProveedores, 0)
+        Me.gbxProveedores.ResumeLayout(False)
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btn_minimizar As System.Windows.Forms.Button
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents lblTitulo As System.Windows.Forms.Label
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents gbxProveedores As System.Windows.Forms.GroupBox
     Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
 End Class

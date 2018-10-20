@@ -18,7 +18,7 @@ Public Class Productos
     End Sub
 
     Public Sub cargarProductos()
-        sql = "select idProducto ID, Descripcion, Stock, Precio from Productos where estado = 'Activo'"
+        sql = "select idProducto ID, Descripcion, Stock, PuntoPedido PuntoDePedido, Precio from Productos where estado = 'Activo'"
         busqueda = sql
         If Not String.IsNullOrEmpty(txtBuscador.Text) Then
             busqueda &= " and descripcion like '%" & txtBuscador.Text & "%' "
@@ -26,14 +26,13 @@ Public Class Productos
         Else
             Funciones.llenarGrilla(sql, dgvGrilla)
         End If
-
-
     End Sub
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
         Me.Enabled = False
         FormularioProducto.editar = False
-        FormularioProducto.cargarProveedores()
+        FormularioProducto.cargarDatos()
+        FormularioProducto.pantallaAnterior = Me
         FormularioProducto.Show()
     End Sub
 
@@ -41,6 +40,7 @@ Public Class Productos
         If idProducto <> 0 Then
             FormularioProducto.editar = True
             FormularioProducto.idProducto = idProducto
+            FormularioProducto.pantallaAnterior = Me
             FormularioProducto.cargarDatos()
             FormularioProducto.Show()
             Me.Enabled = False
