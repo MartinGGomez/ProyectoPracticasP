@@ -1,19 +1,9 @@
 ﻿Public Class Lista
+    Inherits FormularioBase
 
-    Dim form As Form
-
-    Private Sub btn_minimizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_minimizar.Click
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Public Sub cargarLista(ByVal query As String, ByVal fromForm As Form, ByVal nombre As String)
-        lblTitulo.Text = "Lista de " & nombre
-        dgvGrilla.DataSource = Funciones.llenarGrilla(query)
-        form = fromForm
-    End Sub
-
-    Private Sub btnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
-        Me.Close()
-        form.Enabled = True
+    Public Sub cargarDatos(ByRef sql As String, ByVal titulo As String, ByVal form As Form)
+        lblTitulo.Text = "Lista de " & titulo
+        pantallaAnterior = form
+        Funciones.llenarGrilla(sql, dgvGrilla)
     End Sub
 End Class

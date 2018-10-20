@@ -1,0 +1,17 @@
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Ajustes.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Clientes.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Compras.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Inicio.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.InicioSesion.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.FormularioBase.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.MenuBase.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Resources.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.FormularioProducto.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Productos.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.FormularioProveedores.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.Proveedores.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.FormularioTipoTrabajo.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.FormularioUsuario.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.GestionarUsuarios.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.PanelUsuario.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Release\SistemaGenerico.vbproj.GenerateResource.Cache

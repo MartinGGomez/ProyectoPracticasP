@@ -9,6 +9,7 @@ Public Class FormularioProducto
     Dim rs As OdbcDataReader
     Dim proveedores As ArrayList = New ArrayList
     Dim provSeleccionados As ArrayList = New ArrayList
+    Dim primeraVez As Boolean = True
 
     Private Sub FormularioProducto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If editar Then
@@ -20,23 +21,38 @@ Public Class FormularioProducto
 
     Public Sub cargarDatos()
         lblError.Text = ""
-        sql = "select descripcion, stock, precio from productos where idProducto = " & idProducto & ""
-        rs = Funciones.consulta(sql)
-        If rs.Read Then
-            txtDescripcion.Text = rs(0)
-            txtStock.Text = rs(1)
-            txtPrecio.Text = rs(2)
+        If editar Then
+            btnEditar.Visible = True
+            btnAgregar.Visible = False
+            sql = "select descripcion, stock, precio, puntopedido from productos where idProducto = " & idProducto & ""
+            rs = Funciones.consulta(sql)
+            If rs.Read Then
+                txtDescripcion.Text = rs(0)
+                txtStock.Text = rs(1)
+                txtPrecio.Text = rs(2)
+                txtPuntoP.Text = rs(3)
+            End If
+        Else
+            btnEditar.Visible = False
+            btnAgregar.Visible = True
+            txtDescripcion.Clear()
+            txtStock.Clear()
+            txtPrecio.Clear()
+            txtPuntoP.Clear()
+            proveedores = New ArrayList
+            provSeleccionados = New ArrayList
+            lstProveedores.Items.Clear()
         End If
         cargarProveedores()
     End Sub
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
-        If txtDescripcion.Text = "" Or txtStock.Text = "" Or txtPrecio.Text = "" Then
+        If txtDescripcion.Text = "" Or txtStock.Text = "" Or txtPrecio.Text = "" Or lstProveedores.Items.Count = 0 Then
             lblError.Text = "Hay campos vacios. Completar Campos."
 
         Else
             lblError.Text = ""
-            sql = "insert into productos values ('', '" & txtDescripcion.Text & "', " & txtStock.Text & ", " & txtPrecio.Text & ", 'Activo')"
+            sql = "insert into productos values ('', '" & txtDescripcion.Text & "', " & txtStock.Text & ", " & txtPuntoP.Text & "," & txtPrecio.Text & ", 'Activo')"
             Funciones.consulta(sql)
 
             sql = "select max(idproducto) from productos"
@@ -59,7 +75,7 @@ Public Class FormularioProducto
         End If
     End Sub
 
-    Private Sub btnVolver_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVolver.Click
+    Private Sub btnVolver_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Productos.Enabled = True
         Productos.Show()
         Me.Close()
@@ -68,23 +84,46 @@ Public Class FormularioProducto
     Public Sub cargarProveedores()
         cboProveedores.Items.Clear()
         If editar Then
-            sql = "select idProveedor, nombre from proveedores where estado ='Activo' and idproveedor not in (select idproveedor from productoproveedor where idproducto = " & idProducto & ")"
-            rs = Funciones.consulta(sql)
+            If primeraVez Then
+                sql = "select idProveedor, nombre from proveedores where estado ='Activo' and idproveedor not in (select idproveedor from productoproveedor where idproducto = " & idProducto & ")"
+                rs = Funciones.consulta(sql)
 
-            Do While rs.Read
-                If Not provSeleccionados.Contains(rs(0)) Then
-                    cboProveedores.Items.Add(rs(1))
-                    proveedores.Add(rs(0))
-                End If
-            Loop
+                Do While rs.Read
+                    If Not provSeleccionados.Contains(rs(0)) Then
+                        cboProveedores.Items.Add(rs(1))
+                        proveedores.Add(rs(0))
+                    End If
+                Loop
+            Else
+                sql = "select idproveedor, nombre from proveedores where estado = 'Activo'"
+                rs = Funciones.consulta(sql)
+                Do While rs.Read
+                    If Not provSeleccionados.Contains(rs(0)) Then
+                        cboProveedores.Items.Add(rs(1))
+                        proveedores.Add(rs(0))
+                    End If
+                Loop
 
-            sql = "select p.idProveedor, nombre from proveedores p, productoproveedor pp where estado ='Activo' and p.idproveedor = pp.idproveedor and idProducto = " & idProducto & ""
-            rs = Funciones.consulta(sql)
+            End If
             lstProveedores.Items.Clear()
-            Do While rs.Read
-                lstProveedores.Items.Add(rs(1))
-                provSeleccionados.Add(rs(0))
-            Loop
+            If primeraVez Then
+                sql = "select p.idProveedor, nombre from proveedores p, productoproveedor pp where estado ='Activo' and p.idproveedor = pp.idproveedor and idProducto = " & idProducto & ""
+                rs = Funciones.consulta(sql)
+                lstProveedores.Items.Clear()
+                Do While rs.Read
+                    lstProveedores.Items.Add(rs(1))
+                    provSeleccionados.Add(rs(0))
+                Loop
+            Else
+                For Each p As Integer In provSeleccionados
+                    sql = "select nombre from proveedores where idproveedor = " & p & ""
+                    rs = Funciones.consulta(sql)
+                    If rs.Read Then
+                        lstProveedores.Items.Add(rs(0))
+                    End If
+                Next
+            End If
+
         Else
 
             sql = "select idProveedor, nombre from proveedores where estado ='Activo'"
@@ -103,51 +142,87 @@ Public Class FormularioProducto
 
     Private Sub btnAgregarP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarP.Click
         If cboProveedores.Text <> "" Then
+
+            If Not editar Then
+
             lstProveedores.Items.Add(cboProveedores.Text)
 
             sql = "select idproveedor from proveedores where nombre = '" & cboProveedores.Text & "'"
             rs = Funciones.consulta(sql)
             If rs.Read Then
                 provSeleccionados.Add(rs(0))
+                End If
+            Else
+                primeraVez = False
+                lstProveedores.Items.Add(cboProveedores.Text)
+
+                sql = "select idproveedor from proveedores where nombre = '" & cboProveedores.Text & "'"
+                rs = Funciones.consulta(sql)
+                If rs.Read Then
+                    If Not provSeleccionados.Contains(rs(0)) Then
+                        provSeleccionados.Add(rs(0))
+                    End If
+                End If
             End If
 
         Else
-            MsgBox("Seleccione un proveedor")
+            MsgBox("Seleccione un proveedor", MsgBoxStyle.Critical)
 
         End If
         cargarProveedores()
     End Sub
 
     Private Sub btnRemoverP_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRemoverP.Click
-        If editar Then
-
-            If Not lstProveedores.SelectedItem = Nothing Then
+        If Not lstProveedores.SelectedItem = Nothing Then
+            If editar Then
+                primeraVez = False
                 sql = "select idproveedor from proveedores where nombre = '" & lstProveedores.SelectedItem & "'"
                 rs = Funciones.consulta(sql)
                 If rs.Read Then
                     provSeleccionados.Remove(rs(0))
-                    sql = "delete from productoproveedor where idproducto=" & idProducto & " and idproveedor=" & rs(0) & ""
-                    Funciones.consulta(sql)
                     lstProveedores.Items.Remove(lstProveedores.SelectedItem)
                 End If
-
             Else
-                MsgBox("Seleccione un proveedor")
+
+                provSeleccionados.RemoveAt(lstProveedores.SelectedIndex)
+                lstProveedores.Items.RemoveAt(lstProveedores.SelectedIndex)
 
             End If
+
         Else
-
-            provSeleccionados.RemoveAt(lstProveedores.SelectedIndex)
-            lstProveedores.Items.RemoveAt(lstProveedores.SelectedIndex)
-
+            MsgBox("Seleccione un proveedor", MsgBoxStyle.Critical)
         End If
-
         cargarProveedores()
     End Sub
 
+    Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
+        If txtDescripcion.Text = "" Or txtStock.Text = "" Or txtPrecio.Text = "" Or txtPuntoP.Text = "" Or lstProveedores.Items.Count = 0 Then
+            lblError.Text = "Hay campos vacios. Completar Campos."
+
+        Else
+            lblError.Text = ""
+            sql = "update productos set descripcion = '" & txtDescripcion.Text & "', stock = " & txtStock.Text & ", puntopedido = " & txtPuntoP.Text & ", precio = " & txtPrecio.Text & " where idproducto = " & idProducto & " "
+            Funciones.consulta(sql)
+
+            sql = "delete from productoproveedor where idproducto = " & idProducto & ""
+            Funciones.consulta(sql)
+            For Each proveedor As Integer In provSeleccionados
+                sql = "insert into productoproveedor values (" & idProducto & ", " & proveedor & ")"
+                Funciones.consulta(sql)
+            Next
+
+            Me.Close()
+            Productos.cargarProductos()
+            Productos.Show()
+            Productos.Enabled = True
+
+        End If
+
+    End Sub
+
     Private Sub btnVerProveedores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVerProveedores.Click
-        '  Lista.cargarLista("select idProveedor ID, Nombre, Telefono, Mail, Direccion from proveedores where estado='Activo'", Me, "Proveedores")
-        ' Lista.Show()
+        Lista.cargarDatos("select idProveedor ID, Nombre, Telefono, Mail, Direccion from proveedores where estado='Activo'", "Proveedores", Me)
+        Lista.Show()
         Me.Enabled = False
     End Sub
 

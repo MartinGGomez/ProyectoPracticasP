@@ -25,6 +25,9 @@ Partial Class FormularioProducto
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormularioProducto))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblError = New System.Windows.Forms.Label()
+        Me.txtPuntoP = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnRemoverP = New System.Windows.Forms.Button()
@@ -41,11 +44,8 @@ Partial Class FormularioProducto
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnVolver = New System.Windows.Forms.Button()
         Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtPuntoP = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblError = New System.Windows.Forms.Label()
+        Me.btnEditar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -54,6 +54,7 @@ Partial Class FormularioProducto
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.lblError)
         Me.GroupBox1.Controls.Add(Me.txtPuntoP)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -74,6 +75,35 @@ Partial Class FormularioProducto
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Informacion del Producto"
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
+        Me.lblError.ForeColor = System.Drawing.Color.Tomato
+        Me.lblError.Location = New System.Drawing.Point(26, 312)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 22)
+        Me.lblError.TabIndex = 25
+        '
+        'txtPuntoP
+        '
+        Me.txtPuntoP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.txtPuntoP.Location = New System.Drawing.Point(30, 188)
+        Me.txtPuntoP.Name = "txtPuntoP"
+        Me.txtPuntoP.Size = New System.Drawing.Size(252, 26)
+        Me.txtPuntoP.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(26, 165)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(151, 24)
+        Me.Label1.TabIndex = 23
+        Me.Label1.Text = "Punto de Pedido"
         '
         'PictureBox1
         '
@@ -189,7 +219,7 @@ Partial Class FormularioProducto
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAgregar.Location = New System.Drawing.Point(209, 351)
+        Me.btnAgregar.Location = New System.Drawing.Point(209, 350)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(252, 35)
         Me.btnAgregar.TabIndex = 19
@@ -227,9 +257,9 @@ Partial Class FormularioProducto
         Me.lbl_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_usuario.Location = New System.Drawing.Point(26, 38)
         Me.lbl_usuario.Name = "lbl_usuario"
-        Me.lbl_usuario.Size = New System.Drawing.Size(110, 24)
+        Me.lbl_usuario.Size = New System.Drawing.Size(79, 24)
         Me.lbl_usuario.TabIndex = 4
-        Me.lbl_usuario.Text = "Descripcion"
+        Me.lbl_usuario.Text = "Nombre"
         '
         'Label4
         '
@@ -269,68 +299,37 @@ Partial Class FormularioProducto
         Me.Button1.Text = "AGREGAR PRODUCTO"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'btnVolver
-        '
-        Me.btnVolver.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnVolver.FlatAppearance.BorderSize = 0
-        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVolver.Location = New System.Drawing.Point(583, 495)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(103, 35)
-        Me.btnVolver.TabIndex = 19
-        Me.btnVolver.Text = "VOLVER"
-        Me.btnVolver.UseVisualStyleBackColor = False
-        '
         'ErrorProvider
         '
         Me.ErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.ErrorProvider.ContainerControl = Me
         '
-        'txtPuntoP
+        'btnEditar
         '
-        Me.txtPuntoP.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.txtPuntoP.Location = New System.Drawing.Point(30, 188)
-        Me.txtPuntoP.Name = "txtPuntoP"
-        Me.txtPuntoP.Size = New System.Drawing.Size(252, 26)
-        Me.txtPuntoP.TabIndex = 3
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(26, 165)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 24)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Punto de Pedido"
-        '
-        'lblError
-        '
-        Me.lblError.AutoSize = True
-        Me.lblError.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lblError.ForeColor = System.Drawing.Color.Tomato
-        Me.lblError.Location = New System.Drawing.Point(26, 312)
-        Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(68, 22)
-        Me.lblError.TabIndex = 25
-        Me.lblError.Text = "lblError"
+        Me.btnEditar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnEditar.FlatAppearance.BorderSize = 0
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEditar.Location = New System.Drawing.Point(209, 350)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(252, 35)
+        Me.btnEditar.TabIndex = 26
+        Me.btnEditar.Text = "EDITAR PRODUCTO"
+        Me.btnEditar.UseVisualStyleBackColor = False
+        Me.btnEditar.Visible = False
         '
         'FormularioProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(698, 542)
-        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FormularioProducto"
         Me.Text = "FormularioProducto"
         Me.Controls.SetChildIndex(Me.GroupBox1, 0)
-        Me.Controls.SetChildIndex(Me.btnVolver, 0)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -352,7 +351,6 @@ Partial Class FormularioProducto
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents lstProveedores As System.Windows.Forms.ListBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -363,4 +361,5 @@ Partial Class FormularioProducto
     Friend WithEvents txtPuntoP As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblError As System.Windows.Forms.Label
+    Friend WithEvents btnEditar As System.Windows.Forms.Button
 End Class
