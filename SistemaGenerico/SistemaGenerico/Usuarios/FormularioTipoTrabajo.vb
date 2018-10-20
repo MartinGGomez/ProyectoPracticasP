@@ -76,14 +76,14 @@ Public Class FormularioTipoTrabajo
                 lblerror.Text = ""
             Else
 
-                sql = "select idEmpleado from empleado where idTipo =" & idTipo
+                sql = "select idEmpleado from empleados where idTipo =" & idTipo
                 rs2 = Funciones.consulta(sql)
 
-                If rs2.Read Then
+                Do While rs2.Read
 
-                    sql = "update empleado set idTipo = (select idTipo from TipoTrabajo where nombre = 'Empleado') where idEmpleado = " & rs2(0)
+                    sql = "update empleados set idTipo = (select idTipo from TipoTrabajo where nombre = 'Empleado') where idEmpleado = " & rs2(0)
                     Funciones.consulta(sql)
-                End If
+                Loop
 
                 sql = "delete from tipotrabajo where idTipo = " & idTipo
                 Funciones.consulta(sql)
