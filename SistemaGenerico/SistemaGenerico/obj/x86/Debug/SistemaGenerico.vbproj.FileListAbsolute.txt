@@ -99,3 +99,7 @@ C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGener
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources

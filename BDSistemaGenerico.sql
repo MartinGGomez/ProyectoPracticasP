@@ -9,7 +9,6 @@ Nombre varchar(100),
 Apellido varchar(100),
 TEL varchar(20),
 Direccion varchar(100),
-Localidad varchar(100),
 Mail varchar(100),
 Estado varchar(20),
 constraint PK_Clientes primary key (idCliente)

@@ -85,6 +85,12 @@
     <Compile Include="Clientes\Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Clientes\FormularioClientes.Designer.vb">
+      <DependentUpon>FormularioClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FormularioClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Compras\Compras.Designer.vb">
       <DependentUpon>Compras.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FormularioClientes.resx">
+      <DependentUpon>FormularioClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Compras.resx">
       <DependentUpon>Compras.vb</DependentUpon>
