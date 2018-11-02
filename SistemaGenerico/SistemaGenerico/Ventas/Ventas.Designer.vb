@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Compras
+Partial Class Ventas
     Inherits SistemaGenerico.MenuBase
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -25,70 +25,19 @@ Partial Class Compras
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.gbxProductos = New System.Windows.Forms.GroupBox()
-        Me.btnAgregarCompra = New System.Windows.Forms.Button()
-        Me.cboProveedores = New System.Windows.Forms.ComboBox()
-        Me.lblBuscar = New System.Windows.Forms.Label()
         Me.dgvProveedores = New System.Windows.Forms.DataGridView()
-        Me.gbxOpciones = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.lblBuscar = New System.Windows.Forms.Label()
         Me.btnEditar = New System.Windows.Forms.Button()
-        Me.gbxProductos.SuspendLayout()
+        Me.gbxProductos = New System.Windows.Forms.GroupBox()
+        Me.txtBuscador = New System.Windows.Forms.TextBox()
+        Me.gbxOpciones = New System.Windows.Forms.GroupBox()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgvProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbxProductos.SuspendLayout()
         Me.gbxOpciones.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'gbxProductos
-        '
-        Me.gbxProductos.Controls.Add(Me.btnAgregarCompra)
-        Me.gbxProductos.Controls.Add(Me.cboProveedores)
-        Me.gbxProductos.Controls.Add(Me.lblBuscar)
-        Me.gbxProductos.Controls.Add(Me.dgvProveedores)
-        Me.gbxProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.gbxProductos.Location = New System.Drawing.Point(275, 74)
-        Me.gbxProductos.Name = "gbxProductos"
-        Me.gbxProductos.Size = New System.Drawing.Size(844, 468)
-        Me.gbxProductos.TabIndex = 24
-        Me.gbxProductos.TabStop = False
-        '
-        'btnAgregarCompra
-        '
-        Me.btnAgregarCompra.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnAgregarCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnAgregarCompra.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnAgregarCompra.FlatAppearance.BorderSize = 0
-        Me.btnAgregarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregarCompra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAgregarCompra.Location = New System.Drawing.Point(598, 28)
-        Me.btnAgregarCompra.Name = "btnAgregarCompra"
-        Me.btnAgregarCompra.Size = New System.Drawing.Size(219, 35)
-        Me.btnAgregarCompra.TabIndex = 21
-        Me.btnAgregarCompra.Text = "AGREGAR COMPRA"
-        Me.btnAgregarCompra.UseVisualStyleBackColor = False
-        '
-        'cboProveedores
-        '
-        Me.cboProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboProveedores.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.cboProveedores.FormattingEnabled = True
-        Me.cboProveedores.Location = New System.Drawing.Point(20, 42)
-        Me.cboProveedores.Name = "cboProveedores"
-        Me.cboProveedores.Size = New System.Drawing.Size(253, 28)
-        Me.cboProveedores.TabIndex = 20
-        '
-        'lblBuscar
-        '
-        Me.lblBuscar.AutoSize = True
-        Me.lblBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblBuscar.ForeColor = System.Drawing.Color.Orange
-        Me.lblBuscar.Location = New System.Drawing.Point(16, 16)
-        Me.lblBuscar.Name = "lblBuscar"
-        Me.lblBuscar.Size = New System.Drawing.Size(193, 24)
-        Me.lblBuscar.TabIndex = 19
-        Me.lblBuscar.Text = "Buscar por proveedor"
         '
         'dgvProveedores
         '
@@ -112,7 +61,7 @@ Partial Class Compras
         Me.dgvProveedores.Cursor = System.Windows.Forms.Cursors.Default
         Me.dgvProveedores.EnableHeadersVisualStyles = False
         Me.dgvProveedores.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvProveedores.Location = New System.Drawing.Point(20, 89)
+        Me.dgvProveedores.Location = New System.Drawing.Point(20, 99)
         Me.dgvProveedores.Name = "dgvProveedores"
         Me.dgvProveedores.ReadOnly = True
         Me.dgvProveedores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -134,50 +83,16 @@ Partial Class Compras
         Me.dgvProveedores.Size = New System.Drawing.Size(797, 350)
         Me.dgvProveedores.TabIndex = 17
         '
-        'gbxOpciones
+        'lblBuscar
         '
-        Me.gbxOpciones.Controls.Add(Me.Button1)
-        Me.gbxOpciones.Controls.Add(Me.btnEliminar)
-        Me.gbxOpciones.Controls.Add(Me.btnEditar)
-        Me.gbxOpciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxOpciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.gbxOpciones.Location = New System.Drawing.Point(275, 543)
-        Me.gbxOpciones.Name = "gbxOpciones"
-        Me.gbxOpciones.Size = New System.Drawing.Size(844, 85)
-        Me.gbxOpciones.TabIndex = 25
-        Me.gbxOpciones.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(54, 31)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(219, 35)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "EDITAR COMPRA"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnEliminar.FlatAppearance.BorderSize = 0
-        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEliminar.Location = New System.Drawing.Point(333, 31)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEliminar.TabIndex = 15
-        Me.btnEliminar.Text = "FINALIZAR"
-        Me.btnEliminar.UseVisualStyleBackColor = False
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.lblBuscar.ForeColor = System.Drawing.Color.Orange
+        Me.lblBuscar.Location = New System.Drawing.Point(16, 25)
+        Me.lblBuscar.Name = "lblBuscar"
+        Me.lblBuscar.Size = New System.Drawing.Size(264, 24)
+        Me.lblBuscar.TabIndex = 19
+        Me.lblBuscar.Text = "Buscar por monto aproximado"
         '
         'btnEditar
         '
@@ -188,39 +103,121 @@ Partial Class Compras
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEditar.Location = New System.Drawing.Point(598, 31)
+        Me.btnEditar.Location = New System.Drawing.Point(598, 47)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(219, 35)
         Me.btnEditar.TabIndex = 14
         Me.btnEditar.Text = "VER DETALLE"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
-        'Compras
+        'gbxProductos
+        '
+        Me.gbxProductos.Controls.Add(Me.txtBuscador)
+        Me.gbxProductos.Controls.Add(Me.btnEditar)
+        Me.gbxProductos.Controls.Add(Me.lblBuscar)
+        Me.gbxProductos.Controls.Add(Me.dgvProveedores)
+        Me.gbxProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.gbxProductos.Location = New System.Drawing.Point(266, 70)
+        Me.gbxProductos.Name = "gbxProductos"
+        Me.gbxProductos.Size = New System.Drawing.Size(844, 468)
+        Me.gbxProductos.TabIndex = 26
+        Me.gbxProductos.TabStop = False
+        '
+        'txtBuscador
+        '
+        Me.txtBuscador.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.txtBuscador.Location = New System.Drawing.Point(22, 56)
+        Me.txtBuscador.Name = "txtBuscador"
+        Me.txtBuscador.Size = New System.Drawing.Size(187, 26)
+        Me.txtBuscador.TabIndex = 21
+        '
+        'gbxOpciones
+        '
+        Me.gbxOpciones.Controls.Add(Me.btnEliminar)
+        Me.gbxOpciones.Controls.Add(Me.btnAgregar)
+        Me.gbxOpciones.Controls.Add(Me.Button1)
+        Me.gbxOpciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxOpciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.gbxOpciones.Location = New System.Drawing.Point(266, 544)
+        Me.gbxOpciones.Name = "gbxOpciones"
+        Me.gbxOpciones.Size = New System.Drawing.Size(844, 85)
+        Me.gbxOpciones.TabIndex = 27
+        Me.gbxOpciones.TabStop = False
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnEliminar.FlatAppearance.BorderSize = 0
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEliminar.Location = New System.Drawing.Point(598, 31)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(219, 35)
+        Me.btnEliminar.TabIndex = 15
+        Me.btnEliminar.Text = "BORRAR VENTA"
+        Me.btnEliminar.UseVisualStyleBackColor = False
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAgregar.FlatAppearance.BorderSize = 0
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnAgregar.Location = New System.Drawing.Point(42, 31)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(219, 35)
+        Me.btnAgregar.TabIndex = 16
+        Me.btnAgregar.Text = "AGREGAR VENTA"
+        Me.btnAgregar.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Location = New System.Drawing.Point(324, 31)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(219, 35)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "EDITAR VENTA"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
         Me.Controls.Add(Me.gbxOpciones)
         Me.Controls.Add(Me.gbxProductos)
-        Me.Name = "Compras"
-        Me.Text = "Compras"
+        Me.Name = "Ventas"
         Me.Controls.SetChildIndex(Me.gbxProductos, 0)
         Me.Controls.SetChildIndex(Me.gbxOpciones, 0)
+        CType(Me.dgvProveedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbxProductos.ResumeLayout(False)
         Me.gbxProductos.PerformLayout()
-        CType(Me.dgvProveedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbxOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents gbxProductos As System.Windows.Forms.GroupBox
-    Friend WithEvents lblBuscar As System.Windows.Forms.Label
     Friend WithEvents dgvProveedores As System.Windows.Forms.DataGridView
-    Friend WithEvents cboProveedores As System.Windows.Forms.ComboBox
-    Friend WithEvents btnAgregarCompra As System.Windows.Forms.Button
-    Friend WithEvents gbxOpciones As System.Windows.Forms.GroupBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents lblBuscar As System.Windows.Forms.Label
     Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents gbxProductos As System.Windows.Forms.GroupBox
+    Friend WithEvents gbxOpciones As System.Windows.Forms.GroupBox
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
 End Class

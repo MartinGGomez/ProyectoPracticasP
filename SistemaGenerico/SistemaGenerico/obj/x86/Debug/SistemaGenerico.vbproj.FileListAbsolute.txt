@@ -103,3 +103,151 @@ C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
+E:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
+D:\Garcia\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
+C:\Users\computacion\Desktop\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ajustes.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Clientes.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.RegistrarGasto.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Inicio.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.InicioSesion.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioBase.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.MenuBase.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Resources.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProducto.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Productos.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioProveedores.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Proveedores.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioUsuario.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GestionarUsuarios.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.PanelUsuario.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
+C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml

@@ -34,4 +34,16 @@ Public Class Compras
     Private Sub dgvProveedores_CellToolTipTextNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs) Handles dgvProveedores.CellToolTipTextNeeded
         e.ToolTipText = "Doble click para ver el detalle"
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarCompra.Click
+        GenerarCompra.Show()
+    End Sub
+
+    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+        Cargando.mensaje = "Actualizando stock"
+        Cargando.iniciarTimer()
+        Cargando.pantallaAnterior = Me
+        Cargando.Show()
+        Me.Enabled = False
+    End Sub
 End Class

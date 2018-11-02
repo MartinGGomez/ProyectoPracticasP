@@ -115,4 +115,19 @@ Public Class MenuBase
             Compras.Show()
         End If
     End Sub
+
+    Private Sub btn_ventas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_ventas.Click
+        If Not Me.Equals(Ventas) Then
+            Me.Hide()
+            Ventas.cargarVentas()
+            Ventas.Show()
+        End If
+    End Sub
+
+    Private Sub btn_gastos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_gastos.Click
+        If Not Me.Equals(Gastos) Then
+            Me.Hide()
+            Gastos.Show()
+        End If
+    End Sub
 End Class

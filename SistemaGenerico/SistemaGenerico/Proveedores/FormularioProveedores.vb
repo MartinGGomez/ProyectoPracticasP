@@ -8,7 +8,7 @@
     End Sub
 
 
-    Private Sub btnVolver_Click(sender As System.Object, e As System.EventArgs) Handles btnVolver.Click
+    Private Sub btnVolver_Click(sender As System.Object, e As System.EventArgs)
         Proveedores.Enabled = True
         Proveedores.Show()
         Me.Close()

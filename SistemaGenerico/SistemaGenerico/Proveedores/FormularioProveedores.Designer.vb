@@ -22,7 +22,6 @@ Partial Class FormularioProveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnVolver = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
@@ -36,22 +35,6 @@ Partial Class FormularioProveedores
         Me.lblMail = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnVolver
-        '
-        Me.btnVolver.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnVolver.FlatAppearance.BorderSize = 0
-        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVolver.Location = New System.Drawing.Point(583, 480)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(103, 35)
-        Me.btnVolver.TabIndex = 21
-        Me.btnVolver.Text = "VOLVER"
-        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -182,18 +165,15 @@ Partial Class FormularioProveedores
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(698, 527)
-        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FormularioProveedores"
         Me.Controls.SetChildIndex(Me.GroupBox1, 0)
-        Me.Controls.SetChildIndex(Me.btnVolver, 0)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
     Friend WithEvents txtMail As System.Windows.Forms.TextBox
