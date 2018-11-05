@@ -46,4 +46,5 @@ Public Class Compras
         Cargando.Show()
         Me.Enabled = False
     End Sub
+
 End Class

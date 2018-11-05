@@ -251,3 +251,10 @@ C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaG
 C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.exe
 C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.pdb
 C:\Users\Juli\Desktop\SG 2-11\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\bin\Debug\SistemaGenerico.xml
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.RegistrarGasto.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
