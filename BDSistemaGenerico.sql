@@ -81,7 +81,6 @@ constraint FK_ProductoProveedor1 foreign key (idProveedor) references Proveedore
 create table Compras (
 idCompra int auto_increment,
 idProveedor int, 
-descripcion varchar(100),
 fecha date,
 montoTotal int,
 estado varchar(20),
@@ -134,6 +133,25 @@ insert into Proveedores values
 ('', "Proveedor 1" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
 ('', "Proveedor 2" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
 ('', "Proveedor 3" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo");
+
+
+INSERT INTO `productos` (`idProducto`, `Descripcion`, `Stock`, `PuntoPedido`, `Precio`, `Estado`) VALUES
+(1, 'Producto 1', 100, 10, 50, 'Activo'),
+(2, 'Producto 2', 200, 10, 10, 'Activo'),
+(3, 'Producto 3', 21, 2, 12, 'Activo'),
+(4, 'Producto 4', 500, 100, 1, 'Activo');
+
+
+INSERT INTO `productoproveedor` (`idProducto`, `idProveedor`) VALUES
+(1, 1),
+(1, 3),
+(2, 1),
+(2, 2),
+(2, 3),
+(3, 3),
+(4, 2),
+(4, 3);
+
 
 
 
