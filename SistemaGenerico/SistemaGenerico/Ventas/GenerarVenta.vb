@@ -11,7 +11,7 @@ Public Class GenerarVenta
     Dim idDetalle As Integer
 
 
-    Private Sub GenerarVenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub GenerarVenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargarClientes()
         ' cargarProductos()
 
@@ -41,8 +41,8 @@ Public Class GenerarVenta
 
     End Sub
 
-
-    Private Sub dgvGrilla_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+ 
+    Private Sub dgvGrilla_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvGrilla.CellClick
         Try
             idP = dgvGrilla.Rows(e.RowIndex).Cells(0).Value.ToString
             descripcion = dgvGrilla.Rows(e.RowIndex).Cells(1).Value.ToString
@@ -57,7 +57,7 @@ Public Class GenerarVenta
 
     End Sub
 
-    Private Sub btnDer_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnDer_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDer.Click
         If dgvGrilla.Rows.Count = 0 Then
 
             MsgBox("No hay mas productos para vender", MsgBoxStyle.Exclamation, "ATENCION")
@@ -88,7 +88,7 @@ Public Class GenerarVenta
         idP = 0
     End Sub
 
-    Private Sub dgvGrilla2_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+    Private Sub dgvGrilla2_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvGrilla2.CellClick
         Try
             btnDer.Enabled = False
             btnIzq.Enabled = True
@@ -102,7 +102,7 @@ Public Class GenerarVenta
 
     End Sub
 
-    Private Sub btnIzq_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnIzq_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIzq.Click
         If dgvGrilla2.Rows.Count = 0 Then
             MsgBox("No hay Productos Cargados", MsgBoxStyle.Critical, "ATENCION")
 
@@ -130,43 +130,43 @@ Public Class GenerarVenta
                     End If
 
                 End If
-
-            End If
-
+               
+                End If
+            
         End If
         id2 = 0
 
     End Sub
 
-    Private Sub btnSumarCant_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnSumarCant_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSumarCant.Click
         If txtCant.Text < 999 Then
             txtCant.Text = txtCant.Text + 1
         End If
 
     End Sub
 
-    Private Sub btnRestarCant_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnRestarCant_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRestarCant.Click
         If txtCant.Text > 1 Then
             txtCant.Text = txtCant.Text - 1
         End If
     End Sub
 
-    Private Sub txtCant_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
+    Private Sub txtCant_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCant.KeyPress
         onlyNum(e)
     End Sub
 
-    Private Sub txtCant_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub txtCant_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtCant.TextChanged
         If txtCant.Text = "0" Or txtCant.Text = "00" Or txtCant.Text = "000" Or txtCant.Text = "" Then
             txtCant.Text = 1
         End If
     End Sub
 
-    Private Sub txtMontoT_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs)
+    Private Sub txtMontoT_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txtMontoT.KeyPress
         onlyNum(e)
     End Sub
 
-
-    Private Sub txtMontoT_TextChanged(sender As System.Object, e As System.EventArgs)
+   
+    Private Sub txtMontoT_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtMontoT.TextChanged
 
 
         If txtMontoT.Text = "" Then
@@ -176,24 +176,31 @@ Public Class GenerarVenta
         If CInt(txtMontoT.Text) < 0 Then
             txtMontoT.Text = 0
         End If
-
+     
 
 
     End Sub
 
-    Private Sub btnEditarMonto_Click(sender As System.Object, e As System.EventArgs)
+    Private Sub btnEditarMonto_Click(sender As System.Object, e As System.EventArgs) Handles btnEditarMonto.Click
+
+        If txtMontoT.Enabled = False Then
+            txtMontoT.Enabled = True
+        Else
+            txtMontoT.Enabled = False
+
+        End If
 
     End Sub
 
-
-    Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+  
+    Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
         If txtClientes.Text = "" Then
             MsgBox("Debe completar el cliente de la venta", MsgBoxStyle.Critical)
         ElseIf dgvGrilla2.Rows.Count = 0 Then
             MsgBox("Debe haber al menos 1 producto para efectuar la venta", MsgBoxStyle.Critical)
         Else
 
-
+          
 
             sql = "select idCliente from clientes where nombre = '" & txtClientes.Text & "'"
             rs = consulta(sql)
@@ -228,14 +235,48 @@ Public Class GenerarVenta
 
     End Sub
 
-    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         limpiar()
         Me.Hide()
         Ventas.Show()
     End Sub
 
-    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
 
+
+
+        sql = "select idCliente from clientes where nombre = '" & txtClientes.Text & "'"
+        rs = consulta(sql)
+
+        If rs.Read = True Then
+            idCliente = rs(0)
+        End If
+
+        sql = "update ventas set idCliente= " & idCliente & " , montoTotal = '" & txtMontoT.Text & "' where idVenta=" & Ventas.ip
+        consulta(sql)
+
+
+        sql = "select idDetalleVenta from detalleventas where idVenta=" & Ventas.ip
+        rs = consulta(sql)
+        If rs.Read = True Then
+            idDetalle = rs(0)
+        End If
+
+        sql = "delete from detalleventas where idVenta=" & Ventas.ip
+        consulta(sql)
+
+        For Each producto As DataGridViewRow In dgvGrilla2.Rows
+            sql = "insert into detalleventas values (" & idDetalle & ", " & Ventas.ip & ", " & producto.Cells(0).Value.ToString & ", " & producto.Cells(2).Value.ToString & ")"
+            Funciones.consulta(sql)
+        Next
+
+        Me.Hide()
+        Ventas.Show()
+        limpiar()
+        Ventas.cargarVentas()
+
+        Ventas.ip = 0
+        idDetalle = 0
     End Sub
 
     Public Sub limpiar()
@@ -244,4 +285,6 @@ Public Class GenerarVenta
         dgvGrilla.Rows.Clear()
         txtClientes.Text = ""
     End Sub
+
+
 End Class

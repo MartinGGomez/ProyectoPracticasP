@@ -28,15 +28,15 @@ Partial Class Ventas
         Me.dgvGrilla = New System.Windows.Forms.DataGridView()
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.btnVerDetalle = New System.Windows.Forms.Button()
-        Me.gbxVentas = New System.Windows.Forms.GroupBox()
+        Me.gbxProductos = New System.Windows.Forms.GroupBox()
+        Me.btnverVentas = New System.Windows.Forms.Button()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.gbxOpciones = New System.Windows.Forms.GroupBox()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.txtEditar = New System.Windows.Forms.Button()
-        Me.btnverVentas = New System.Windows.Forms.Button()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbxVentas.SuspendLayout()
+        Me.gbxProductos.SuspendLayout()
         Me.gbxOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -104,27 +104,43 @@ Partial Class Ventas
         Me.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVerDetalle.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVerDetalle.Location = New System.Drawing.Point(651, 47)
+        Me.btnVerDetalle.Location = New System.Drawing.Point(651, 52)
         Me.btnVerDetalle.Name = "btnVerDetalle"
         Me.btnVerDetalle.Size = New System.Drawing.Size(166, 35)
         Me.btnVerDetalle.TabIndex = 14
         Me.btnVerDetalle.Text = "VER DETALLE"
         Me.btnVerDetalle.UseVisualStyleBackColor = False
         '
-        'gbxVentas
+        'gbxProductos
         '
-        Me.gbxVentas.Controls.Add(Me.btnverVentas)
-        Me.gbxVentas.Controls.Add(Me.txtBuscador)
-        Me.gbxVentas.Controls.Add(Me.btnVerDetalle)
-        Me.gbxVentas.Controls.Add(Me.lblBuscar)
-        Me.gbxVentas.Controls.Add(Me.dgvGrilla)
-        Me.gbxVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.gbxVentas.Location = New System.Drawing.Point(266, 70)
-        Me.gbxVentas.Name = "gbxVentas"
-        Me.gbxVentas.Size = New System.Drawing.Size(844, 468)
-        Me.gbxVentas.TabIndex = 26
-        Me.gbxVentas.TabStop = False
+        Me.gbxProductos.Controls.Add(Me.btnverVentas)
+        Me.gbxProductos.Controls.Add(Me.txtBuscador)
+        Me.gbxProductos.Controls.Add(Me.btnVerDetalle)
+        Me.gbxProductos.Controls.Add(Me.lblBuscar)
+        Me.gbxProductos.Controls.Add(Me.dgvGrilla)
+        Me.gbxProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.gbxProductos.Location = New System.Drawing.Point(266, 70)
+        Me.gbxProductos.Name = "gbxProductos"
+        Me.gbxProductos.Size = New System.Drawing.Size(844, 468)
+        Me.gbxProductos.TabIndex = 26
+        Me.gbxProductos.TabStop = False
+        '
+        'btnverVentas
+        '
+        Me.btnverVentas.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnverVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnverVentas.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnverVentas.FlatAppearance.BorderSize = 0
+        Me.btnverVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnverVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnverVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnverVentas.Location = New System.Drawing.Point(651, 52)
+        Me.btnverVentas.Name = "btnverVentas"
+        Me.btnverVentas.Size = New System.Drawing.Size(166, 35)
+        Me.btnverVentas.TabIndex = 22
+        Me.btnverVentas.Text = "VER VENTAS"
+        Me.btnverVentas.UseVisualStyleBackColor = False
         '
         'txtBuscador
         '
@@ -195,35 +211,19 @@ Partial Class Ventas
         Me.txtEditar.Text = "EDITAR VENTA"
         Me.txtEditar.UseVisualStyleBackColor = False
         '
-        'btnverVentas
-        '
-        Me.btnverVentas.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnverVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnverVentas.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnverVentas.FlatAppearance.BorderSize = 0
-        Me.btnverVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnverVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnverVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnverVentas.Location = New System.Drawing.Point(651, 47)
-        Me.btnverVentas.Name = "btnverVentas"
-        Me.btnverVentas.Size = New System.Drawing.Size(166, 35)
-        Me.btnverVentas.TabIndex = 23
-        Me.btnverVentas.Text = "VER VENTAS"
-        Me.btnverVentas.UseVisualStyleBackColor = False
-        '
         'Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
         Me.Controls.Add(Me.gbxOpciones)
-        Me.Controls.Add(Me.gbxVentas)
+        Me.Controls.Add(Me.gbxProductos)
         Me.Name = "Ventas"
-        Me.Controls.SetChildIndex(Me.gbxVentas, 0)
+        Me.Controls.SetChildIndex(Me.gbxProductos, 0)
         Me.Controls.SetChildIndex(Me.gbxOpciones, 0)
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbxVentas.ResumeLayout(False)
-        Me.gbxVentas.PerformLayout()
+        Me.gbxProductos.ResumeLayout(False)
+        Me.gbxProductos.PerformLayout()
         Me.gbxOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -232,7 +232,7 @@ Partial Class Ventas
     Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
     Friend WithEvents lblBuscar As System.Windows.Forms.Label
     Friend WithEvents btnVerDetalle As System.Windows.Forms.Button
-    Friend WithEvents gbxVentas As System.Windows.Forms.GroupBox
+    Friend WithEvents gbxProductos As System.Windows.Forms.GroupBox
     Friend WithEvents gbxOpciones As System.Windows.Forms.GroupBox
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnAgregar As System.Windows.Forms.Button

@@ -29,28 +29,17 @@ Partial Class GenerarVenta
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.gbxVentas = New System.Windows.Forms.GroupBox()
+        Me.gbxProductos = New System.Windows.Forms.GroupBox()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.btnDer = New System.Windows.Forms.Button()
         Me.btnIzq = New System.Windows.Forms.Button()
         Me.btnRestarCant = New System.Windows.Forms.Button()
         Me.btnSumarCant = New System.Windows.Forms.Button()
-        Me.lblCant = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCant = New System.Windows.Forms.TextBox()
-        Me.lblGrilla2 = New System.Windows.Forms.Label()
-        Me.lblGrilla = New System.Windows.Forms.Label()
-        Me.gbxOpciones = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.txtClientes = New System.Windows.Forms.TextBox()
-        Me.txtMontoT = New System.Windows.Forms.TextBox()
-        Me.lblMonto = New System.Windows.Forms.Label()
-        Me.btnCancelar = New System.Windows.Forms.Button()
-        Me.btnConfirmar = New System.Windows.Forms.Button()
-        Me.lblCliente = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btnEditarMonto = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.dgvGrilla2 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -60,33 +49,43 @@ Partial Class GenerarVenta
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.gbxVentas.SuspendLayout()
-        Me.gbxOpciones.SuspendLayout()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnEditarMonto = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.txtClientes = New System.Windows.Forms.TextBox()
+        Me.txtMontoT = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnConfirmar = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.gbxProductos.SuspendLayout()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'gbxVentas
+        'gbxProductos
         '
-        Me.gbxVentas.Controls.Add(Me.dgvGrilla2)
-        Me.gbxVentas.Controls.Add(Me.dgvGrilla)
-        Me.gbxVentas.Controls.Add(Me.txtBuscador)
-        Me.gbxVentas.Controls.Add(Me.lblBuscar)
-        Me.gbxVentas.Controls.Add(Me.btnDer)
-        Me.gbxVentas.Controls.Add(Me.btnIzq)
-        Me.gbxVentas.Controls.Add(Me.btnRestarCant)
-        Me.gbxVentas.Controls.Add(Me.btnSumarCant)
-        Me.gbxVentas.Controls.Add(Me.lblCant)
-        Me.gbxVentas.Controls.Add(Me.txtCant)
-        Me.gbxVentas.Controls.Add(Me.lblGrilla2)
-        Me.gbxVentas.Controls.Add(Me.lblGrilla)
-        Me.gbxVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxVentas.ForeColor = System.Drawing.Color.Orange
-        Me.gbxVentas.Location = New System.Drawing.Point(252, 58)
-        Me.gbxVentas.Name = "gbxVentas"
-        Me.gbxVentas.Size = New System.Drawing.Size(877, 427)
-        Me.gbxVentas.TabIndex = 27
-        Me.gbxVentas.TabStop = False
+        Me.gbxProductos.Controls.Add(Me.txtBuscador)
+        Me.gbxProductos.Controls.Add(Me.lblBuscar)
+        Me.gbxProductos.Controls.Add(Me.btnDer)
+        Me.gbxProductos.Controls.Add(Me.btnIzq)
+        Me.gbxProductos.Controls.Add(Me.btnRestarCant)
+        Me.gbxProductos.Controls.Add(Me.btnSumarCant)
+        Me.gbxProductos.Controls.Add(Me.Label2)
+        Me.gbxProductos.Controls.Add(Me.txtCant)
+        Me.gbxProductos.Controls.Add(Me.Label4)
+        Me.gbxProductos.Controls.Add(Me.Label7)
+        Me.gbxProductos.Controls.Add(Me.dgvGrilla2)
+        Me.gbxProductos.Controls.Add(Me.dgvGrilla)
+        Me.gbxProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxProductos.ForeColor = System.Drawing.Color.Orange
+        Me.gbxProductos.Location = New System.Drawing.Point(252, 58)
+        Me.gbxProductos.Name = "gbxProductos"
+        Me.gbxProductos.Size = New System.Drawing.Size(877, 427)
+        Me.gbxProductos.TabIndex = 27
+        Me.gbxProductos.TabStop = False
         '
         'txtBuscador
         '
@@ -183,16 +182,16 @@ Partial Class GenerarVenta
         Me.btnSumarCant.TabIndex = 41
         Me.btnSumarCant.UseVisualStyleBackColor = False
         '
-        'lblCant
+        'Label2
         '
-        Me.lblCant.AutoSize = True
-        Me.lblCant.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblCant.ForeColor = System.Drawing.Color.Orange
-        Me.lblCant.Location = New System.Drawing.Point(416, 89)
-        Me.lblCant.Name = "lblCant"
-        Me.lblCant.Size = New System.Drawing.Size(84, 24)
-        Me.lblCant.TabIndex = 40
-        Me.lblCant.Text = "Cantidad"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label2.ForeColor = System.Drawing.Color.Orange
+        Me.Label2.Location = New System.Drawing.Point(416, 89)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(84, 24)
+        Me.Label2.TabIndex = 40
+        Me.Label2.Text = "Cantidad"
         '
         'txtCant
         '
@@ -205,189 +204,27 @@ Partial Class GenerarVenta
         Me.txtCant.Text = "1"
         Me.txtCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblGrilla2
+        'Label4
         '
-        Me.lblGrilla2.AutoSize = True
-        Me.lblGrilla2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblGrilla2.ForeColor = System.Drawing.Color.Orange
-        Me.lblGrilla2.Location = New System.Drawing.Point(617, 89)
-        Me.lblGrilla2.Name = "lblGrilla2"
-        Me.lblGrilla2.Size = New System.Drawing.Size(174, 24)
-        Me.lblGrilla2.TabIndex = 38
-        Me.lblGrilla2.Text = "Productos a vender"
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label4.ForeColor = System.Drawing.Color.Orange
+        Me.Label4.Location = New System.Drawing.Point(617, 89)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(174, 24)
+        Me.Label4.TabIndex = 38
+        Me.Label4.Text = "Productos a vender"
         '
-        'lblGrilla
+        'Label7
         '
-        Me.lblGrilla.AutoSize = True
-        Me.lblGrilla.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblGrilla.ForeColor = System.Drawing.Color.Orange
-        Me.lblGrilla.Location = New System.Drawing.Point(135, 89)
-        Me.lblGrilla.Name = "lblGrilla"
-        Me.lblGrilla.Size = New System.Drawing.Size(164, 24)
-        Me.lblGrilla.TabIndex = 37
-        Me.lblGrilla.Text = "Lista de Productos"
-        '
-        'gbxOpciones
-        '
-        Me.gbxOpciones.Controls.Add(Me.btnEditarMonto)
-        Me.gbxOpciones.Controls.Add(Me.btnGuardar)
-        Me.gbxOpciones.Controls.Add(Me.Button5)
-        Me.gbxOpciones.Controls.Add(Me.txtClientes)
-        Me.gbxOpciones.Controls.Add(Me.txtMontoT)
-        Me.gbxOpciones.Controls.Add(Me.lblMonto)
-        Me.gbxOpciones.Controls.Add(Me.btnCancelar)
-        Me.gbxOpciones.Controls.Add(Me.btnConfirmar)
-        Me.gbxOpciones.Controls.Add(Me.lblCliente)
-        Me.gbxOpciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxOpciones.ForeColor = System.Drawing.Color.Orange
-        Me.gbxOpciones.Location = New System.Drawing.Point(252, 491)
-        Me.gbxOpciones.Name = "gbxOpciones"
-        Me.gbxOpciones.Size = New System.Drawing.Size(877, 132)
-        Me.gbxOpciones.TabIndex = 29
-        Me.gbxOpciones.TabStop = False
-        Me.gbxOpciones.Text = "Facturacion"
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
-        Me.Button5.Location = New System.Drawing.Point(366, 34)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(35, 35)
-        Me.Button5.TabIndex = 42
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'txtClientes
-        '
-        Me.txtClientes.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.txtClientes.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.txtClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.txtClientes.Location = New System.Drawing.Point(192, 38)
-        Me.txtClientes.Name = "txtClientes"
-        Me.txtClientes.Size = New System.Drawing.Size(168, 26)
-        Me.txtClientes.TabIndex = 33
-        '
-        'txtMontoT
-        '
-        Me.txtMontoT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.txtMontoT.Location = New System.Drawing.Point(192, 84)
-        Me.txtMontoT.Name = "txtMontoT"
-        Me.txtMontoT.Size = New System.Drawing.Size(168, 26)
-        Me.txtMontoT.TabIndex = 32
-        '
-        'lblMonto
-        '
-        Me.lblMonto.AutoSize = True
-        Me.lblMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblMonto.ForeColor = System.Drawing.Color.Orange
-        Me.lblMonto.Location = New System.Drawing.Point(77, 84)
-        Me.lblMonto.Name = "lblMonto"
-        Me.lblMonto.Size = New System.Drawing.Size(109, 24)
-        Me.lblMonto.TabIndex = 31
-        Me.lblMonto.Text = "Monto Total"
-        '
-        'btnCancelar
-        '
-        Me.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnCancelar.FlatAppearance.BorderSize = 0
-        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCancelar.Location = New System.Drawing.Point(549, 79)
-        Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(144, 35)
-        Me.btnCancelar.TabIndex = 25
-        Me.btnCancelar.Text = "CANCELAR"
-        Me.btnCancelar.UseVisualStyleBackColor = False
-        '
-        'btnConfirmar
-        '
-        Me.btnConfirmar.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnConfirmar.FlatAppearance.BorderSize = 0
-        Me.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirmar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnConfirmar.Location = New System.Drawing.Point(549, 33)
-        Me.btnConfirmar.Name = "btnConfirmar"
-        Me.btnConfirmar.Size = New System.Drawing.Size(144, 35)
-        Me.btnConfirmar.TabIndex = 24
-        Me.btnConfirmar.Text = "CONFIRMAR"
-        Me.btnConfirmar.UseVisualStyleBackColor = False
-        '
-        'lblCliente
-        '
-        Me.lblCliente.AutoSize = True
-        Me.lblCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.lblCliente.ForeColor = System.Drawing.Color.Orange
-        Me.lblCliente.Location = New System.Drawing.Point(118, 38)
-        Me.lblCliente.Name = "lblCliente"
-        Me.lblCliente.Size = New System.Drawing.Size(68, 24)
-        Me.lblCliente.TabIndex = 20
-        Me.lblCliente.Text = "Cliente"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(549, 33)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(144, 35)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "CONFIRMAR"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btnGuardar
-        '
-        Me.btnGuardar.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnGuardar.FlatAppearance.BorderSize = 0
-        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGuardar.Location = New System.Drawing.Point(515, 55)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(223, 35)
-        Me.btnGuardar.TabIndex = 45
-        Me.btnGuardar.Text = "GUARDAR CAMBIOS"
-        Me.btnGuardar.UseVisualStyleBackColor = False
-        '
-        'btnEditarMonto
-        '
-        Me.btnEditarMonto.BackColor = System.Drawing.Color.Transparent
-        Me.btnEditarMonto.BackgroundImage = CType(resources.GetObject("btnEditarMonto.BackgroundImage"), System.Drawing.Image)
-        Me.btnEditarMonto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnEditarMonto.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnEditarMonto.FlatAppearance.BorderSize = 0
-        Me.btnEditarMonto.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
-        Me.btnEditarMonto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnEditarMonto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnEditarMonto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditarMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditarMonto.ForeColor = System.Drawing.Color.Transparent
-        Me.btnEditarMonto.Location = New System.Drawing.Point(370, 81)
-        Me.btnEditarMonto.Name = "btnEditarMonto"
-        Me.btnEditarMonto.Size = New System.Drawing.Size(35, 30)
-        Me.btnEditarMonto.TabIndex = 46
-        Me.btnEditarMonto.UseVisualStyleBackColor = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label7.ForeColor = System.Drawing.Color.Orange
+        Me.Label7.Location = New System.Drawing.Point(135, 89)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(164, 24)
+        Me.Label7.TabIndex = 37
+        Me.Label7.Text = "Lista de Productos"
         '
         'dgvGrilla2
         '
@@ -412,7 +249,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla2.Cursor = System.Windows.Forms.Cursors.Default
         Me.dgvGrilla2.EnableHeadersVisualStyles = False
         Me.dgvGrilla2.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvGrilla2.Location = New System.Drawing.Point(515, 128)
+        Me.dgvGrilla2.Location = New System.Drawing.Point(515, 121)
         Me.dgvGrilla2.MultiSelect = False
         Me.dgvGrilla2.Name = "dgvGrilla2"
         Me.dgvGrilla2.ReadOnly = True
@@ -433,7 +270,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla2.Size = New System.Drawing.Size(341, 262)
-        Me.dgvGrilla2.TabIndex = 48
+        Me.dgvGrilla2.TabIndex = 24
         '
         'Column1
         '
@@ -476,7 +313,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla.Cursor = System.Windows.Forms.Cursors.Default
         Me.dgvGrilla.EnableHeadersVisualStyles = False
         Me.dgvGrilla.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvGrilla.Location = New System.Drawing.Point(47, 128)
+        Me.dgvGrilla.Location = New System.Drawing.Point(47, 121)
         Me.dgvGrilla.MultiSelect = False
         Me.dgvGrilla.Name = "dgvGrilla"
         Me.dgvGrilla.ReadOnly = True
@@ -497,7 +334,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(354, 262)
-        Me.dgvGrilla.TabIndex = 47
+        Me.dgvGrilla.TabIndex = 17
         '
         'Column4
         '
@@ -523,55 +360,201 @@ Partial Class GenerarVenta
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.btnGuardar)
+        Me.GroupBox2.Controls.Add(Me.btnEditarMonto)
+        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.txtClientes)
+        Me.GroupBox2.Controls.Add(Me.txtMontoT)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.btnCancelar)
+        Me.GroupBox2.Controls.Add(Me.btnConfirmar)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Orange
+        Me.GroupBox2.Location = New System.Drawing.Point(252, 491)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(877, 132)
+        Me.GroupBox2.TabIndex = 29
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Facturacion"
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnGuardar.FlatAppearance.BorderSize = 0
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGuardar.Location = New System.Drawing.Point(509, 56)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(223, 35)
+        Me.btnGuardar.TabIndex = 44
+        Me.btnGuardar.Text = "GUARDAR CAMBIOS"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        'btnEditarMonto
+        '
+        Me.btnEditarMonto.BackColor = System.Drawing.Color.Transparent
+        Me.btnEditarMonto.BackgroundImage = CType(resources.GetObject("btnEditarMonto.BackgroundImage"), System.Drawing.Image)
+        Me.btnEditarMonto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEditarMonto.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnEditarMonto.FlatAppearance.BorderSize = 0
+        Me.btnEditarMonto.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.btnEditarMonto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnEditarMonto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnEditarMonto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditarMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditarMonto.ForeColor = System.Drawing.Color.Transparent
+        Me.btnEditarMonto.Location = New System.Drawing.Point(371, 81)
+        Me.btnEditarMonto.Name = "btnEditarMonto"
+        Me.btnEditarMonto.Size = New System.Drawing.Size(35, 30)
+        Me.btnEditarMonto.TabIndex = 43
+        Me.btnEditarMonto.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.Location = New System.Drawing.Point(366, 34)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(35, 35)
+        Me.Button5.TabIndex = 42
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'txtClientes
+        '
+        Me.txtClientes.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.txtClientes.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.txtClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.txtClientes.Location = New System.Drawing.Point(192, 38)
+        Me.txtClientes.Name = "txtClientes"
+        Me.txtClientes.Size = New System.Drawing.Size(168, 26)
+        Me.txtClientes.TabIndex = 33
+        '
+        'txtMontoT
+        '
+        Me.txtMontoT.Enabled = False
+        Me.txtMontoT.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.txtMontoT.Location = New System.Drawing.Point(192, 84)
+        Me.txtMontoT.Name = "txtMontoT"
+        Me.txtMontoT.Size = New System.Drawing.Size(168, 26)
+        Me.txtMontoT.TabIndex = 32
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label6.ForeColor = System.Drawing.Color.Orange
+        Me.Label6.Location = New System.Drawing.Point(77, 84)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(109, 24)
+        Me.Label6.TabIndex = 31
+        Me.Label6.Text = "Monto Total"
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnCancelar.FlatAppearance.BorderSize = 0
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCancelar.Location = New System.Drawing.Point(549, 79)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(144, 35)
+        Me.btnCancelar.TabIndex = 25
+        Me.btnCancelar.Text = "CANCELAR"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
+        'btnConfirmar
+        '
+        Me.btnConfirmar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnConfirmar.FlatAppearance.BorderSize = 0
+        Me.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConfirmar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnConfirmar.Location = New System.Drawing.Point(549, 33)
+        Me.btnConfirmar.Name = "btnConfirmar"
+        Me.btnConfirmar.Size = New System.Drawing.Size(144, 35)
+        Me.btnConfirmar.TabIndex = 24
+        Me.btnConfirmar.Text = "CONFIRMAR"
+        Me.btnConfirmar.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
+        Me.Label3.ForeColor = System.Drawing.Color.Orange
+        Me.Label3.Location = New System.Drawing.Point(118, 38)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 24)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Cliente"
+        '
         'GenerarVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
-        Me.Controls.Add(Me.gbxOpciones)
-        Me.Controls.Add(Me.gbxVentas)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.gbxProductos)
         Me.Name = "GenerarVenta"
-        Me.Controls.SetChildIndex(Me.gbxVentas, 0)
-        Me.Controls.SetChildIndex(Me.gbxOpciones, 0)
-        Me.gbxVentas.ResumeLayout(False)
-        Me.gbxVentas.PerformLayout()
-        Me.gbxOpciones.ResumeLayout(False)
-        Me.gbxOpciones.PerformLayout()
+        Me.Controls.SetChildIndex(Me.gbxProductos, 0)
+        Me.Controls.SetChildIndex(Me.GroupBox2, 0)
+        Me.gbxProductos.ResumeLayout(False)
+        Me.gbxProductos.PerformLayout()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents gbxVentas As System.Windows.Forms.GroupBox
-    Friend WithEvents gbxOpciones As System.Windows.Forms.GroupBox
-    Friend WithEvents lblCliente As System.Windows.Forms.Label
+    Friend WithEvents gbxProductos As System.Windows.Forms.GroupBox
+    Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtMontoT As System.Windows.Forms.TextBox
-    Friend WithEvents lblMonto As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents btnConfirmar As System.Windows.Forms.Button
+    Friend WithEvents dgvGrilla2 As System.Windows.Forms.DataGridView
     Friend WithEvents btnDer As System.Windows.Forms.Button
     Friend WithEvents btnIzq As System.Windows.Forms.Button
     Friend WithEvents btnRestarCant As System.Windows.Forms.Button
     Friend WithEvents btnSumarCant As System.Windows.Forms.Button
-    Friend WithEvents lblCant As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtCant As System.Windows.Forms.TextBox
-    Friend WithEvents lblGrilla2 As System.Windows.Forms.Label
-    Friend WithEvents lblGrilla As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtClientes As System.Windows.Forms.TextBox
     Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
     Friend WithEvents lblBuscar As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btnEditarMonto As System.Windows.Forms.Button
-    Friend WithEvents dgvGrilla2 As System.Windows.Forms.DataGridView
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnEditarMonto As System.Windows.Forms.Button
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
 End Class

@@ -259,3 +259,10 @@ C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
 C:\Users\gonza\Desktop\6º Año\Practicas\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.DetalleCompra.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.DetalleCompra.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.RegistrarGasto.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources

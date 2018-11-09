@@ -1,6 +1,5 @@
 ﻿Public Class Ventas
     Inherits MenuBase
-
     Dim sql, busqueda As String
     Public ip As Integer
     Dim rs, rs2, rs3 As Odbc.OdbcDataReader
@@ -65,6 +64,11 @@
     End Sub
 
     Private Sub btnverVentas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnverVentas.Click
+        btnVerDetalle.Visible = True
+        btnverVentas.Visible = False
+
+        cargarVentas()
+        ip = 0
 
     End Sub
 
@@ -72,7 +76,7 @@
         If ip = 0 Then
             MsgBox("Seleccione una venta", MsgBoxStyle.Exclamation, "ATENCION")
         Else
-
+          
 
             sql = "delete from detalleventas where idVenta = " & ip
             consulta(sql)
