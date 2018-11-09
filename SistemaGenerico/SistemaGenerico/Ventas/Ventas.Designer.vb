@@ -25,30 +25,31 @@ Partial Class Ventas
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.dgvProveedores = New System.Windows.Forms.DataGridView()
+        Me.dgvGrilla = New System.Windows.Forms.DataGridView()
         Me.lblBuscar = New System.Windows.Forms.Label()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.gbxProductos = New System.Windows.Forms.GroupBox()
+        Me.btnVerDetalle = New System.Windows.Forms.Button()
+        Me.gbxVentas = New System.Windows.Forms.GroupBox()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.gbxOpciones = New System.Windows.Forms.GroupBox()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.dgvProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbxProductos.SuspendLayout()
+        Me.txtEditar = New System.Windows.Forms.Button()
+        Me.btnverVentas = New System.Windows.Forms.Button()
+        CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbxVentas.SuspendLayout()
         Me.gbxOpciones.SuspendLayout()
         Me.SuspendLayout()
         '
-        'dgvProveedores
+        'dgvGrilla
         '
-        Me.dgvProveedores.AllowUserToAddRows = False
-        Me.dgvProveedores.AllowUserToDeleteRows = False
-        Me.dgvProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvProveedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
-        Me.dgvProveedores.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.dgvProveedores.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvProveedores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.dgvProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvGrilla.AllowUserToAddRows = False
+        Me.dgvGrilla.AllowUserToDeleteRows = False
+        Me.dgvGrilla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvGrilla.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
+        Me.dgvGrilla.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgvGrilla.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvGrilla.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dgvGrilla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -56,15 +57,15 @@ Partial Class Ventas
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvProveedores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvProveedores.Cursor = System.Windows.Forms.Cursors.Default
-        Me.dgvProveedores.EnableHeadersVisualStyles = False
-        Me.dgvProveedores.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.dgvProveedores.Location = New System.Drawing.Point(20, 99)
-        Me.dgvProveedores.Name = "dgvProveedores"
-        Me.dgvProveedores.ReadOnly = True
-        Me.dgvProveedores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvGrilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvGrilla.Cursor = System.Windows.Forms.Cursors.Default
+        Me.dgvGrilla.EnableHeadersVisualStyles = False
+        Me.dgvGrilla.GridColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.dgvGrilla.Location = New System.Drawing.Point(20, 99)
+        Me.dgvGrilla.Name = "dgvGrilla"
+        Me.dgvGrilla.ReadOnly = True
+        Me.dgvGrilla.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -72,16 +73,16 @@ Partial Class Ventas
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvProveedores.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvProveedores.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        Me.dgvGrilla.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvGrilla.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        Me.dgvProveedores.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvProveedores.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.dgvProveedores.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvProveedores.Size = New System.Drawing.Size(797, 350)
-        Me.dgvProveedores.TabIndex = 17
+        Me.dgvGrilla.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvGrilla.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvGrilla.Size = New System.Drawing.Size(797, 350)
+        Me.dgvGrilla.TabIndex = 17
         '
         'lblBuscar
         '
@@ -94,35 +95,36 @@ Partial Class Ventas
         Me.lblBuscar.TabIndex = 19
         Me.lblBuscar.Text = "Buscar por monto aproximado"
         '
-        'btnEditar
+        'btnVerDetalle
         '
-        Me.btnEditar.BackColor = System.Drawing.SystemColors.Highlight
-        Me.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnEditar.FlatAppearance.BorderSize = 0
-        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEditar.Location = New System.Drawing.Point(598, 47)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEditar.TabIndex = 14
-        Me.btnEditar.Text = "VER DETALLE"
-        Me.btnEditar.UseVisualStyleBackColor = False
+        Me.btnVerDetalle.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnVerDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnVerDetalle.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnVerDetalle.FlatAppearance.BorderSize = 0
+        Me.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVerDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVerDetalle.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnVerDetalle.Location = New System.Drawing.Point(651, 47)
+        Me.btnVerDetalle.Name = "btnVerDetalle"
+        Me.btnVerDetalle.Size = New System.Drawing.Size(166, 35)
+        Me.btnVerDetalle.TabIndex = 14
+        Me.btnVerDetalle.Text = "VER DETALLE"
+        Me.btnVerDetalle.UseVisualStyleBackColor = False
         '
-        'gbxProductos
+        'gbxVentas
         '
-        Me.gbxProductos.Controls.Add(Me.txtBuscador)
-        Me.gbxProductos.Controls.Add(Me.btnEditar)
-        Me.gbxProductos.Controls.Add(Me.lblBuscar)
-        Me.gbxProductos.Controls.Add(Me.dgvProveedores)
-        Me.gbxProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbxProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.gbxProductos.Location = New System.Drawing.Point(266, 70)
-        Me.gbxProductos.Name = "gbxProductos"
-        Me.gbxProductos.Size = New System.Drawing.Size(844, 468)
-        Me.gbxProductos.TabIndex = 26
-        Me.gbxProductos.TabStop = False
+        Me.gbxVentas.Controls.Add(Me.btnverVentas)
+        Me.gbxVentas.Controls.Add(Me.txtBuscador)
+        Me.gbxVentas.Controls.Add(Me.btnVerDetalle)
+        Me.gbxVentas.Controls.Add(Me.lblBuscar)
+        Me.gbxVentas.Controls.Add(Me.dgvGrilla)
+        Me.gbxVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbxVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.gbxVentas.Location = New System.Drawing.Point(266, 70)
+        Me.gbxVentas.Name = "gbxVentas"
+        Me.gbxVentas.Size = New System.Drawing.Size(844, 468)
+        Me.gbxVentas.TabIndex = 26
+        Me.gbxVentas.TabStop = False
         '
         'txtBuscador
         '
@@ -136,7 +138,7 @@ Partial Class Ventas
         '
         Me.gbxOpciones.Controls.Add(Me.btnEliminar)
         Me.gbxOpciones.Controls.Add(Me.btnAgregar)
-        Me.gbxOpciones.Controls.Add(Me.Button1)
+        Me.gbxOpciones.Controls.Add(Me.txtEditar)
         Me.gbxOpciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxOpciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.gbxOpciones.Location = New System.Drawing.Point(266, 544)
@@ -177,21 +179,37 @@ Partial Class Ventas
         Me.btnAgregar.Text = "AGREGAR VENTA"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
-        'Button1
+        'txtEditar
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(324, 31)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(219, 35)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "EDITAR VENTA"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.txtEditar.BackColor = System.Drawing.SystemColors.Highlight
+        Me.txtEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.txtEditar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.txtEditar.FlatAppearance.BorderSize = 0
+        Me.txtEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.txtEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtEditar.Location = New System.Drawing.Point(324, 31)
+        Me.txtEditar.Name = "txtEditar"
+        Me.txtEditar.Size = New System.Drawing.Size(219, 35)
+        Me.txtEditar.TabIndex = 14
+        Me.txtEditar.Text = "EDITAR VENTA"
+        Me.txtEditar.UseVisualStyleBackColor = False
+        '
+        'btnverVentas
+        '
+        Me.btnverVentas.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnverVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnverVentas.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnverVentas.FlatAppearance.BorderSize = 0
+        Me.btnverVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnverVentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnverVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnverVentas.Location = New System.Drawing.Point(651, 47)
+        Me.btnverVentas.Name = "btnverVentas"
+        Me.btnverVentas.Size = New System.Drawing.Size(166, 35)
+        Me.btnverVentas.TabIndex = 23
+        Me.btnverVentas.Text = "VER VENTAS"
+        Me.btnverVentas.UseVisualStyleBackColor = False
         '
         'Ventas
         '
@@ -199,25 +217,26 @@ Partial Class Ventas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
         Me.Controls.Add(Me.gbxOpciones)
-        Me.Controls.Add(Me.gbxProductos)
+        Me.Controls.Add(Me.gbxVentas)
         Me.Name = "Ventas"
-        Me.Controls.SetChildIndex(Me.gbxProductos, 0)
+        Me.Controls.SetChildIndex(Me.gbxVentas, 0)
         Me.Controls.SetChildIndex(Me.gbxOpciones, 0)
-        CType(Me.dgvProveedores, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbxProductos.ResumeLayout(False)
-        Me.gbxProductos.PerformLayout()
+        CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbxVentas.ResumeLayout(False)
+        Me.gbxVentas.PerformLayout()
         Me.gbxOpciones.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents dgvProveedores As System.Windows.Forms.DataGridView
+    Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
     Friend WithEvents lblBuscar As System.Windows.Forms.Label
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
-    Friend WithEvents gbxProductos As System.Windows.Forms.GroupBox
+    Friend WithEvents btnVerDetalle As System.Windows.Forms.Button
+    Friend WithEvents gbxVentas As System.Windows.Forms.GroupBox
     Friend WithEvents gbxOpciones As System.Windows.Forms.GroupBox
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtEditar As System.Windows.Forms.Button
     Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
+    Friend WithEvents btnverVentas As System.Windows.Forms.Button
 End Class
