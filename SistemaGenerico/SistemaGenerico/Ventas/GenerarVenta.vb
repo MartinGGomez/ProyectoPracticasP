@@ -3,19 +3,18 @@ Public Class GenerarVenta
     Inherits MenuBase
 
     Dim rs As OdbcDataReader
-    Dim sql, descripcion As String
+    Dim sql, descripcion, busqueda, nombre, apellido As String
     Dim idP, id2, monto, precio, cantidad As Integer
     Public total As Integer
     Dim idCliente As Integer
     Dim idVenta As Integer
     Dim idDetalle As Integer
-
+    Dim existe As Boolean
 
     Private Sub GenerarVenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargarClientes()
-        ' cargarProductos()
-
-
+        'cargarProductos()
+        logo()
 
     End Sub
     Public Sub cargarClientes()
@@ -32,12 +31,22 @@ Public Class GenerarVenta
 
         sql = "select idProducto ID, Descripcion, Stock, Precio from Productos where estado = 'Activo'"
         rs = Funciones.consulta(sql)
+        busqueda = sql
+        If Not String.IsNullOrEmpty(txtBuscador.Text) Then
+            dgvGrilla.Rows.Clear()
+            busqueda &= " and descripcion like '%" & txtBuscador.Text & "%' "
+            rs = consulta(busqueda)
+            While rs.Read = True
+                dgvGrilla.Rows.Add(rs(0), rs(1), rs(2), rs(3))
+            End While
 
-        While rs.Read = True
-            dgvGrilla.Rows.Add(rs(0), rs(1), rs(2), rs(3))
-        End While
+        Else
+            dgvGrilla.Rows.Clear()
+            While rs.Read = True
+                dgvGrilla.Rows.Add(rs(0), rs(1), rs(2), rs(3))
+            End While
 
-
+        End If
 
     End Sub
 
@@ -54,7 +63,6 @@ Public Class GenerarVenta
 
         End Try
 
-
     End Sub
 
     Private Sub btnDer_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDer.Click
@@ -62,7 +70,6 @@ Public Class GenerarVenta
 
             MsgBox("No hay mas productos para vender", MsgBoxStyle.Exclamation, "ATENCION")
         Else
-
 
             If idP = 0 Then
 
@@ -76,7 +83,6 @@ Public Class GenerarVenta
                 total = total + monto
                 txtMontoT.Text = total
                 monto = 0
-
 
                 dgvGrilla.Rows.RemoveAt(dgvGrilla.SelectedRows(0).Index)
                 btnDer.Enabled = True
@@ -165,9 +171,7 @@ Public Class GenerarVenta
         onlyNum(e)
     End Sub
 
-   
     Private Sub txtMontoT_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtMontoT.TextChanged
-
 
         If txtMontoT.Text = "" Then
             txtMontoT.Text = 0
@@ -176,8 +180,6 @@ Public Class GenerarVenta
         If CInt(txtMontoT.Text) < 0 Then
             txtMontoT.Text = 0
         End If
-     
-
 
     End Sub
 
@@ -187,9 +189,7 @@ Public Class GenerarVenta
             txtMontoT.Enabled = True
         Else
             txtMontoT.Enabled = False
-
         End If
-
     End Sub
 
   
@@ -200,9 +200,11 @@ Public Class GenerarVenta
             MsgBox("Debe haber al menos 1 producto para efectuar la venta", MsgBoxStyle.Critical)
         Else
 
-          
+            Dim palabras As Array
 
-            sql = "select idCliente from clientes where nombre = '" & txtClientes.Text & "'"
+            palabras = Split(txtClientes.Text, " ")
+
+            sql = "select idCliente from clientes where nombre = '" & palabras(0) & "' and apellido = '" & palabras(1) & "'"
             rs = consulta(sql)
 
             If rs.Read = True Then
@@ -224,12 +226,10 @@ Public Class GenerarVenta
                 Funciones.consulta(sql)
             Next
 
-            limpiar()
-
-
             Ventas.cargarVentas()
             Ventas.Show()
             Me.Hide()
+            limpiar()
 
         End If
 
@@ -243,40 +243,46 @@ Public Class GenerarVenta
 
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
 
+        If txtClientes.Text = "" Then
+            MsgBox("Debe completar el cliente de la venta", MsgBoxStyle.Critical)
+        ElseIf dgvGrilla2.Rows.Count = 0 Then
+            MsgBox("Debe haber al menos 1 producto para efectuar la venta", MsgBoxStyle.Critical)
+        Else
+            Dim palabras As Array
 
+            palabras = Split(txtClientes.Text, " ")
 
-        sql = "select idCliente from clientes where nombre = '" & txtClientes.Text & "'"
-        rs = consulta(sql)
+            sql = "select idCliente from clientes where nombre = '" & palabras(0) & "' and apellido = '" & palabras(1) & "'"
+            rs = consulta(sql)
 
-        If rs.Read = True Then
-            idCliente = rs(0)
+            If rs.Read = True Then
+                idCliente = rs(0)
+            End If
+
+            sql = "update ventas set idCliente= " & idCliente & " , montoTotal = '" & txtMontoT.Text & "' where idVenta=" & Ventas.ip
+            consulta(sql)
+
+            sql = "select idDetalleVenta from detalleventas where idVenta=" & Ventas.ip
+            rs = consulta(sql)
+            If rs.Read = True Then
+                idDetalle = rs(0)
+            End If
+
+            sql = "delete from detalleventas where idVenta=" & Ventas.ip
+            consulta(sql)
+
+            For Each producto As DataGridViewRow In dgvGrilla2.Rows
+                sql = "insert into detalleventas values ('', " & Ventas.ip & ", " & producto.Cells(0).Value.ToString & ", " & producto.Cells(2).Value.ToString & ")"
+                Funciones.consulta(sql)
+            Next
+
         End If
-
-        sql = "update ventas set idCliente= " & idCliente & " , montoTotal = '" & txtMontoT.Text & "' where idVenta=" & Ventas.ip
-        consulta(sql)
-
-
-        sql = "select idDetalleVenta from detalleventas where idVenta=" & Ventas.ip
-        rs = consulta(sql)
-        If rs.Read = True Then
-            idDetalle = rs(0)
-        End If
-
-        sql = "delete from detalleventas where idVenta=" & Ventas.ip
-        consulta(sql)
-
-        For Each producto As DataGridViewRow In dgvGrilla2.Rows
-            sql = "insert into detalleventas values (" & idDetalle & ", " & Ventas.ip & ", " & producto.Cells(0).Value.ToString & ", " & producto.Cells(2).Value.ToString & ")"
-            Funciones.consulta(sql)
-        Next
 
         Me.Hide()
         Ventas.Show()
         limpiar()
         Ventas.cargarVentas()
 
-        Ventas.ip = 0
-        idDetalle = 0
     End Sub
 
     Public Sub limpiar()
@@ -284,7 +290,82 @@ Public Class GenerarVenta
         txtCant.Text = "1"
         dgvGrilla.Rows.Clear()
         txtClientes.Text = ""
+        total = 0
+        monto = 0
+        Ventas.ip = 0
+        idDetalle = 0
+        txtBuscador.Text = ""
     End Sub
 
+    Private Sub txtBuscador_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscador.TextChanged
+        cargarProductos()
+    End Sub
 
+   
+    Private Sub btnAgregarClieEspecial_Click(sender As System.Object, e As System.EventArgs) Handles btnAgregarClieEspecial.Click
+        FormularioClientes.txtNombre.Text = ""
+        FormularioClientes.txtApellido.Text = ""
+        FormularioClientes.Show()
+        MsgBox("Atencion este cliente podra ser agregado como un cliente especial", MsgBoxStyle.Information, "ATENCION")
+
+        If String.IsNullOrEmpty(apellido) Then
+            FormularioClientes.txtNombre.Text = txtClientes.Text
+        Else
+            FormularioClientes.txtNombre.Text = nombre
+            FormularioClientes.txtApellido.Text = apellido
+            nombre = ""
+            apellido = ""
+        End If
+
+
+
+    End Sub
+
+    Private Sub txtClientes_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtClientes.TextChanged
+        Dim palabras As Array
+        Try
+            palabras = Split(txtClientes.Text, " ")
+
+            sql = "select idCliente from clientes where nombre = '" & txtClientes.Text & "'"
+            rs = consulta(sql)
+
+            If rs.Read = True Then
+                idCliente = rs(0)
+                existe = True
+            Else
+                existe = False
+            End If
+
+            sql = "select idCliente from clientes where nombre = '" & palabras(0) & "' and apellido = '" & palabras(1) & "'"
+            rs = consulta(sql)
+
+            If rs.Read = True Then
+                idCliente = rs(0)
+                existe = True
+            Else
+                existe = False
+                nombre = palabras(0)
+                apellido = palabras(1)
+            End If
+
+            If existe Then
+                btnAgregarClieEspecial.Enabled = False
+            Else
+                btnAgregarClieEspecial.Enabled = True
+            End If
+
+
+        Catch ex As Exception
+
+        End Try
+
+
+    End Sub
+
+    Private Sub btnDescartarC_Click(sender As System.Object, e As System.EventArgs) Handles btnDescartarC.Click
+        Me.Hide()
+        Ventas.Show()
+        limpiar()
+        Ventas.cargarVentas()
+    End Sub
 End Class

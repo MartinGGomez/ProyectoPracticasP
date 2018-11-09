@@ -32,6 +32,7 @@
         GenerarVenta.cargarProductos()
         GenerarVenta.btnConfirmar.Visible = True
         GenerarVenta.btnCancelar.Visible = True
+        GenerarVenta.btnDescartarC.Visible = False
         GenerarVenta.btnGuardar.Visible = False
     End Sub
 
@@ -113,11 +114,11 @@
                 cliente = rs(1)
             End If
 
-            sql = "select nombre from clientes where idCliente=" & cliente
+            sql = "select nombre, apellido from clientes where idCliente=" & cliente
             rs2 = consulta(sql)
 
             If rs2.Read = True Then
-                GenerarVenta.txtClientes.Text = rs2(0)
+                GenerarVenta.txtClientes.Text = rs2(0) & " " & rs2(1)
             End If
 
 
@@ -131,6 +132,8 @@
             GenerarVenta.btnConfirmar.Visible = False
             GenerarVenta.btnCancelar.Visible = False
             GenerarVenta.btnGuardar.Visible = True
+            GenerarVenta.btnDescartarC.Visible = True
+
 
             Me.Hide()
             GenerarVenta.Show()

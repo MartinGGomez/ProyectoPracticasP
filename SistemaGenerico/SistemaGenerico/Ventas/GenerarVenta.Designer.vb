@@ -52,13 +52,14 @@ Partial Class GenerarVenta
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditarMonto = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnAgregarClieEspecial = New System.Windows.Forms.Button()
         Me.txtClientes = New System.Windows.Forms.TextBox()
         Me.txtMontoT = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnConfirmar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnDescartarC = New System.Windows.Forms.Button()
         Me.gbxProductos.SuspendLayout()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,9 +363,10 @@ Partial Class GenerarVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnDescartarC)
         Me.GroupBox2.Controls.Add(Me.btnGuardar)
         Me.GroupBox2.Controls.Add(Me.btnEditarMonto)
-        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.btnAgregarClieEspecial)
         Me.GroupBox2.Controls.Add(Me.txtClientes)
         Me.GroupBox2.Controls.Add(Me.txtMontoT)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -389,7 +391,7 @@ Partial Class GenerarVenta
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGuardar.Location = New System.Drawing.Point(509, 56)
+        Me.btnGuardar.Location = New System.Drawing.Point(509, 33)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(223, 35)
         Me.btnGuardar.TabIndex = 44
@@ -415,24 +417,24 @@ Partial Class GenerarVenta
         Me.btnEditarMonto.TabIndex = 43
         Me.btnEditarMonto.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnAgregarClieEspecial
         '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
-        Me.Button5.Location = New System.Drawing.Point(366, 34)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(35, 35)
-        Me.Button5.TabIndex = 42
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnAgregarClieEspecial.BackColor = System.Drawing.Color.Transparent
+        Me.btnAgregarClieEspecial.BackgroundImage = CType(resources.GetObject("btnAgregarClieEspecial.BackgroundImage"), System.Drawing.Image)
+        Me.btnAgregarClieEspecial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAgregarClieEspecial.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAgregarClieEspecial.FlatAppearance.BorderSize = 0
+        Me.btnAgregarClieEspecial.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
+        Me.btnAgregarClieEspecial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnAgregarClieEspecial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnAgregarClieEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregarClieEspecial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarClieEspecial.ForeColor = System.Drawing.Color.Transparent
+        Me.btnAgregarClieEspecial.Location = New System.Drawing.Point(366, 34)
+        Me.btnAgregarClieEspecial.Name = "btnAgregarClieEspecial"
+        Me.btnAgregarClieEspecial.Size = New System.Drawing.Size(35, 35)
+        Me.btnAgregarClieEspecial.TabIndex = 42
+        Me.btnAgregarClieEspecial.UseVisualStyleBackColor = False
         '
         'txtClientes
         '
@@ -507,6 +509,22 @@ Partial Class GenerarVenta
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Cliente"
         '
+        'btnDescartarC
+        '
+        Me.btnDescartarC.BackColor = System.Drawing.SystemColors.Highlight
+        Me.btnDescartarC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnDescartarC.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnDescartarC.FlatAppearance.BorderSize = 0
+        Me.btnDescartarC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDescartarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDescartarC.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnDescartarC.Location = New System.Drawing.Point(509, 79)
+        Me.btnDescartarC.Name = "btnDescartarC"
+        Me.btnDescartarC.Size = New System.Drawing.Size(223, 35)
+        Me.btnDescartarC.TabIndex = 45
+        Me.btnDescartarC.Text = "DESCARTAR CAMBIOS"
+        Me.btnDescartarC.UseVisualStyleBackColor = False
+        '
         'GenerarVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -547,7 +565,7 @@ Partial Class GenerarVenta
     Friend WithEvents txtClientes As System.Windows.Forms.TextBox
     Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
     Friend WithEvents lblBuscar As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnAgregarClieEspecial As System.Windows.Forms.Button
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -557,4 +575,5 @@ Partial Class GenerarVenta
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnEditarMonto As System.Windows.Forms.Button
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents btnDescartarC As System.Windows.Forms.Button
 End Class
