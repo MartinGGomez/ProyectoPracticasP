@@ -2,8 +2,7 @@
 
 Public Class MenuBase
 
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cerrar.Click
+     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cerrar.Click
 
         Application.Exit()
 
@@ -13,9 +12,11 @@ Public Class MenuBase
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_inicio.Click
 
         If Not Me.Equals(Inicio) Then
-
+            Inicio.contadores()
             Inicio.Show()
             Me.Hide()
+            Inicio.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Inicio.lbl_tipo_trab.Text = Utilidades.tipoUsuario
 
         End If
 
@@ -47,7 +48,8 @@ Public Class MenuBase
         If Not Me.Equals(PanelUsuario) Then
             Me.Hide()
             PanelUsuario.Show()
-
+            PanelUsuario.lbl_nom_user.Text = Utilidades.nombreUsuario
+            PanelUsuario.lbl_tipo_trab.Text = Utilidades.tipoUsuario
 
         End If
     End Sub
@@ -57,17 +59,27 @@ Public Class MenuBase
 
             PanelUsuario.Show()
             Me.Close()
-
+            PanelUsuario.lbl_nom_user.Text = Utilidades.nombreUsuario
+            PanelUsuario.lbl_tipo_trab.Text = Utilidades.tipoUsuario
         End If
     End Sub
 
     Private Sub btn_ajustes_Click(sender As System.Object, e As System.EventArgs) Handles btn_ajustes.Click
-        If Not Me.Equals(Ajustes) Then
 
-            Ajustes.Show()
-            Me.Hide()
+        If Utilidades.tipoUsuario.Equals("Administrador") Then
 
+            If Not Me.Equals(Ajustes) Then
+
+                Ajustes.Show()
+                Me.Hide()
+                Ajustes.lbl_nom_user.Text = Utilidades.nombreUsuario
+                Ajustes.lbl_tipo_trab.Text = Utilidades.tipoUsuario
+
+            End If
+        Else
+            MsgBox("Usted no tiene permisos para acceder a los ajustes del sistema.", MsgBoxStyle.Critical)
         End If
+
     End Sub
 
     Public Sub logo()
@@ -79,9 +91,9 @@ Public Class MenuBase
 
         ElseIf File.Exists(Utilidades.pathLogoDefault) Then
 
-                img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
+            img_logo.BackgroundImage = Image.FromFile(Utilidades.pathLogoDefault)
 
-            End If
+        End If
 
     End Sub
 
@@ -90,6 +102,8 @@ Public Class MenuBase
             Me.Hide()
             Productos.cargarProductos()
             Productos.Show()
+            Productos.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Productos.lbl_tipo_trab.Text = Utilidades.tipoUsuario
         End If
     End Sub
 
@@ -98,6 +112,8 @@ Public Class MenuBase
             Me.Hide()
             Proveedores.cargarProveedores()
             Proveedores.Show()
+            Proveedores.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Proveedores.lbl_tipo_trab.Text = Utilidades.tipoUsuario
         End If
 
     End Sub
@@ -113,6 +129,21 @@ Public Class MenuBase
             Me.Hide()
             Compras.cargarCompras()
             Compras.Show()
+            Compras.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Compras.lbl_tipo_trab.Text = Utilidades.tipoUsuario
+        End If
+    End Sub
+
+    Private Sub img_user_Click_1(sender As System.Object, e As System.EventArgs) Handles img_user.Click
+
+    End Sub
+
+    Private Sub btn_gastos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_gastos.Click
+        If Not Me.Equals(Gastos) Then
+            Me.Hide()
+            Gastos.Show()
+            Gastos.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Gastos.lbl_tipo_trab.Text = Utilidades.tipoUsuario
         End If
     End Sub
 End Class

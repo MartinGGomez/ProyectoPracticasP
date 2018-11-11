@@ -46,13 +46,14 @@ Partial Class FormularioBase
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
-        Me.lblTitulo.Font = New System.Drawing.Font("Gobold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.Font = New System.Drawing.Font("Arial Narrow", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(194, 27)
+        Me.lblTitulo.Location = New System.Drawing.Point(178, 27)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(307, 41)
+        Me.lblTitulo.Size = New System.Drawing.Size(346, 37)
         Me.lblTitulo.TabIndex = 5
         Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
+        Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnVolver
         '
@@ -61,7 +62,7 @@ Partial Class FormularioBase
         Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnVolver.FlatAppearance.BorderSize = 0
         Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnVolver.Location = New System.Drawing.Point(583, 493)
         Me.btnVolver.Name = "btnVolver"
@@ -75,7 +76,7 @@ Partial Class FormularioBase
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(698, 542)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.lblTitulo)

@@ -36,13 +36,19 @@ Partial Class InicioSesion
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnver = New System.Windows.Forms.Button()
         Me.lblerror = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.imgError = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.img_logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Panel1.Controls.Add(Me.img_logo)
         Me.Panel1.Location = New System.Drawing.Point(-1, -2)
         Me.Panel1.Name = "Panel1"
@@ -62,52 +68,52 @@ Partial Class InicioSesion
         'lbl_usuario
         '
         Me.lbl_usuario.AutoSize = True
-        Me.lbl_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_usuario.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_usuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbl_usuario.Location = New System.Drawing.Point(368, 106)
+        Me.lbl_usuario.Location = New System.Drawing.Point(405, 78)
         Me.lbl_usuario.Name = "lbl_usuario"
-        Me.lbl_usuario.Size = New System.Drawing.Size(79, 24)
+        Me.lbl_usuario.Size = New System.Drawing.Size(69, 23)
         Me.lbl_usuario.TabIndex = 1
-        Me.lbl_usuario.Text = "Usuario:"
+        Me.lbl_usuario.Text = "Usuario"
         '
         'lbl_contra
         '
         Me.lbl_contra.AutoSize = True
-        Me.lbl_contra.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_contra.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_contra.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbl_contra.Location = New System.Drawing.Point(338, 171)
+        Me.lbl_contra.Location = New System.Drawing.Point(408, 144)
         Me.lbl_contra.Name = "lbl_contra"
-        Me.lbl_contra.Size = New System.Drawing.Size(111, 24)
+        Me.lbl_contra.Size = New System.Drawing.Size(98, 23)
         Me.lbl_contra.TabIndex = 2
-        Me.lbl_contra.Text = "Contraseña:"
+        Me.lbl_contra.Text = "Contraseña"
         '
         'txtusuario
         '
-        Me.txtusuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtusuario.Location = New System.Drawing.Point(449, 105)
+        Me.txtusuario.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtusuario.Location = New System.Drawing.Point(386, 102)
         Me.txtusuario.Name = "txtusuario"
-        Me.txtusuario.Size = New System.Drawing.Size(196, 29)
+        Me.txtusuario.Size = New System.Drawing.Size(241, 29)
         Me.txtusuario.TabIndex = 3
         Me.txtusuario.Text = "admin"
         '
         'txtcontraseña
         '
-        Me.txtcontraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcontraseña.Location = New System.Drawing.Point(449, 170)
+        Me.txtcontraseña.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcontraseña.Location = New System.Drawing.Point(386, 169)
         Me.txtcontraseña.Name = "txtcontraseña"
         Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.txtcontraseña.Size = New System.Drawing.Size(196, 29)
+        Me.txtcontraseña.Size = New System.Drawing.Size(241, 29)
         Me.txtcontraseña.TabIndex = 4
         Me.txtcontraseña.Text = "admin1234"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(407, 33)
+        Me.Label1.Location = New System.Drawing.Point(380, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(295, 37)
+        Me.Label1.Size = New System.Drawing.Size(247, 37)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "INICIO DE SESIÓN"
         '
@@ -148,11 +154,11 @@ Partial Class InicioSesion
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(391, 242)
+        Me.Button1.Location = New System.Drawing.Point(386, 239)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 35)
+        Me.Button1.Size = New System.Drawing.Size(108, 35)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "INICIAR"
         Me.Button1.UseVisualStyleBackColor = False
@@ -164,11 +170,11 @@ Partial Class InicioSesion
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(541, 242)
+        Me.Button2.Location = New System.Drawing.Point(536, 239)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(104, 35)
+        Me.Button2.Size = New System.Drawing.Size(108, 35)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = False
@@ -182,7 +188,7 @@ Partial Class InicioSesion
         Me.btnver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnver.Location = New System.Drawing.Point(652, 175)
+        Me.btnver.Location = New System.Drawing.Point(633, 172)
         Me.btnver.Name = "btnver"
         Me.btnver.Size = New System.Drawing.Size(28, 23)
         Me.btnver.TabIndex = 10
@@ -193,18 +199,52 @@ Partial Class InicioSesion
         Me.lblerror.AutoSize = True
         Me.lblerror.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblerror.ForeColor = System.Drawing.Color.Tomato
-        Me.lblerror.Location = New System.Drawing.Point(339, 214)
+        Me.lblerror.Location = New System.Drawing.Point(412, 211)
         Me.lblerror.Name = "lblerror"
         Me.lblerror.Size = New System.Drawing.Size(0, 18)
         Me.lblerror.TabIndex = 11
         Me.lblerror.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(386, 79)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 792
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(387, 146)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 793
+        Me.PictureBox9.TabStop = False
+        '
+        'imgError
+        '
+        Me.imgError.Image = CType(resources.GetObject("imgError.Image"), System.Drawing.Image)
+        Me.imgError.Location = New System.Drawing.Point(389, 211)
+        Me.imgError.Name = "imgError"
+        Me.imgError.Size = New System.Drawing.Size(17, 17)
+        Me.imgError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imgError.TabIndex = 794
+        Me.imgError.TabStop = False
+        Me.imgError.Visible = False
+        '
         'InicioSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.BackColor = System.Drawing.Color.LightSlateGray
         Me.ClientSize = New System.Drawing.Size(702, 300)
+        Me.Controls.Add(Me.imgError)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.lblerror)
         Me.Controls.Add(Me.btnver)
         Me.Controls.Add(Me.Button2)
@@ -223,6 +263,9 @@ Partial Class InicioSesion
         Me.Text = "InicioSesion"
         Me.Panel1.ResumeLayout(False)
         CType(Me.img_logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -240,4 +283,7 @@ Partial Class InicioSesion
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents btnver As System.Windows.Forms.Button
     Friend WithEvents lblerror As System.Windows.Forms.Label
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents imgError As System.Windows.Forms.PictureBox
 End Class

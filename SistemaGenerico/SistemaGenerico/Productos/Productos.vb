@@ -10,7 +10,7 @@ Public Class Productos
     Private Sub Productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblTitulo.Text = "Gestion de Productos"
         logo()
-        btn_productos.BackColor = Color.Black
+        ' btn_productos.BackColor = Color.Black
     End Sub
 
     Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged
@@ -63,10 +63,14 @@ Public Class Productos
 
     End Sub
 
-    Private Sub dgvGrilla_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvGrilla.CellClick
+    Private Sub dgvGrilla_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         Try
             idProducto = dgvGrilla.Rows(e.RowIndex).Cells(0).Value.ToString
         Catch ex As Exception
         End Try
+    End Sub
+
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs)
+
     End Sub
 End Class

@@ -8,7 +8,7 @@
         conexion()
         lblTitulo.Text = "Gestion de Proveedores"
         logo()
-        btn_proveedores.BackColor = Color.Black
+        btn_proveedores.BackColor = Color.OrangeRed
         cargarProveedores()
 
     End Sub

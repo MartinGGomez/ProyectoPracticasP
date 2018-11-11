@@ -16,6 +16,7 @@
         txtNombre.Text = ""
         txtTel.Text = ""
         lblError.Text = ""
+        imgError.Visible = False
 
     End Sub
 
@@ -24,6 +25,7 @@
         If lblTitulo.Text = "Cargar Cliente" Then
             If txtDNICliente.Text = "" Or txtTel.Text = "" Or txtMail.Text = "" Or txtDireccion.Text = "" Or txtApellido.Text = "" Or txtNombre.Text = "" Then
                 lblError.Text = "Hay campos vacios. Completar Campos."
+                imgError.Visible = True
             Else
 
                 sql = "insert into clientes values ('', '" & txtDNICliente.Text & "', '" & txtNombre.Text & "', '" & txtApellido.Text & "', '" & txtTel.Text & "',  '" & txtDireccion.Text & "', '" & txtMail.Text & "', 'Activo')"
@@ -39,6 +41,7 @@
 
             If txtDNICliente.Text = "" Or txtTel.Text = "" Or txtMail.Text = "" Or txtDireccion.Text = "" Or txtApellido.Text = "" Or txtNombre.Text = "" Then
                 lblError.Text = "Hay campos vacios. Completar Campos."
+                imgError.Visible = True
             Else
                 sql = "update clientes set Nombre = '" & txtNombre.Text & "', TEL = '" & txtTel.Text & "', Mail = '" & txtMail.Text & "', Direccion = '" & txtDireccion.Text & "',  Apellido = '" & txtApellido.Text & "',  DNI = '" & txtDNICliente.Text & "' where idCliente =" & Clientes.idCliente
                 consulta(Sql)

@@ -48,8 +48,6 @@ constraint FK_Usuarios foreign key (idEmpleado) references Empleados (idEmpleado
 
 insert into Usuarios values ('',1,"admin","admin1234",true);
 
-
-
 create table Productos(
 idProducto int auto_increment, 
 Descripcion varchar(100),
@@ -89,6 +87,7 @@ constraint PK_Compras primary key (idCompra),
 constraint FK_Compras foreign key (idProveedor) references Proveedores (idProveedor)
 )ENGINE=InnoDB;
 
+
 create table DetalleCompras (
 idDetalleCompra int auto_increment,
 idCompra int, 
@@ -109,6 +108,7 @@ constraint PK_Ventas primary key (idVenta),
 constraint FK_Ventas foreign key (idCliente) references Clientes (idCliente)
 )ENGINE=InnoDB;
 
+
 create table DetalleVentas (
 idDetalleVenta int auto_increment,
 idVenta int ,
@@ -123,8 +123,9 @@ create table Gastos (
 idGasto int auto_increment,
 descripcion varchar(100),
 tipo varchar(50),
-monto int,
-fecha date,
+monto float,
+año year,
+mes varchar(10),
 constraint PK_Gastos primary key (idGasto)
 )ENGINE=InnoDB;
 
@@ -135,7 +136,16 @@ insert into Proveedores values
 ('', "Proveedor 2" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
 ('', "Proveedor 3" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo");
 
+insert into compras values ('',1,"Compra", "2017/01/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2018/03/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2018/01/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2012/01/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2015/01/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2016/01/01",200,"Estado");
+insert into compras values ('',1,"Compra", "2011/01/01",200,"Estado");
 
 
-update Proveedores set nombre = " modificado ", " modificado ", " modificado ", " modificado " where idProveedor =1;
-
+insert into gastos values
+('',"Agua","tipo",200,2018,"Febrero"),
+('',"Luz","tipo",300,2018,"Enero"),
+('',"Gas","tipo",100,2018,"Febrero");

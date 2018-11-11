@@ -35,6 +35,7 @@ Public Class InicioSesion
 
         If txtusuario.Text = "" Or txtcontraseña.Text = "" Then
             lblerror.Text = "Hay campos vacios."
+            imgError.Visible = True
         Else
 
 
@@ -67,10 +68,16 @@ Public Class InicioSesion
 
                             End If
 
+                            Inicio.lbl_nom_user.Text = Utilidades.nombreUsuario
+                            Inicio.lbl_tipo_trab.Text = Utilidades.tipoUsuario
+                            lblerror.Text = ""
+                            imgError.Visible = False
+
                             Me.Hide()
                             Inicio.Show()
                         Else
                             lblerror.Text = "La contraseña es erronea"
+                            imgError.Visible = True
                             txtcontraseña.Text = ""
                         End If
 
@@ -79,6 +86,7 @@ Public Class InicioSesion
                 Else
 
                     lblerror.Text = "El usuario no existe"
+                    imgError.Visible = True
                     txtusuario.Text = ""
                     txtcontraseña.Text = ""
 

@@ -35,10 +35,12 @@ Public Class FormularioTipoTrabajo
                     Funciones.consulta(sql)
                     cargarTrabajos()
                     lblerror2.Text = ""
+                    imgError.Visible = False
 
                 Else
 
                     lblerror2.Text = "Ya existe un trabajo con ese nombre"
+                    imgError.Visible = True
 
                 End If
 
@@ -47,6 +49,7 @@ Public Class FormularioTipoTrabajo
 
         Else
             lblerror2.Text = "Hay campos vacios"
+            imgError.Visible = True
 
         End If
     End Sub

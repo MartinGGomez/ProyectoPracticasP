@@ -76,19 +76,21 @@ Public Class GestionarUsuarios
             FormularioUsuario.btnagregaresp.Visible = False
             If FormularioUsuario.txtdni.Text = "" Then
                 FormularioUsuario.btneditaresp.Visible = True
+                FormularioUsuario.btneditar.Visible = False
                 FormularioUsuario.lblTitulo.Text = "EDITAR USUARIO ESPECIAL"
                 FormularioUsuario.txtape.Enabled = False
                 FormularioUsuario.txtmail.Enabled = False
                 FormularioUsuario.txtdni.Enabled = False
             Else
                 FormularioUsuario.btneditar.Visible = True
+                FormularioUsuario.btneditaresp.Visible = False
                 FormularioUsuario.lblTitulo.Text = "EDITAR USUARIO"
             End If
 
             FormularioUsuario.pantallaAnterior = Me
         Else
 
-            lblerror.Text = "No se ha seleccionado ningun usuario"
+            MsgBox("No se ha seleccionado ningun usuario", MsgBoxStyle.Critical)
 
         End If
 
@@ -107,7 +109,7 @@ Public Class GestionarUsuarios
 
                 If rs(0) = 1 Then
 
-                    lblerror.Text = "No se puede borrar un administrador."
+                    MsgBox("No se puede borrar un administrador", MsgBoxStyle.Critical)
 
                 Else
                     sql = "delete from usuarios where idEmpleado = " & idEmpleado
@@ -153,10 +155,10 @@ Public Class GestionarUsuarios
                 MsgBox(rs(0))
                 If rs(0) = 1 Then
 
-                    lblerror.Text = "Ya es administrador."
+                    MsgBox("Ya es administrador", MsgBoxStyle.Critical)
 
                 Else
-                    sql = "update empleados set administrador = true where idEmpleado = " & idEmpleado
+                    sql = "update usuarios set administrador = true where idEmpleado = " & idEmpleado
                     Funciones.consulta(sql)
 
                     cargarUsuarios()
@@ -166,5 +168,9 @@ Public Class GestionarUsuarios
 
         End If
         idEmpleado = 0
+    End Sub
+
+    Private Sub lblBuscar_Click(sender As System.Object, e As System.EventArgs) Handles lblBuscar.Click
+
     End Sub
 End Class

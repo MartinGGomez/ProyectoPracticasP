@@ -75,6 +75,7 @@ Public Class FormularioUsuario
         cmbtrabajo.Text = ""
         lblerror.Text = ""
         cmbtrabajo.Enabled = True
+        imgError.Visible = False
 
     End Sub
 
@@ -96,6 +97,7 @@ Public Class FormularioUsuario
         FormularioTipoTrabajo.Show()
         FormularioTipoTrabajo.lblerror.Text = ""
         FormularioTipoTrabajo.lblerror2.Text = ""
+        cmbtrabajo.Text = ""
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles btnagregar.Click
@@ -143,7 +145,7 @@ Public Class FormularioUsuario
                     sql = "insert into usuarios values ('', " & idEmpleado & ", '" & txtdni.Text & "','12345678'," & admin & " )"
                     Funciones.consulta(sql)
 
-
+                    blanquear()
 
                     pantallaAnterior.Enabled = True
                     pantallaAnterior.Show()
@@ -152,7 +154,8 @@ Public Class FormularioUsuario
 
                 Else
 
-                    lblerror.Text = "Ya existe otro empleado con ese dni."
+                    lblError.Text = "Ya existe otro empleado con ese dni."
+                    imgError.Visible = True
 
                 End If
 
@@ -161,7 +164,7 @@ Public Class FormularioUsuario
         Else
 
             lblerror.Text = "Hay campos vacios."
-
+            imgError.Visible = True
         End If
 
     End Sub
@@ -200,6 +203,8 @@ Public Class FormularioUsuario
                     sql = "update usuarios set usuario = '" & txtdni.Text & "' where idEmpleado = " & idEmpleado
                     Funciones.consulta(sql)
 
+                    blanquear()
+
                     pantallaAnterior.Enabled = True
                     pantallaAnterior.Show()
 
@@ -208,7 +213,7 @@ Public Class FormularioUsuario
                 Else
 
                     lblerror.Text = "Ya existe otro empleado con ese dni."
-
+                    imgError.Visible = True
                 End If
 
 
@@ -217,7 +222,7 @@ Public Class FormularioUsuario
         Else
 
             lblerror.Text = "Hay campos vacios."
-
+            imgError.Visible = True
         End If
 
     End Sub
@@ -267,6 +272,8 @@ Public Class FormularioUsuario
 
                     especial = False
 
+                    blanquear()
+
                     pantallaAnterior.Enabled = True
                     pantallaAnterior.Show()
 
@@ -275,7 +282,7 @@ Public Class FormularioUsuario
                 Else
 
                     lblerror.Text = "Ya existe otro empleado especial con ese nombre."
-
+                    imgError.Visible = True
                 End If
 
             End If
@@ -283,7 +290,7 @@ Public Class FormularioUsuario
         Else
 
             lblerror.Text = "Hay campos vacios."
-
+            imgError.Visible = True
         End If
 
     End Sub
@@ -313,7 +320,8 @@ Public Class FormularioUsuario
 
 
                     If cmbtrabajo.Text.Equals("Administrador") Then
-                        sql = "update usuarios set administrador = true where idEmpleado = " & idEmpleado
+                        sql = "update usuarios set administrador = true where idEmpleado = '" & idEmpleado & "'"
+
                         Funciones.consulta(sql)
 
                     End If
@@ -324,12 +332,13 @@ Public Class FormularioUsuario
                     pantallaAnterior.Enabled = True
                     pantallaAnterior.Show()
 
+                    blanquear()
                     Me.Close()
 
                 Else
 
                     lblerror.Text = "Ya existe otro empleado especial con ese nombre."
-
+                    imgError.Visible = True
                 End If
 
 
@@ -338,8 +347,12 @@ Public Class FormularioUsuario
         Else
 
             lblerror.Text = "Hay campos vacios."
-
+            imgError.Visible = True
         End If
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

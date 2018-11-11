@@ -11,6 +11,7 @@
     Private Sub Clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblTitulo.Text = "GESTIÓN DE CLIENTES"
         logo()
+        btn_clientes.BackColor = Color.OrangeRed
         cargarClientes()
     End Sub
 
