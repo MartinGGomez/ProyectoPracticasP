@@ -96,6 +96,12 @@
     <Compile Include="Ajustes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cargando\Cargando.Designer.vb">
+      <DependentUpon>Cargando.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cargando\Cargando.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Clientes\Clientes.Designer.vb">
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
@@ -114,11 +120,30 @@
     <Compile Include="Compras\Compras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Compras\GenerarCompra.Designer.vb">
+      <DependentUpon>GenerarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\GenerarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\DetalleCompra.Designer.vb">
+      <DependentUpon>DetalleCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\DetalleCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Funciones.vb" />
     <Compile Include="Gastos\Gastos.Designer.vb">
       <DependentUpon>Gastos.vb</DependentUpon>
     </Compile>
     <Compile Include="Gastos\Gastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+
+    <Compile Include="Gastos\RegistrarGasto.Designer.vb">
+      <DependentUpon>RegistrarGasto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gastos\RegistrarGasto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.vb">
@@ -216,10 +241,25 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utilidades\Utilidades.vb" />
+    <Compile Include="Ventas\GenerarVenta.designer.vb">
+      <DependentUpon>GenerarVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\GenerarVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ventas.designer.vb">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ajustes.resx">
       <DependentUpon>Ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargando\Cargando.resx">
+      <DependentUpon>Cargando.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
@@ -230,8 +270,17 @@
     <EmbeddedResource Include="Compras\Compras.resx">
       <DependentUpon>Compras.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Compras\DetalleCompra.resx">
+      <DependentUpon>DetalleCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\GenerarCompra.resx">
+      <DependentUpon>GenerarCompra.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gastos\Gastos.resx">
       <DependentUpon>Gastos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastos\RegistrarGasto.resx">
+      <DependentUpon>RegistrarGasto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
@@ -278,6 +327,12 @@
     <EmbeddedResource Include="Usuarios\PanelUsuario.resx">
       <DependentUpon>PanelUsuario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\GenerarVenta.resx">
+      <DependentUpon>GenerarVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ventas.resx">
+      <DependentUpon>Ventas.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -294,7 +349,6 @@
     <Folder Include="Estadisticas\" />
     <Folder Include="Personalizacion\" />
     <Folder Include="Presupuesto\" />
-    <Folder Include="Ventas\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

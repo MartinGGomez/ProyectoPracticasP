@@ -23,6 +23,7 @@ Partial Class FormularioProveedores
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormularioProveedores))
+
         Me.lblError = New System.Windows.Forms.Label()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.lblDireccion = New System.Windows.Forms.Label()
@@ -244,6 +245,7 @@ Partial Class FormularioProveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+
         Me.ClientSize = New System.Drawing.Size(698, 538)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FormularioProveedores"
@@ -255,10 +257,12 @@ Partial Class FormularioProveedores
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
     Friend WithEvents txtMail As System.Windows.Forms.TextBox
     Friend WithEvents txtTel As System.Windows.Forms.TextBox

@@ -1,4 +1,5 @@
-﻿Imports System.Data.Odbc
+
+Imports System.Data.Odbc
 Imports System.Data.SqlClient
 Imports System.Windows.Forms.DataVisualization.Charting
 
@@ -35,4 +36,5 @@ Public Class Gastos
 
 
     End Sub
+
 End Class
