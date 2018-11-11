@@ -103,7 +103,6 @@ C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Compras.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioTipoTrabajo.resources
-<<<<<<< HEAD
 E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
 E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
 G:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
@@ -158,7 +157,6 @@ J:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGeneric
 J:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.vbproj.GenerateResource.Cache
 E:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
 J:\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Gastos.resources
-=======
 D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.exe
 D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.xml
 D:\SG\ProyectoPracticasP-master\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.pdb
@@ -322,4 +320,10 @@ C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x8
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.RegistrarGasto.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
 C:\Users\Juli\Desktop\Proyecto PracticasP\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
->>>>>>> 111bf97df0b91c0a1636cef37a65d8a7fc1fba24
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Cargando.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.FormularioClientes.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.DetalleCompra.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarCompra.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Lista.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.GenerarVenta.resources
+C:\Users\i5\Documents\Repositories\sistema-generico\SistemaGenerico\SistemaGenerico\obj\x86\Debug\SistemaGenerico.Ventas.resources
