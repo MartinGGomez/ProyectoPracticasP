@@ -56,4 +56,8 @@
     
 
     End Sub
+
+    Private Sub Label7_Click(sender As System.Object, e As System.EventArgs) Handles Label7.Click
+
+    End Sub
 End Class

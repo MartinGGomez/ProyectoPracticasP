@@ -48,6 +48,7 @@ Partial Class FormularioUsuario
         Me.lblError = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel4.SuspendLayout()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +57,7 @@ Partial Class FormularioUsuario
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btneditaresp
@@ -238,6 +240,7 @@ Partial Class FormularioUsuario
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.PictureBox7)
         Me.Panel4.Controls.Add(Me.imgError)
         Me.Panel4.Controls.Add(Me.PictureBox5)
         Me.Panel4.Controls.Add(Me.PictureBox4)
@@ -340,7 +343,7 @@ Partial Class FormularioUsuario
         Me.Label7.CausesValidation = False
         Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(5, 3)
+        Me.Label7.Location = New System.Drawing.Point(19, 3)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(144, 23)
         Me.Label7.TabIndex = 778
@@ -358,6 +361,16 @@ Partial Class FormularioUsuario
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(581, 74)
         Me.Panel1.TabIndex = 778
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(4, 6)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 792
+        Me.PictureBox7.TabStop = False
         '
         'FormularioUsuario
         '
@@ -379,6 +392,7 @@ Partial Class FormularioUsuario
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -408,4 +422,5 @@ Partial Class FormularioUsuario
     Friend WithEvents imgError As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
 End Class

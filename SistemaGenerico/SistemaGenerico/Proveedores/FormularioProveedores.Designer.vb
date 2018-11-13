@@ -23,7 +23,6 @@ Partial Class FormularioProveedores
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormularioProveedores))
-
         Me.lblError = New System.Windows.Forms.Label()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.lblDireccion = New System.Windows.Forms.Label()
@@ -41,12 +40,14 @@ Partial Class FormularioProveedores
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblError
@@ -155,6 +156,7 @@ Partial Class FormularioProveedores
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.PictureBox7)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.imgError)
         Me.Panel1.Controls.Add(Me.PictureBox4)
@@ -183,7 +185,7 @@ Partial Class FormularioProveedores
         Me.Label7.CausesValidation = False
         Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(3, 2)
+        Me.Label7.Location = New System.Drawing.Point(24, 3)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(164, 23)
         Me.Label7.TabIndex = 788
@@ -241,11 +243,20 @@ Partial Class FormularioProveedores
         Me.PictureBox3.TabIndex = 63
         Me.PictureBox3.TabStop = False
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(7, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 789
+        Me.PictureBox7.TabStop = False
+        '
         'FormularioProveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-
         Me.ClientSize = New System.Drawing.Size(698, 538)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FormularioProveedores"
@@ -257,7 +268,7 @@ Partial Class FormularioProveedores
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -280,4 +291,5 @@ Partial Class FormularioProveedores
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents imgError As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
 End Class

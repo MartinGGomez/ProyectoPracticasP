@@ -162,9 +162,9 @@ Partial Class GestionarUsuarios
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(13, 9)
+        Me.PictureBox2.Location = New System.Drawing.Point(11, 6)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 60
         Me.PictureBox2.TabStop = False

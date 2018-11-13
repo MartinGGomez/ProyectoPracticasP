@@ -19,16 +19,14 @@ Public Class DetalleCompra
             cboProveedores.Text = rs(0)
             cboProveedores.Enabled = False
             dtpFecha.Value = rs(1)
-
-
             estado = rs(3)
-            txtMonto.Text = rs(2)
+            lblMontoTotal.Text = "$" + rs(2).ToString
 
             If estado = "Finalizada" Then
                 lblEstado.ForeColor = Color.Red
                 lblEstado.Text = estado
             Else
-                lblEstado.ForeColor = Color.LightBlue
+                lblEstado.ForeColor = Color.YellowGreen
                 lblEstado.Text = estado
             End If
 
@@ -47,5 +45,13 @@ Public Class DetalleCompra
         Me.Close()
         Compras.cargarCompras()
         Compras.Show()
+    End Sub
+
+    Private Sub Label3_Click(sender As System.Object, e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub DetalleCompra_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        logo()
     End Sub
 End Class

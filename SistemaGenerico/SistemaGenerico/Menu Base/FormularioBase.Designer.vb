@@ -45,15 +45,14 @@ Partial Class FormularioBase
         '
         'lblTitulo
         '
-        Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Arial Narrow", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(178, 27)
+        Me.lblTitulo.Location = New System.Drawing.Point(112, 27)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(346, 37)
+        Me.lblTitulo.Size = New System.Drawing.Size(473, 37)
         Me.lblTitulo.TabIndex = 5
         Me.lblTitulo.Text = "TITULO DE LA PANTALLA"
-        Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'btnVolver
         '
@@ -88,7 +87,6 @@ Partial Class FormularioBase
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btn_minimizar As System.Windows.Forms.Button

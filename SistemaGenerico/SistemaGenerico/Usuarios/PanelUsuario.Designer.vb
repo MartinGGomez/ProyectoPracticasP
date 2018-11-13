@@ -64,6 +64,8 @@ Partial Class PanelUsuario
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Panel7.SuspendLayout()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,11 +78,14 @@ Partial Class PanelUsuario
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel7.Controls.Add(Me.PictureBox11)
         Me.Panel7.Controls.Add(Me.imgError)
         Me.Panel7.Controls.Add(Me.PictureBox3)
         Me.Panel7.Controls.Add(Me.PictureBox5)
@@ -179,7 +184,7 @@ Partial Class PanelUsuario
         Me.Label7.CausesValidation = False
         Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(3, 2)
+        Me.Label7.Location = New System.Drawing.Point(29, 3)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(144, 23)
         Me.Label7.TabIndex = 57
@@ -394,6 +399,7 @@ Partial Class PanelUsuario
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.PictureBox7)
         Me.Panel4.Controls.Add(Me.PictureBox10)
         Me.Panel4.Controls.Add(Me.PictureBox9)
         Me.Panel4.Controls.Add(Me.PictureBox8)
@@ -479,7 +485,7 @@ Partial Class PanelUsuario
         Me.Label6.CausesValidation = False
         Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(3, 3)
+        Me.Label6.Location = New System.Drawing.Point(27, 3)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(165, 23)
         Me.Label6.TabIndex = 58
@@ -573,6 +579,26 @@ Partial Class PanelUsuario
         Me.Label16.TabIndex = 29
         Me.Label16.Text = "Nueva Contraseña"
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(8, 5)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 793
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(10, 4)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 792
+        Me.PictureBox11.TabStop = False
+        '
         'PanelUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -598,6 +624,8 @@ Partial Class PanelUsuario
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -642,4 +670,6 @@ Partial Class PanelUsuario
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
 End Class

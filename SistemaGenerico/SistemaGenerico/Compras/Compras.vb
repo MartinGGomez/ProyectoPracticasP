@@ -16,12 +16,12 @@ Public Class Compras
         busqueda = sql
         If Not String.IsNullOrEmpty(cboProveedores.Text) And cboProveedores.Text <> "Todos" Then
             busqueda &= " and p.nombre like '%" & cboProveedores.Text & "%' order by fecha"
-            Funciones.llenarGrilla(busqueda, dgvProveedores)
+            Funciones.llenarGrilla(busqueda, dgvGrilla)
         Else
-            Funciones.llenarGrilla(sql & " order by fecha", dgvProveedores)
+            Funciones.llenarGrilla(sql & " order by fecha", dgvGrilla)
         End If
-        If dgvProveedores.Rows.Count > 0 Then
-            dgvProveedores.Rows(0).Selected = False
+        If dgvGrilla.Rows.Count > 0 Then
+            dgvGrilla.Rows(0).Selected = False
         End If
 
 
@@ -37,10 +37,10 @@ Public Class Compras
         Loop
     End Sub
 
-    Private Sub dgvProveedores_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvProveedores.CellClick
+    Private Sub dgvProveedores_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvGrilla.CellClick
         Try
-            idCompra = dgvProveedores.Rows(e.RowIndex).Cells(0).Value.ToString
-            estado = dgvProveedores.Rows(e.RowIndex).Cells("Estado").Value.ToString
+            idCompra = dgvGrilla.Rows(e.RowIndex).Cells(0).Value.ToString
+            estado = dgvGrilla.Rows(e.RowIndex).Cells("Estado").Value.ToString
         Catch ex As Exception
         End Try
 
@@ -54,7 +54,7 @@ Public Class Compras
 
     End Sub
 
-    Private Sub dgvProveedores_CellToolTipTextNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs) Handles dgvProveedores.CellToolTipTextNeeded
+    Private Sub dgvProveedores_CellToolTipTextNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs)
         e.ToolTipText = "Doble click para ver el detalle"
     End Sub
 
@@ -103,12 +103,12 @@ Public Class Compras
         busqueda = sql
         If Not String.IsNullOrEmpty(cboProveedores.Text) And cboProveedores.Text <> "Todos" Then
             busqueda &= " and p.nombre like '%" & cboProveedores.Text & "%' order by fecha"
-            Funciones.llenarGrilla(busqueda, dgvProveedores)
+            Funciones.llenarGrilla(busqueda, dgvGrilla)
         Else
-            Funciones.llenarGrilla(sql & " order by fecha", dgvProveedores)
+            Funciones.llenarGrilla(sql & " order by fecha", dgvGrilla)
         End If
-        If dgvProveedores.Rows.Count > 0 Then
-            dgvProveedores.Rows(0).Selected = False
+        If dgvGrilla.Rows.Count > 0 Then
+            dgvGrilla.Rows(0).Selected = False
         End If
     End Sub
 
@@ -121,5 +121,9 @@ Public Class Compras
             Me.Close()
         End If
         idCompra = 0
+    End Sub
+
+    Private Sub Compras_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        logo()
     End Sub
 End Class
