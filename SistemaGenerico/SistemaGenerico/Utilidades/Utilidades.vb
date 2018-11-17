@@ -72,6 +72,27 @@ Module Utilidades
                 Productos.img_logo.BackgroundImage.Dispose()
             End If
 
+            If Utilidades.estaAbiertoElFormulario("Compras") Then
+                Compras.img_logo.BackgroundImage.Dispose()
+            End If
+
+            If Utilidades.estaAbiertoElFormulario("Ventas") Then
+                Ventas.img_logo.BackgroundImage.Dispose()
+            End If
+
+            If Utilidades.estaAbiertoElFormulario("GenerarVenta") Then
+                GenerarCompra.img_logo.BackgroundImage.Dispose()
+            End If
+
+            If Utilidades.estaAbiertoElFormulario("DetalleCompra") Then
+                DetalleCompra.img_logo.BackgroundImage.Dispose()
+            End If
+
+
+            If Utilidades.estaAbiertoElFormulario("GenerarCompra") Then
+                GenerarCompra.img_logo.BackgroundImage.Dispose()
+            End If
+
             File.Delete(Utilidades.pathLogo)
 
             refrescarLogo()
@@ -90,6 +111,11 @@ Module Utilidades
         Ajustes.logo()
         Ajustes.logoAjustes()
         InicioSesion.logo()
+        Compras.logo()
+        Ventas.logo()
+        DetalleCompra.logo()
+        GenerarCompra.logo()
+        GenerarVenta.logo()
 
     End Sub
 

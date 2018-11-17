@@ -234,6 +234,12 @@
     <Compile Include="Ventas\GenerarVenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Registros.Designer.vb">
+      <DependentUpon>Registros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registros.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventas\Ventas.designer.vb">
       <DependentUpon>Ventas.vb</DependentUpon>
     </Compile>
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\GenerarVenta.resx">
       <DependentUpon>GenerarVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros.resx">
+      <DependentUpon>Registros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>
