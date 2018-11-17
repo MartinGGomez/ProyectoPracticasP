@@ -60,7 +60,7 @@ Partial Class Compras
         Me.btnAgregarCompra.Location = New System.Drawing.Point(602, 21)
         Me.btnAgregarCompra.Name = "btnAgregarCompra"
         Me.btnAgregarCompra.Size = New System.Drawing.Size(219, 35)
-        Me.btnAgregarCompra.TabIndex = 21
+        Me.btnAgregarCompra.TabIndex = 3
         Me.btnAgregarCompra.Text = "AGREGAR COMPRA"
         Me.btnAgregarCompra.UseVisualStyleBackColor = False
         '
@@ -72,7 +72,7 @@ Partial Class Compras
         Me.cboProveedores.Location = New System.Drawing.Point(15, 33)
         Me.cboProveedores.Name = "cboProveedores"
         Me.cboProveedores.Size = New System.Drawing.Size(253, 28)
-        Me.cboProveedores.TabIndex = 20
+        Me.cboProveedores.TabIndex = 2
         '
         'lblBuscar
         '
@@ -97,7 +97,7 @@ Partial Class Compras
         Me.btnEditar.Location = New System.Drawing.Point(45, 17)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEditar.TabIndex = 16
+        Me.btnEditar.TabIndex = 7
         Me.btnEditar.Text = "EDITAR COMPRA"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
@@ -113,7 +113,7 @@ Partial Class Compras
         Me.btnFinalizar.Location = New System.Drawing.Point(317, 17)
         Me.btnFinalizar.Name = "btnFinalizar"
         Me.btnFinalizar.Size = New System.Drawing.Size(219, 35)
-        Me.btnFinalizar.TabIndex = 15
+        Me.btnFinalizar.TabIndex = 8
         Me.btnFinalizar.Text = "FINALIZAR COMPRA"
         Me.btnFinalizar.UseVisualStyleBackColor = False
         '
@@ -129,7 +129,7 @@ Partial Class Compras
         Me.btnVerDetalle.Location = New System.Drawing.Point(589, 17)
         Me.btnVerDetalle.Name = "btnVerDetalle"
         Me.btnVerDetalle.Size = New System.Drawing.Size(219, 35)
-        Me.btnVerDetalle.TabIndex = 14
+        Me.btnVerDetalle.TabIndex = 9
         Me.btnVerDetalle.Text = "VER DETALLE DE LA COMPRA"
         Me.btnVerDetalle.UseVisualStyleBackColor = False
         '
@@ -142,7 +142,7 @@ Partial Class Compras
         Me.Panel5.Location = New System.Drawing.Point(265, 553)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(850, 68)
-        Me.Panel5.TabIndex = 58
+        Me.Panel5.TabIndex = 6
         '
         'Panel4
         '
@@ -153,7 +153,7 @@ Partial Class Compras
         Me.Panel4.Location = New System.Drawing.Point(265, 138)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(850, 394)
-        Me.Panel4.TabIndex = 59
+        Me.Panel4.TabIndex = 4
         '
         'PictureBox2
         '
@@ -225,7 +225,7 @@ Partial Class Compras
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(797, 341)
-        Me.dgvGrilla.TabIndex = 52
+        Me.dgvGrilla.TabIndex = 5
         '
         'Panel6
         '
@@ -237,7 +237,7 @@ Partial Class Compras
         Me.Panel6.Location = New System.Drawing.Point(265, 49)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(850, 76)
-        Me.Panel6.TabIndex = 59
+        Me.Panel6.TabIndex = 1
         '
         'PictureBox3
         '

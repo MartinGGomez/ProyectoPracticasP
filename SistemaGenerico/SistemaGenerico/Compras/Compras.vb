@@ -9,8 +9,9 @@ Public Class Compras
 
 
     Public Sub cargarCompras()
-        lblTitulo.Text = "Gestion de Compras"
+        lblTitulo.Text = "Gestionar Compras"
         cargarProveedores()
+        btn_compras.BackColor = Color.OrangeRed
 
         sql = "select idCompra ID, nombre Proveedor, Fecha, MontoTotal, c.estado Estado from compras c, proveedores p where c.idproveedor = p.idproveedor"
         busqueda = sql

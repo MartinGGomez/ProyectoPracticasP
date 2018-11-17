@@ -14,6 +14,8 @@ Public Class GenerarVenta
     Private Sub GenerarVenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargarClientes()
         logo()
+        btn_ventas.BackColor = Color.OrangeRed
+        lblTitulo.Text = "Gestionar Ventas  >  Generar Venta"
 
     End Sub
 

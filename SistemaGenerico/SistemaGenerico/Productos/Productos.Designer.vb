@@ -53,7 +53,7 @@ Partial Class Productos
         Me.txtBuscador.Location = New System.Drawing.Point(18, 29)
         Me.txtBuscador.Name = "txtBuscador"
         Me.txtBuscador.Size = New System.Drawing.Size(216, 26)
-        Me.txtBuscador.TabIndex = 20
+        Me.txtBuscador.TabIndex = 2
         '
         'lblBuscar
         '
@@ -78,7 +78,7 @@ Partial Class Productos
         Me.btnAgregar.Location = New System.Drawing.Point(36, 16)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(219, 35)
-        Me.btnAgregar.TabIndex = 16
+        Me.btnAgregar.TabIndex = 6
         Me.btnAgregar.Text = "AGREGAR NUEVO PRODUCTO"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -94,7 +94,7 @@ Partial Class Productos
         Me.btnEliminar.Location = New System.Drawing.Point(592, 16)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEliminar.TabIndex = 15
+        Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "BORRAR PRODUCTO"
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
@@ -110,7 +110,7 @@ Partial Class Productos
         Me.btnEditar.Location = New System.Drawing.Point(318, 16)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 7
         Me.btnEditar.Text = "EDITAR PRODUCTO"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
@@ -123,7 +123,7 @@ Partial Class Productos
         Me.Panel5.Location = New System.Drawing.Point(269, 559)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(846, 68)
-        Me.Panel5.TabIndex = 58
+        Me.Panel5.TabIndex = 5
         '
         'Panel4
         '
@@ -134,7 +134,7 @@ Partial Class Productos
         Me.Panel4.Location = New System.Drawing.Point(269, 133)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(846, 409)
-        Me.Panel4.TabIndex = 59
+        Me.Panel4.TabIndex = 3
         '
         'PictureBox2
         '
@@ -195,7 +195,7 @@ Partial Class Productos
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(815, 358)
-        Me.dgvGrilla.TabIndex = 58
+        Me.dgvGrilla.TabIndex = 4
         '
         'Label2
         '
@@ -220,7 +220,7 @@ Partial Class Productos
         Me.Panel6.Location = New System.Drawing.Point(269, 60)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(846, 67)
-        Me.Panel6.TabIndex = 60
+        Me.Panel6.TabIndex = 1
         '
         'PictureBox3
         '

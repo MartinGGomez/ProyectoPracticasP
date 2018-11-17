@@ -67,7 +67,7 @@ Partial Class DetalleCompra
         Me.dtpFecha.Location = New System.Drawing.Point(618, 36)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(253, 26)
-        Me.dtpFecha.TabIndex = 41
+        Me.dtpFecha.TabIndex = 3
         '
         'Label4
         '
@@ -88,7 +88,7 @@ Partial Class DetalleCompra
         Me.cboProveedores.Location = New System.Drawing.Point(18, 35)
         Me.cboProveedores.Name = "cboProveedores"
         Me.cboProveedores.Size = New System.Drawing.Size(253, 28)
-        Me.cboProveedores.TabIndex = 37
+        Me.cboProveedores.TabIndex = 2
         '
         'lblBuscar
         '
@@ -135,7 +135,7 @@ Partial Class DetalleCompra
         Me.btnVolver.Location = New System.Drawing.Point(939, 591)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(201, 37)
-        Me.btnVolver.TabIndex = 47
+        Me.btnVolver.TabIndex = 6
         Me.btnVolver.Text = "VOLVER"
         Me.btnVolver.UseVisualStyleBackColor = False
         '
@@ -196,7 +196,7 @@ Partial Class DetalleCompra
         Me.Panel4.Location = New System.Drawing.Point(244, 54)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(896, 80)
-        Me.Panel4.TabIndex = 65
+        Me.Panel4.TabIndex = 1
         '
         'PictureBox6
         '
@@ -247,7 +247,7 @@ Partial Class DetalleCompra
         Me.Panel7.Location = New System.Drawing.Point(244, 146)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(896, 378)
-        Me.Panel7.TabIndex = 66
+        Me.Panel7.TabIndex = 4
         '
         'PictureBox5
         '
@@ -309,7 +309,7 @@ Partial Class DetalleCompra
         Me.dgvProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProductos.Size = New System.Drawing.Size(868, 328)
-        Me.dgvProductos.TabIndex = 67
+        Me.dgvProductos.TabIndex = 5
         '
         'idp
         '

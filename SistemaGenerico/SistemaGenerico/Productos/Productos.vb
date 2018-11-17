@@ -8,9 +8,9 @@ Public Class Productos
     Dim idProducto As Integer
 
     Private Sub Productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblTitulo.Text = "Gestion de Productos"
+        lblTitulo.Text = "Gestionar Productos"
         logo()
-        ' btn_productos.BackColor = Color.Black
+        btn_productos.BackColor = Color.OrangeRed
     End Sub
 
     Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged

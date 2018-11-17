@@ -34,20 +34,20 @@ Partial Class FormularioProveedores
         Me.lblTel = New System.Windows.Forms.Label()
         Me.lblMail = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblError
@@ -67,7 +67,7 @@ Partial Class FormularioProveedores
         Me.txtDireccion.Location = New System.Drawing.Point(60, 275)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(302, 26)
-        Me.txtDireccion.TabIndex = 23
+        Me.txtDireccion.TabIndex = 5
         '
         'lblDireccion
         '
@@ -92,7 +92,7 @@ Partial Class FormularioProveedores
         Me.btnAgregar.Location = New System.Drawing.Point(84, 355)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(252, 35)
-        Me.btnAgregar.TabIndex = 19
+        Me.btnAgregar.TabIndex = 6
         Me.btnAgregar.Text = "AGREGAR PROVEEDOR"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -102,7 +102,7 @@ Partial Class FormularioProveedores
         Me.txtMail.Location = New System.Drawing.Point(60, 205)
         Me.txtMail.Name = "txtMail"
         Me.txtMail.Size = New System.Drawing.Size(302, 26)
-        Me.txtMail.TabIndex = 20
+        Me.txtMail.TabIndex = 4
         '
         'txtTel
         '
@@ -110,7 +110,7 @@ Partial Class FormularioProveedores
         Me.txtTel.Location = New System.Drawing.Point(60, 137)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(302, 26)
-        Me.txtTel.TabIndex = 19
+        Me.txtTel.TabIndex = 3
         '
         'txtNombreProv
         '
@@ -118,7 +118,7 @@ Partial Class FormularioProveedores
         Me.txtNombreProv.Location = New System.Drawing.Point(60, 70)
         Me.txtNombreProv.Name = "txtNombreProv"
         Me.txtNombreProv.Size = New System.Drawing.Size(302, 26)
-        Me.txtNombreProv.TabIndex = 18
+        Me.txtNombreProv.TabIndex = 2
         '
         'lblNombreProv
         '
@@ -176,7 +176,17 @@ Partial Class FormularioProveedores
         Me.Panel1.Location = New System.Drawing.Point(143, 81)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(421, 408)
-        Me.Panel1.TabIndex = 781
+        Me.Panel1.TabIndex = 1
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(7, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 789
+        Me.PictureBox7.TabStop = False
         '
         'Label7
         '
@@ -243,16 +253,6 @@ Partial Class FormularioProveedores
         Me.PictureBox3.TabIndex = 63
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(7, 4)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 789
-        Me.PictureBox7.TabStop = False
-        '
         'FormularioProveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -263,14 +263,13 @@ Partial Class FormularioProveedores
         Me.Controls.SetChildIndex(Me.Panel1, 0)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

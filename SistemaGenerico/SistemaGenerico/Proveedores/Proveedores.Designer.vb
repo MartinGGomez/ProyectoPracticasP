@@ -22,29 +22,29 @@ Partial Class Proveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Proveedores))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Proveedores))
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.dgvGrilla = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEliminar
@@ -59,7 +59,7 @@ Partial Class Proveedores
         Me.btnEliminar.Location = New System.Drawing.Point(588, 17)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEliminar.TabIndex = 15
+        Me.btnEliminar.TabIndex = 8
         Me.btnEliminar.Text = "BORRAR PROVEEDOR"
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
@@ -75,7 +75,7 @@ Partial Class Proveedores
         Me.btnAgregar.Location = New System.Drawing.Point(32, 17)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(219, 35)
-        Me.btnAgregar.TabIndex = 16
+        Me.btnAgregar.TabIndex = 6
         Me.btnAgregar.Text = "AGREGAR NUEVO PROVEEDOR"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -91,7 +91,7 @@ Partial Class Proveedores
         Me.btnEditar.Location = New System.Drawing.Point(314, 17)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 7
         Me.btnEditar.Text = "EDITAR PROVEEDOR"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
@@ -101,7 +101,7 @@ Partial Class Proveedores
         Me.txtBuscador.Location = New System.Drawing.Point(16, 29)
         Me.txtBuscador.Name = "txtBuscador"
         Me.txtBuscador.Size = New System.Drawing.Size(233, 26)
-        Me.txtBuscador.TabIndex = 20
+        Me.txtBuscador.TabIndex = 2
         '
         'lblBuscar
         '
@@ -123,7 +123,17 @@ Partial Class Proveedores
         Me.Panel4.Location = New System.Drawing.Point(269, 138)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(846, 384)
-        Me.Panel4.TabIndex = 56
+        Me.Panel4.TabIndex = 3
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(9, 4)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 790
+        Me.PictureBox7.TabStop = False
         '
         'dgvGrilla
         '
@@ -174,7 +184,7 @@ Partial Class Proveedores
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(815, 335)
-        Me.dgvGrilla.TabIndex = 58
+        Me.dgvGrilla.TabIndex = 4
         '
         'Label2
         '
@@ -199,7 +209,7 @@ Partial Class Proveedores
         Me.Panel5.Location = New System.Drawing.Point(269, 542)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(850, 68)
-        Me.Panel5.TabIndex = 57
+        Me.Panel5.TabIndex = 5
         '
         'Panel6
         '
@@ -210,7 +220,7 @@ Partial Class Proveedores
         Me.Panel6.Location = New System.Drawing.Point(269, 52)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(846, 67)
-        Me.Panel6.TabIndex = 57
+        Me.Panel6.TabIndex = 1
         '
         'PictureBox3
         '
@@ -221,16 +231,6 @@ Partial Class Proveedores
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 62
         Me.PictureBox3.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(9, 4)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 790
-        Me.PictureBox7.TabStop = False
         '
         'Proveedores
         '
@@ -246,12 +246,12 @@ Partial Class Proveedores
         Me.Controls.SetChildIndex(Me.Panel5, 0)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

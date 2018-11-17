@@ -88,6 +88,7 @@ Partial Class MenuBase
         Me.btn_ajustes.Name = "btn_ajustes"
         Me.btn_ajustes.Size = New System.Drawing.Size(231, 35)
         Me.btn_ajustes.TabIndex = 17
+        Me.btn_ajustes.Tag = "59"
         Me.btn_ajustes.UseVisualStyleBackColor = False
         '
         'btn_estadisticas
@@ -107,6 +108,7 @@ Partial Class MenuBase
         Me.btn_estadisticas.Name = "btn_estadisticas"
         Me.btn_estadisticas.Size = New System.Drawing.Size(231, 35)
         Me.btn_estadisticas.TabIndex = 16
+        Me.btn_estadisticas.Tag = "58"
         Me.btn_estadisticas.UseVisualStyleBackColor = False
         '
         'img_logo
@@ -118,6 +120,7 @@ Partial Class MenuBase
         Me.img_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.img_logo.TabIndex = 3
         Me.img_logo.TabStop = False
+        Me.img_logo.Tag = "50"
         '
         'btn_gastos
         '
@@ -136,6 +139,7 @@ Partial Class MenuBase
         Me.btn_gastos.Name = "btn_gastos"
         Me.btn_gastos.Size = New System.Drawing.Size(231, 35)
         Me.btn_gastos.TabIndex = 15
+        Me.btn_gastos.Tag = "57"
         Me.btn_gastos.UseVisualStyleBackColor = False
         '
         'btn_productos
@@ -155,6 +159,7 @@ Partial Class MenuBase
         Me.btn_productos.Name = "btn_productos"
         Me.btn_productos.Size = New System.Drawing.Size(231, 35)
         Me.btn_productos.TabIndex = 11
+        Me.btn_productos.Tag = "54"
         Me.btn_productos.UseVisualStyleBackColor = False
         '
         'btn_ventas
@@ -174,6 +179,7 @@ Partial Class MenuBase
         Me.btn_ventas.Name = "btn_ventas"
         Me.btn_ventas.Size = New System.Drawing.Size(231, 35)
         Me.btn_ventas.TabIndex = 12
+        Me.btn_ventas.Tag = "56"
         Me.btn_ventas.UseVisualStyleBackColor = False
         '
         'Panel3
@@ -254,6 +260,7 @@ Partial Class MenuBase
         Me.btn_compras.Name = "btn_compras"
         Me.btn_compras.Size = New System.Drawing.Size(231, 35)
         Me.btn_compras.TabIndex = 13
+        Me.btn_compras.Tag = "55"
         Me.btn_compras.UseVisualStyleBackColor = False
         '
         'btn_inicio
@@ -273,6 +280,7 @@ Partial Class MenuBase
         Me.btn_inicio.Name = "btn_inicio"
         Me.btn_inicio.Size = New System.Drawing.Size(231, 35)
         Me.btn_inicio.TabIndex = 8
+        Me.btn_inicio.Tag = "51"
         Me.btn_inicio.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btn_inicio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btn_inicio.UseVisualStyleBackColor = False
@@ -294,6 +302,7 @@ Partial Class MenuBase
         Me.btn_clientes.Name = "btn_clientes"
         Me.btn_clientes.Size = New System.Drawing.Size(231, 35)
         Me.btn_clientes.TabIndex = 9
+        Me.btn_clientes.Tag = "52"
         Me.btn_clientes.UseVisualStyleBackColor = False
         '
         'btn_proveedores
@@ -313,6 +322,7 @@ Partial Class MenuBase
         Me.btn_proveedores.Name = "btn_proveedores"
         Me.btn_proveedores.Size = New System.Drawing.Size(231, 35)
         Me.btn_proveedores.TabIndex = 10
+        Me.btn_proveedores.Tag = "53"
         Me.btn_proveedores.UseVisualStyleBackColor = False
         '
         'lblTitulo
@@ -353,6 +363,7 @@ Partial Class MenuBase
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
         Me.btn_minimizar.TabIndex = 7
+        Me.btn_minimizar.Tag = "60"
         Me.btn_minimizar.UseVisualStyleBackColor = False
         '
         'PictureBox1
@@ -378,6 +389,7 @@ Partial Class MenuBase
         Me.btn_cerrar.Name = "btn_cerrar"
         Me.btn_cerrar.Size = New System.Drawing.Size(20, 20)
         Me.btn_cerrar.TabIndex = 6
+        Me.btn_cerrar.Tag = "61"
         Me.btn_cerrar.UseVisualStyleBackColor = False
         '
         'MenuBase

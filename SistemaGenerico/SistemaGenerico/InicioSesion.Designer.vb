@@ -93,7 +93,7 @@ Partial Class InicioSesion
         Me.txtusuario.Location = New System.Drawing.Point(386, 102)
         Me.txtusuario.Name = "txtusuario"
         Me.txtusuario.Size = New System.Drawing.Size(241, 29)
-        Me.txtusuario.TabIndex = 3
+        Me.txtusuario.TabIndex = 1
         Me.txtusuario.Text = "admin"
         '
         'txtcontraseña
@@ -103,7 +103,7 @@ Partial Class InicioSesion
         Me.txtcontraseña.Name = "txtcontraseña"
         Me.txtcontraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtcontraseña.Size = New System.Drawing.Size(241, 29)
-        Me.txtcontraseña.TabIndex = 4
+        Me.txtcontraseña.TabIndex = 2
         Me.txtcontraseña.Text = "admin1234"
         '
         'Label1
@@ -129,7 +129,7 @@ Partial Class InicioSesion
         Me.btn_minimizar.Location = New System.Drawing.Point(652, 6)
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
-        Me.btn_minimizar.TabIndex = 7
+        Me.btn_minimizar.TabIndex = 6
         Me.btn_minimizar.UseVisualStyleBackColor = False
         '
         'btn_cerrar
@@ -144,7 +144,7 @@ Partial Class InicioSesion
         Me.btn_cerrar.Location = New System.Drawing.Point(678, 6)
         Me.btn_cerrar.Name = "btn_cerrar"
         Me.btn_cerrar.Size = New System.Drawing.Size(20, 20)
-        Me.btn_cerrar.TabIndex = 6
+        Me.btn_cerrar.TabIndex = 7
         Me.btn_cerrar.UseVisualStyleBackColor = False
         '
         'Button1
@@ -159,7 +159,7 @@ Partial Class InicioSesion
         Me.Button1.Location = New System.Drawing.Point(386, 239)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 35)
-        Me.Button1.TabIndex = 8
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "INICIAR"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -175,7 +175,7 @@ Partial Class InicioSesion
         Me.Button2.Location = New System.Drawing.Point(536, 239)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(108, 35)
-        Me.Button2.TabIndex = 9
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -191,7 +191,7 @@ Partial Class InicioSesion
         Me.btnver.Location = New System.Drawing.Point(633, 172)
         Me.btnver.Name = "btnver"
         Me.btnver.Size = New System.Drawing.Size(28, 23)
-        Me.btnver.TabIndex = 10
+        Me.btnver.TabIndex = 3
         Me.btnver.UseVisualStyleBackColor = False
         '
         'lblerror

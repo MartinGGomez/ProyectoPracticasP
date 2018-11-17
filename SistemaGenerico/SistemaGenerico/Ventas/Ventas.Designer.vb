@@ -61,7 +61,7 @@ Partial Class Ventas
         Me.btnVerDetalle.Location = New System.Drawing.Point(54, 17)
         Me.btnVerDetalle.Name = "btnVerDetalle"
         Me.btnVerDetalle.Size = New System.Drawing.Size(219, 35)
-        Me.btnVerDetalle.TabIndex = 14
+        Me.btnVerDetalle.TabIndex = 8
         Me.btnVerDetalle.Text = "VER DETALLE"
         Me.btnVerDetalle.UseVisualStyleBackColor = False
         '
@@ -77,7 +77,7 @@ Partial Class Ventas
         Me.btnverVentas.Location = New System.Drawing.Point(95, 4)
         Me.btnverVentas.Name = "btnverVentas"
         Me.btnverVentas.Size = New System.Drawing.Size(122, 28)
-        Me.btnverVentas.TabIndex = 22
+        Me.btnverVentas.TabIndex = 5
         Me.btnverVentas.Text = "VER VENTAS"
         Me.btnverVentas.UseVisualStyleBackColor = False
         '
@@ -87,7 +87,7 @@ Partial Class Ventas
         Me.txtBuscador.Location = New System.Drawing.Point(15, 33)
         Me.txtBuscador.Name = "txtBuscador"
         Me.txtBuscador.Size = New System.Drawing.Size(241, 26)
-        Me.txtBuscador.TabIndex = 21
+        Me.txtBuscador.TabIndex = 2
         '
         'btnEliminar
         '
@@ -101,7 +101,7 @@ Partial Class Ventas
         Me.btnEliminar.Location = New System.Drawing.Point(589, 17)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(219, 35)
-        Me.btnEliminar.TabIndex = 15
+        Me.btnEliminar.TabIndex = 10
         Me.btnEliminar.Text = "BORRAR VENTA"
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
@@ -117,7 +117,7 @@ Partial Class Ventas
         Me.btnAgregar.Location = New System.Drawing.Point(598, 24)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(219, 35)
-        Me.btnAgregar.TabIndex = 16
+        Me.btnAgregar.TabIndex = 3
         Me.btnAgregar.Text = "AGREGAR VENTA"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -133,7 +133,7 @@ Partial Class Ventas
         Me.txtEditar.Location = New System.Drawing.Point(315, 17)
         Me.txtEditar.Name = "txtEditar"
         Me.txtEditar.Size = New System.Drawing.Size(219, 35)
-        Me.txtEditar.TabIndex = 14
+        Me.txtEditar.TabIndex = 9
         Me.txtEditar.Text = "EDITAR VENTA"
         Me.txtEditar.UseVisualStyleBackColor = False
         '
@@ -146,7 +146,7 @@ Partial Class Ventas
         Me.Panel5.Location = New System.Drawing.Point(266, 557)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(849, 68)
-        Me.Panel5.TabIndex = 59
+        Me.Panel5.TabIndex = 7
         '
         'Panel6
         '
@@ -158,7 +158,7 @@ Partial Class Ventas
         Me.Panel6.Location = New System.Drawing.Point(266, 49)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(849, 76)
-        Me.Panel6.TabIndex = 60
+        Me.Panel6.TabIndex = 1
         '
         'PictureBox3
         '
@@ -191,7 +191,7 @@ Partial Class Ventas
         Me.Panel4.Location = New System.Drawing.Point(266, 145)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(849, 393)
-        Me.Panel4.TabIndex = 60
+        Me.Panel4.TabIndex = 4
         '
         'PictureBox2
         '
@@ -263,7 +263,7 @@ Partial Class Ventas
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(803, 341)
-        Me.dgvGrilla.TabIndex = 65
+        Me.dgvGrilla.TabIndex = 6
         '
         'Ventas
         '

@@ -70,6 +70,7 @@ Public Class GestionarUsuarios
             FormularioUsuario.blanquear()
             FormularioUsuario.cargarInfo()
 
+
             Me.Enabled = False
             FormularioUsuario.Show()
             FormularioUsuario.btnagregar.Visible = False

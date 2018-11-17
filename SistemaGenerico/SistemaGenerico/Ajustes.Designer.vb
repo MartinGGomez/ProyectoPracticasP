@@ -58,7 +58,7 @@ Partial Class Ajustes
         Me.Button1.Location = New System.Drawing.Point(61, 326)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(219, 35)
-        Me.Button1.TabIndex = 19
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "RESTABLECER IMAGEN"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -84,7 +84,7 @@ Partial Class Ajustes
         Me.Button2.Location = New System.Drawing.Point(61, 275)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 35)
-        Me.Button2.TabIndex = 14
+        Me.Button2.TabIndex = 2
         Me.Button2.Text = "CAMBIAR IMAGEN"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -100,7 +100,7 @@ Partial Class Ajustes
         Me.Button4.Location = New System.Drawing.Point(47, 49)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(219, 35)
-        Me.Button4.TabIndex = 14
+        Me.Button4.TabIndex = 5
         Me.Button4.Text = "GESTIONAR USUARIOS"
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -115,7 +115,7 @@ Partial Class Ajustes
         Me.Panel7.Location = New System.Drawing.Point(345, 70)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(342, 389)
-        Me.Panel7.TabIndex = 54
+        Me.Panel7.TabIndex = 1
         '
         'PictureBox4
         '
@@ -150,7 +150,7 @@ Partial Class Ajustes
         Me.Panel4.Location = New System.Drawing.Point(739, 70)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(309, 118)
-        Me.Panel4.TabIndex = 55
+        Me.Panel4.TabIndex = 4
         '
         'PictureBox2
         '
@@ -185,7 +185,7 @@ Partial Class Ajustes
         Me.Panel5.Location = New System.Drawing.Point(739, 207)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(309, 118)
-        Me.Panel5.TabIndex = 57
+        Me.Panel5.TabIndex = 6
         '
         'PictureBox3
         '
@@ -223,7 +223,7 @@ Partial Class Ajustes
         Me.btnregistros.Location = New System.Drawing.Point(47, 49)
         Me.btnregistros.Name = "btnregistros"
         Me.btnregistros.Size = New System.Drawing.Size(219, 35)
-        Me.btnregistros.TabIndex = 14
+        Me.btnregistros.TabIndex = 7
         Me.btnregistros.Text = "VER REGISTROS"
         Me.btnregistros.UseVisualStyleBackColor = False
         '

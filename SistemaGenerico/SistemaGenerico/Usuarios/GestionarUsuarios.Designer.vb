@@ -61,7 +61,7 @@ Partial Class GestionarUsuarios
         Me.Button2.Location = New System.Drawing.Point(609, 22)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 35)
-        Me.Button2.TabIndex = 16
+        Me.Button2.TabIndex = 10
         Me.Button2.Text = "ASIGNAR ADMINISTRADOR"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -77,7 +77,7 @@ Partial Class GestionarUsuarios
         Me.Button1.Location = New System.Drawing.Point(330, 22)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(219, 35)
-        Me.Button1.TabIndex = 15
+        Me.Button1.TabIndex = 9
         Me.Button1.Text = "BORRAR USUARIO"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -93,7 +93,7 @@ Partial Class GestionarUsuarios
         Me.Button4.Location = New System.Drawing.Point(42, 22)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(219, 35)
-        Me.Button4.TabIndex = 14
+        Me.Button4.TabIndex = 8
         Me.Button4.Text = "EDITAR USUARIO"
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -109,7 +109,7 @@ Partial Class GestionarUsuarios
         Me.Button5.Location = New System.Drawing.Point(389, 20)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(219, 35)
-        Me.Button5.TabIndex = 25
+        Me.Button5.TabIndex = 3
         Me.Button5.Text = "AGREGAR USUARIO ESPECIAL"
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -119,7 +119,7 @@ Partial Class GestionarUsuarios
         Me.txtBuscador.Location = New System.Drawing.Point(12, 32)
         Me.txtBuscador.Name = "txtBuscador"
         Me.txtBuscador.Size = New System.Drawing.Size(270, 29)
-        Me.txtBuscador.TabIndex = 24
+        Me.txtBuscador.TabIndex = 2
         '
         'lblBuscar
         '
@@ -144,7 +144,7 @@ Partial Class GestionarUsuarios
         Me.Button3.Location = New System.Drawing.Point(623, 20)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(219, 35)
-        Me.Button3.TabIndex = 16
+        Me.Button3.TabIndex = 4
         Me.Button3.Text = "AGREGAR  USUARIO"
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -157,7 +157,7 @@ Partial Class GestionarUsuarios
         Me.Panel5.Location = New System.Drawing.Point(253, 129)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(876, 413)
-        Me.Panel5.TabIndex = 61
+        Me.Panel5.TabIndex = 5
         '
         'PictureBox2
         '
@@ -218,7 +218,7 @@ Partial Class GestionarUsuarios
         Me.tabla_empleados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.tabla_empleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.tabla_empleados.Size = New System.Drawing.Size(850, 363)
-        Me.tabla_empleados.TabIndex = 59
+        Me.tabla_empleados.TabIndex = 6
         '
         'Label7
         '
@@ -245,7 +245,7 @@ Partial Class GestionarUsuarios
         Me.Panel4.Location = New System.Drawing.Point(253, 46)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(876, 77)
-        Me.Panel4.TabIndex = 62
+        Me.Panel4.TabIndex = 1
         '
         'PictureBox3
         '
@@ -266,7 +266,7 @@ Partial Class GestionarUsuarios
         Me.Panel6.Location = New System.Drawing.Point(253, 553)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(876, 77)
-        Me.Panel6.TabIndex = 63
+        Me.Panel6.TabIndex = 7
         '
         'GestionarUsuarios
         '

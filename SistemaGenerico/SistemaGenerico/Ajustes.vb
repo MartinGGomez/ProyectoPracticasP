@@ -6,6 +6,7 @@ Public Class Ajustes
     Private Sub Ajustes_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         lblTitulo.Text = "Panel de Ajustes"
         logo()
+        btn_ajustes.BackColor = Color.OrangeRed
 
         If File.Exists(Utilidades.pathLogo) Then
 
@@ -66,7 +67,7 @@ Public Class Ajustes
                 Utilidades.refrescarLogo()
 
             Else
-                MsgBox("ARCHIVO INVALIDO")
+                MsgBox("Formato del archivo invalido. (.jpg o .png)", MsgBoxStyle.Critical)
             End If
 
 

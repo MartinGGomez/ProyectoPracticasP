@@ -87,7 +87,7 @@ Partial Class GenerarVenta
         Me.txtBuscador.Location = New System.Drawing.Point(15, 35)
         Me.txtBuscador.Name = "txtBuscador"
         Me.txtBuscador.Size = New System.Drawing.Size(218, 26)
-        Me.txtBuscador.TabIndex = 46
+        Me.txtBuscador.TabIndex = 2
         '
         'btnDer
         '
@@ -105,7 +105,7 @@ Partial Class GenerarVenta
         Me.btnDer.Location = New System.Drawing.Point(420, 143)
         Me.btnDer.Name = "btnDer"
         Me.btnDer.Size = New System.Drawing.Size(38, 70)
-        Me.btnDer.TabIndex = 44
+        Me.btnDer.TabIndex = 8
         Me.btnDer.UseVisualStyleBackColor = False
         '
         'btnIzq
@@ -124,7 +124,7 @@ Partial Class GenerarVenta
         Me.btnIzq.Location = New System.Drawing.Point(417, 225)
         Me.btnIzq.Name = "btnIzq"
         Me.btnIzq.Size = New System.Drawing.Size(40, 70)
-        Me.btnIzq.TabIndex = 43
+        Me.btnIzq.TabIndex = 9
         Me.btnIzq.UseVisualStyleBackColor = False
         '
         'btnRestarCant
@@ -143,7 +143,7 @@ Partial Class GenerarVenta
         Me.btnRestarCant.Location = New System.Drawing.Point(388, 89)
         Me.btnRestarCant.Name = "btnRestarCant"
         Me.btnRestarCant.Size = New System.Drawing.Size(25, 25)
-        Me.btnRestarCant.TabIndex = 42
+        Me.btnRestarCant.TabIndex = 5
         Me.btnRestarCant.UseVisualStyleBackColor = False
         '
         'btnSumarCant
@@ -162,7 +162,7 @@ Partial Class GenerarVenta
         Me.btnSumarCant.Location = New System.Drawing.Point(461, 90)
         Me.btnSumarCant.Name = "btnSumarCant"
         Me.btnSumarCant.Size = New System.Drawing.Size(25, 25)
-        Me.btnSumarCant.TabIndex = 41
+        Me.btnSumarCant.TabIndex = 7
         Me.btnSumarCant.UseVisualStyleBackColor = False
         '
         'Label2
@@ -183,7 +183,7 @@ Partial Class GenerarVenta
         Me.txtCant.MaxLength = 3
         Me.txtCant.Name = "txtCant"
         Me.txtCant.Size = New System.Drawing.Size(38, 26)
-        Me.txtCant.TabIndex = 39
+        Me.txtCant.TabIndex = 6
         Me.txtCant.Text = "1"
         Me.txtCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -210,7 +210,7 @@ Partial Class GenerarVenta
         Me.btnDescartarC.Location = New System.Drawing.Point(623, 36)
         Me.btnDescartarC.Name = "btnDescartarC"
         Me.btnDescartarC.Size = New System.Drawing.Size(223, 35)
-        Me.btnDescartarC.TabIndex = 45
+        Me.btnDescartarC.TabIndex = 19
         Me.btnDescartarC.Text = "DESCARTAR CAMBIOS"
         Me.btnDescartarC.UseVisualStyleBackColor = False
         '
@@ -226,7 +226,7 @@ Partial Class GenerarVenta
         Me.btnGuardar.Location = New System.Drawing.Point(382, 36)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(223, 35)
-        Me.btnGuardar.TabIndex = 44
+        Me.btnGuardar.TabIndex = 17
         Me.btnGuardar.Text = "GUARDAR CAMBIOS"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
@@ -246,7 +246,7 @@ Partial Class GenerarVenta
         Me.btnEditarMonto.Location = New System.Drawing.Point(316, 60)
         Me.btnEditarMonto.Name = "btnEditarMonto"
         Me.btnEditarMonto.Size = New System.Drawing.Size(25, 22)
-        Me.btnEditarMonto.TabIndex = 43
+        Me.btnEditarMonto.TabIndex = 15
         Me.btnEditarMonto.UseVisualStyleBackColor = False
         '
         'btnAgregarClieEspecial
@@ -265,7 +265,7 @@ Partial Class GenerarVenta
         Me.btnAgregarClieEspecial.Location = New System.Drawing.Point(313, 22)
         Me.btnAgregarClieEspecial.Name = "btnAgregarClieEspecial"
         Me.btnAgregarClieEspecial.Size = New System.Drawing.Size(25, 22)
-        Me.btnAgregarClieEspecial.TabIndex = 42
+        Me.btnAgregarClieEspecial.TabIndex = 13
         Me.btnAgregarClieEspecial.UseVisualStyleBackColor = False
         '
         'txtClientes
@@ -276,7 +276,7 @@ Partial Class GenerarVenta
         Me.txtClientes.Location = New System.Drawing.Point(139, 20)
         Me.txtClientes.Name = "txtClientes"
         Me.txtClientes.Size = New System.Drawing.Size(150, 26)
-        Me.txtClientes.TabIndex = 33
+        Me.txtClientes.TabIndex = 12
         '
         'txtMontoT
         '
@@ -285,7 +285,7 @@ Partial Class GenerarVenta
         Me.txtMontoT.Location = New System.Drawing.Point(166, 59)
         Me.txtMontoT.Name = "txtMontoT"
         Me.txtMontoT.Size = New System.Drawing.Size(130, 26)
-        Me.txtMontoT.TabIndex = 32
+        Me.txtMontoT.TabIndex = 14
         '
         'Label6
         '
@@ -310,7 +310,7 @@ Partial Class GenerarVenta
         Me.btnCancelar.Location = New System.Drawing.Point(666, 36)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(144, 35)
-        Me.btnCancelar.TabIndex = 25
+        Me.btnCancelar.TabIndex = 18
         Me.btnCancelar.Text = "CANCELAR"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
@@ -326,7 +326,7 @@ Partial Class GenerarVenta
         Me.btnConfirmar.Location = New System.Drawing.Point(422, 36)
         Me.btnConfirmar.Name = "btnConfirmar"
         Me.btnConfirmar.Size = New System.Drawing.Size(144, 35)
-        Me.btnConfirmar.TabIndex = 24
+        Me.btnConfirmar.TabIndex = 16
         Me.btnConfirmar.Text = "CONFIRMAR"
         Me.btnConfirmar.UseVisualStyleBackColor = False
         '
@@ -350,7 +350,7 @@ Partial Class GenerarVenta
         Me.Panel6.Location = New System.Drawing.Point(252, 46)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(877, 76)
-        Me.Panel6.TabIndex = 61
+        Me.Panel6.TabIndex = 1
         '
         'PictureBox3
         '
@@ -392,7 +392,7 @@ Partial Class GenerarVenta
         Me.Panel4.Location = New System.Drawing.Point(252, 517)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(877, 106)
-        Me.Panel4.TabIndex = 64
+        Me.Panel4.TabIndex = 11
         '
         'Label8
         '
@@ -454,7 +454,7 @@ Partial Class GenerarVenta
         Me.Panel5.Location = New System.Drawing.Point(252, 140)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(877, 358)
-        Me.Panel5.TabIndex = 64
+        Me.Panel5.TabIndex = 3
         '
         'dgvGrilla2
         '
@@ -506,7 +506,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla2.Size = New System.Drawing.Size(313, 283)
-        Me.dgvGrilla2.TabIndex = 75
+        Me.dgvGrilla2.TabIndex = 10
         '
         'idd
         '
@@ -576,7 +576,7 @@ Partial Class GenerarVenta
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(313, 283)
-        Me.dgvGrilla.TabIndex = 74
+        Me.dgvGrilla.TabIndex = 4
         '
         'id
         '

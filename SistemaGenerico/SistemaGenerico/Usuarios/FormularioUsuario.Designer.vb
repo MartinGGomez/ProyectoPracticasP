@@ -39,6 +39,7 @@ Partial Class FormularioUsuario
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -48,8 +49,8 @@ Partial Class FormularioUsuario
         Me.lblError = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +58,6 @@ Partial Class FormularioUsuario
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btneditaresp
@@ -140,7 +140,7 @@ Partial Class FormularioUsuario
         Me.btnagregar.Name = "btnagregar"
         Me.btnagregar.Size = New System.Drawing.Size(252, 35)
         Me.btnagregar.TabIndex = 88
-        Me.btnagregar.Text = "AGREGAR USUARIO"
+        Me.btnagregar.Text = "9"
         Me.btnagregar.UseVisualStyleBackColor = False
         '
         'Button3
@@ -156,7 +156,7 @@ Partial Class FormularioUsuario
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(193, 28)
         Me.Button3.TabIndex = 777
-        Me.Button3.Text = "GESTIONAR TIPOS DE TRABAJO"
+        Me.Button3.Text = "7"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'cmbtrabajo
@@ -265,6 +265,16 @@ Partial Class FormularioUsuario
         Me.Panel4.Size = New System.Drawing.Size(581, 294)
         Me.Panel4.TabIndex = 781
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(4, 6)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 792
+        Me.PictureBox7.TabStop = False
+        '
         'imgError
         '
         Me.imgError.Image = CType(resources.GetObject("imgError.Image"), System.Drawing.Image)
@@ -362,16 +372,6 @@ Partial Class FormularioUsuario
         Me.Panel1.Size = New System.Drawing.Size(581, 74)
         Me.Panel1.TabIndex = 778
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(4, 6)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 792
-        Me.PictureBox7.TabStop = False
-        '
         'FormularioUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -385,6 +385,7 @@ Partial Class FormularioUsuario
         Me.Controls.SetChildIndex(Me.Panel1, 0)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -392,9 +393,7 @@ Partial Class FormularioUsuario
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button3 As System.Windows.Forms.Button

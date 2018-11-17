@@ -64,14 +64,14 @@ Partial Class GenerarCompra
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.dgvProductosCompra = New System.Windows.Forms.DataGridView()
-        Me.dgvProductos = New System.Windows.Forms.DataGridView()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.idp = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.des = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.descr = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.stoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvProductos = New System.Windows.Forms.DataGridView()
+        Me.idp = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.des = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,7 +102,7 @@ Partial Class GenerarCompra
         Me.btnAgregarProducto.Location = New System.Drawing.Point(418, 155)
         Me.btnAgregarProducto.Name = "btnAgregarProducto"
         Me.btnAgregarProducto.Size = New System.Drawing.Size(38, 70)
-        Me.btnAgregarProducto.TabIndex = 36
+        Me.btnAgregarProducto.TabIndex = 11
         Me.btnAgregarProducto.UseVisualStyleBackColor = False
         '
         'btnRemoverProducto
@@ -121,7 +121,7 @@ Partial Class GenerarCompra
         Me.btnRemoverProducto.Location = New System.Drawing.Point(418, 231)
         Me.btnRemoverProducto.Name = "btnRemoverProducto"
         Me.btnRemoverProducto.Size = New System.Drawing.Size(38, 70)
-        Me.btnRemoverProducto.TabIndex = 35
+        Me.btnRemoverProducto.TabIndex = 12
         Me.btnRemoverProducto.UseVisualStyleBackColor = False
         '
         'btnRestarCant
@@ -140,7 +140,7 @@ Partial Class GenerarCompra
         Me.btnRestarCant.Location = New System.Drawing.Point(385, 103)
         Me.btnRestarCant.Name = "btnRestarCant"
         Me.btnRestarCant.Size = New System.Drawing.Size(25, 25)
-        Me.btnRestarCant.TabIndex = 34
+        Me.btnRestarCant.TabIndex = 8
         Me.btnRestarCant.UseVisualStyleBackColor = False
         '
         'btnSumarCant
@@ -159,7 +159,7 @@ Partial Class GenerarCompra
         Me.btnSumarCant.Location = New System.Drawing.Point(460, 104)
         Me.btnSumarCant.Name = "btnSumarCant"
         Me.btnSumarCant.Size = New System.Drawing.Size(25, 25)
-        Me.btnSumarCant.TabIndex = 33
+        Me.btnSumarCant.TabIndex = 10
         Me.btnSumarCant.UseVisualStyleBackColor = False
         '
         'Label5
@@ -180,7 +180,7 @@ Partial Class GenerarCompra
         Me.txtCant.MaxLength = 3
         Me.txtCant.Name = "txtCant"
         Me.txtCant.Size = New System.Drawing.Size(38, 26)
-        Me.txtCant.TabIndex = 31
+        Me.txtCant.TabIndex = 9
         Me.txtCant.Text = "1"
         Me.txtCant.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -212,7 +212,7 @@ Partial Class GenerarCompra
         Me.txtMonto.Location = New System.Drawing.Point(150, 15)
         Me.txtMonto.Name = "txtMonto"
         Me.txtMonto.Size = New System.Drawing.Size(125, 26)
-        Me.txtMonto.TabIndex = 27
+        Me.txtMonto.TabIndex = 15
         '
         'cboProveedores
         '
@@ -222,7 +222,7 @@ Partial Class GenerarCompra
         Me.cboProveedores.Location = New System.Drawing.Point(259, 77)
         Me.cboProveedores.Name = "cboProveedores"
         Me.cboProveedores.Size = New System.Drawing.Size(253, 28)
-        Me.cboProveedores.TabIndex = 22
+        Me.cboProveedores.TabIndex = 2
         '
         'btnRegistrar
         '
@@ -252,7 +252,7 @@ Partial Class GenerarCompra
         Me.btnEditar.Location = New System.Drawing.Point(594, 10)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(201, 37)
-        Me.btnEditar.TabIndex = 31
+        Me.btnEditar.TabIndex = 16
         Me.btnEditar.Text = "GUARDAR CAMBIOS"
         Me.btnEditar.UseVisualStyleBackColor = False
         Me.btnEditar.Visible = False
@@ -265,7 +265,7 @@ Partial Class GenerarCompra
         Me.rdbPendiente.Location = New System.Drawing.Point(344, 31)
         Me.rdbPendiente.Name = "rdbPendiente"
         Me.rdbPendiente.Size = New System.Drawing.Size(89, 24)
-        Me.rdbPendiente.TabIndex = 32
+        Me.rdbPendiente.TabIndex = 3
         Me.rdbPendiente.TabStop = True
         Me.rdbPendiente.Text = "Pendiente"
         Me.rdbPendiente.UseVisualStyleBackColor = True
@@ -278,7 +278,7 @@ Partial Class GenerarCompra
         Me.rdbFinalizada.Location = New System.Drawing.Point(437, 31)
         Me.rdbFinalizada.Name = "rdbFinalizada"
         Me.rdbFinalizada.Size = New System.Drawing.Size(90, 24)
-        Me.rdbFinalizada.TabIndex = 33
+        Me.rdbFinalizada.TabIndex = 4
         Me.rdbFinalizada.TabStop = True
         Me.rdbFinalizada.Text = "Finalizada"
         Me.rdbFinalizada.UseVisualStyleBackColor = True
@@ -291,7 +291,7 @@ Partial Class GenerarCompra
         Me.dtpFecha.Location = New System.Drawing.Point(608, 32)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(253, 23)
-        Me.dtpFecha.TabIndex = 35
+        Me.dtpFecha.TabIndex = 5
         '
         'ErrorProvider
         '
@@ -311,7 +311,7 @@ Partial Class GenerarCompra
         Me.Panel6.Location = New System.Drawing.Point(251, 555)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(875, 58)
-        Me.Panel6.TabIndex = 59
+        Me.Panel6.TabIndex = 14
         '
         'Label7
         '
@@ -370,7 +370,7 @@ Partial Class GenerarCompra
         Me.Panel4.Location = New System.Drawing.Point(251, 50)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(875, 67)
-        Me.Panel4.TabIndex = 67
+        Me.Panel4.TabIndex = 1
         '
         'PictureBox6
         '
@@ -454,7 +454,7 @@ Partial Class GenerarCompra
         Me.Panel5.Location = New System.Drawing.Point(251, 143)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(875, 398)
-        Me.Panel5.TabIndex = 67
+        Me.Panel5.TabIndex = 6
         '
         'PictureBox7
         '
@@ -526,7 +526,25 @@ Partial Class GenerarCompra
         Me.dgvProductosCompra.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvProductosCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProductosCompra.Size = New System.Drawing.Size(313, 320)
-        Me.dgvProductosCompra.TabIndex = 69
+        Me.dgvProductosCompra.TabIndex = 13
+        '
+        'id
+        '
+        Me.id.HeaderText = "ID"
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        '
+        'descr
+        '
+        Me.descr.HeaderText = "Descripcion"
+        Me.descr.Name = "descr"
+        Me.descr.ReadOnly = True
+        '
+        'stoc
+        '
+        Me.stoc.HeaderText = "Stock"
+        Me.stoc.Name = "stoc"
+        Me.stoc.ReadOnly = True
         '
         'dgvProductos
         '
@@ -578,17 +596,7 @@ Partial Class GenerarCompra
         Me.dgvProductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProductos.Size = New System.Drawing.Size(313, 320)
-        Me.dgvProductos.TabIndex = 68
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.Location = New System.Drawing.Point(124, 18)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(0, 20)
-        Me.Label9.TabIndex = 65
+        Me.dgvProductos.TabIndex = 7
         '
         'idp
         '
@@ -608,23 +616,15 @@ Partial Class GenerarCompra
         Me.stock.Name = "stock"
         Me.stock.ReadOnly = True
         '
-        'id
+        'Label9
         '
-        Me.id.HeaderText = "ID"
-        Me.id.Name = "id"
-        Me.id.ReadOnly = True
-        '
-        'descr
-        '
-        Me.descr.HeaderText = "Descripcion"
-        Me.descr.Name = "descr"
-        Me.descr.ReadOnly = True
-        '
-        'stoc
-        '
-        Me.stoc.HeaderText = "Stock"
-        Me.stoc.Name = "stoc"
-        Me.stoc.ReadOnly = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label9.Location = New System.Drawing.Point(124, 18)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(0, 20)
+        Me.Label9.TabIndex = 65
         '
         'GenerarCompra
         '

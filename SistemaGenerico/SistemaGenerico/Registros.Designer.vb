@@ -72,7 +72,7 @@ Partial Class Registros
         Me.Panel4.Location = New System.Drawing.Point(253, 58)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(875, 67)
-        Me.Panel4.TabIndex = 68
+        Me.Panel4.TabIndex = 1
         '
         'cboRegistros
         '
@@ -82,7 +82,7 @@ Partial Class Registros
         Me.cboRegistros.Location = New System.Drawing.Point(8, 27)
         Me.cboRegistros.Name = "cboRegistros"
         Me.cboRegistros.Size = New System.Drawing.Size(253, 28)
-        Me.cboRegistros.TabIndex = 69
+        Me.cboRegistros.TabIndex = 2
         '
         'Panel5
         '
@@ -93,7 +93,7 @@ Partial Class Registros
         Me.Panel5.Location = New System.Drawing.Point(253, 146)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(875, 477)
-        Me.Panel5.TabIndex = 71
+        Me.Panel5.TabIndex = 3
         '
         'dgvGrilla
         '
@@ -144,7 +144,7 @@ Partial Class Registros
         Me.dgvGrilla.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvGrilla.Size = New System.Drawing.Size(846, 429)
-        Me.dgvGrilla.TabIndex = 71
+        Me.dgvGrilla.TabIndex = 4
         '
         'lblRegistros
         '

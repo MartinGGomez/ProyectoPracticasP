@@ -6,7 +6,7 @@
 
     Private Sub Proveedores_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         conexion()
-        lblTitulo.Text = "Gestion de Proveedores"
+        lblTitulo.Text = "Gestionar Proveedores"
         logo()
         btn_proveedores.BackColor = Color.OrangeRed
         cargarProveedores()
@@ -55,6 +55,7 @@
 
             Me.Enabled = False
             FormularioProveedores.Show()
+            FormularioProveedores.pantallaAnterior = Me
             FormularioProveedores.lblTitulo.Text = "Editar Proveedor"
             FormularioProveedores.btnAgregar.Text = "EDITAR PROVEEDOR"
         End If

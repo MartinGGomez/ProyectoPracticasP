@@ -93,6 +93,18 @@ Module Utilidades
                 GenerarCompra.img_logo.BackgroundImage.Dispose()
             End If
 
+            If Utilidades.estaAbiertoElFormulario("Gastos") Then
+                Gastos.img_logo.BackgroundImage.Dispose()
+            End If
+
+            If Utilidades.estaAbiertoElFormulario("Proveedores") Then
+                Proveedores.img_logo.BackgroundImage.Dispose()
+            End If
+
+            If Utilidades.estaAbiertoElFormulario("Registros") Then
+                Registros.img_logo.BackgroundImage.Dispose()
+            End If
+
             File.Delete(Utilidades.pathLogo)
 
             refrescarLogo()
@@ -116,7 +128,9 @@ Module Utilidades
         DetalleCompra.logo()
         GenerarCompra.logo()
         GenerarVenta.logo()
-
+        Gastos.logo()
+        Proveedores.logo()
+        Registros.logo()
     End Sub
 
 

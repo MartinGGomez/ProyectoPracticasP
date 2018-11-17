@@ -36,9 +36,11 @@ Partial Class FormularioProducto
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -54,20 +56,18 @@ Partial Class FormularioProducto
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.imgError = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEditar
@@ -82,7 +82,7 @@ Partial Class FormularioProducto
         Me.btnEditar.Location = New System.Drawing.Point(207, 36)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(252, 35)
-        Me.btnEditar.TabIndex = 26
+        Me.btnEditar.TabIndex = 13
         Me.btnEditar.Text = "EDITAR PRODUCTO"
         Me.btnEditar.UseVisualStyleBackColor = False
         Me.btnEditar.Visible = False
@@ -109,7 +109,7 @@ Partial Class FormularioProducto
         Me.btnRemoverP.Location = New System.Drawing.Point(184, 114)
         Me.btnRemoverP.Name = "btnRemoverP"
         Me.btnRemoverP.Size = New System.Drawing.Size(130, 35)
-        Me.btnRemoverP.TabIndex = 24
+        Me.btnRemoverP.TabIndex = 10
         Me.btnRemoverP.Text = "REMOVER"
         Me.btnRemoverP.UseVisualStyleBackColor = False
         '
@@ -125,7 +125,7 @@ Partial Class FormularioProducto
         Me.btnAgregarP.Location = New System.Drawing.Point(26, 114)
         Me.btnAgregarP.Name = "btnAgregarP"
         Me.btnAgregarP.Size = New System.Drawing.Size(130, 35)
-        Me.btnAgregarP.TabIndex = 6
+        Me.btnAgregarP.TabIndex = 9
         Me.btnAgregarP.Text = "AGREGAR"
         Me.btnAgregarP.UseVisualStyleBackColor = False
         '
@@ -137,7 +137,7 @@ Partial Class FormularioProducto
         Me.lstProveedores.Location = New System.Drawing.Point(26, 168)
         Me.lstProveedores.Name = "lstProveedores"
         Me.lstProveedores.Size = New System.Drawing.Size(288, 104)
-        Me.lstProveedores.TabIndex = 23
+        Me.lstProveedores.TabIndex = 11
         '
         'btnVerProveedores
         '
@@ -152,7 +152,7 @@ Partial Class FormularioProducto
         Me.btnVerProveedores.Location = New System.Drawing.Point(292, 44)
         Me.btnVerProveedores.Name = "btnVerProveedores"
         Me.btnVerProveedores.Size = New System.Drawing.Size(22, 20)
-        Me.btnVerProveedores.TabIndex = 17
+        Me.btnVerProveedores.TabIndex = 8
         Me.btnVerProveedores.UseVisualStyleBackColor = False
         '
         'Label3
@@ -174,7 +174,7 @@ Partial Class FormularioProducto
         Me.cboProveedores.Location = New System.Drawing.Point(25, 65)
         Me.cboProveedores.Name = "cboProveedores"
         Me.cboProveedores.Size = New System.Drawing.Size(289, 28)
-        Me.cboProveedores.TabIndex = 5
+        Me.cboProveedores.TabIndex = 7
         '
         'btnAgregar
         '
@@ -228,7 +228,17 @@ Partial Class FormularioProducto
         Me.Panel6.Location = New System.Drawing.Point(343, 93)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(339, 299)
-        Me.Panel6.TabIndex = 61
+        Me.Panel6.TabIndex = 6
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 787
+        Me.PictureBox7.TabStop = False
         '
         'PictureBox1
         '
@@ -274,7 +284,17 @@ Partial Class FormularioProducto
         Me.Panel1.Location = New System.Drawing.Point(21, 93)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(299, 299)
-        Me.Panel1.TabIndex = 779
+        Me.Panel1.TabIndex = 1
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(7, 6)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 786
+        Me.PictureBox6.TabStop = False
         '
         'PictureBox5
         '
@@ -336,7 +356,7 @@ Partial Class FormularioProducto
         Me.txtDescripcion.Location = New System.Drawing.Point(23, 68)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(252, 26)
-        Me.txtDescripcion.TabIndex = 1
+        Me.txtDescripcion.TabIndex = 2
         '
         'Label5
         '
@@ -366,7 +386,7 @@ Partial Class FormularioProducto
         Me.txtPuntoP.Location = New System.Drawing.Point(23, 189)
         Me.txtPuntoP.Name = "txtPuntoP"
         Me.txtPuntoP.Size = New System.Drawing.Size(252, 26)
-        Me.txtPuntoP.TabIndex = 3
+        Me.txtPuntoP.TabIndex = 4
         '
         'lbl_usuario
         '
@@ -385,7 +405,7 @@ Partial Class FormularioProducto
         Me.txtStock.Location = New System.Drawing.Point(23, 128)
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(252, 26)
-        Me.txtStock.TabIndex = 2
+        Me.txtStock.TabIndex = 3
         '
         'Label1
         '
@@ -404,7 +424,7 @@ Partial Class FormularioProducto
         Me.txtPrecio.Location = New System.Drawing.Point(23, 250)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(252, 26)
-        Me.txtPrecio.TabIndex = 4
+        Me.txtPrecio.TabIndex = 5
         '
         'Panel2
         '
@@ -416,7 +436,7 @@ Partial Class FormularioProducto
         Me.Panel2.Location = New System.Drawing.Point(21, 398)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(661, 89)
-        Me.Panel2.TabIndex = 780
+        Me.Panel2.TabIndex = 12
         '
         'imgError
         '
@@ -428,26 +448,6 @@ Partial Class FormularioProducto
         Me.imgError.TabIndex = 787
         Me.imgError.TabStop = False
         Me.imgError.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(7, 6)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 786
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 787
-        Me.PictureBox7.TabStop = False
         '
         'FormularioProducto
         '
@@ -465,9 +465,11 @@ Partial Class FormularioProducto
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -475,10 +477,7 @@ Partial Class FormularioProducto
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnAgregar As System.Windows.Forms.Button

@@ -66,7 +66,7 @@ Partial Class FormularioClientes
         Me.txtApellido.Location = New System.Drawing.Point(15, 207)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(277, 26)
-        Me.txtApellido.TabIndex = 28
+        Me.txtApellido.TabIndex = 6
         '
         'Label2
         '
@@ -85,7 +85,7 @@ Partial Class FormularioClientes
         Me.txtNombre.Location = New System.Drawing.Point(15, 136)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(277, 26)
-        Me.txtNombre.TabIndex = 26
+        Me.txtNombre.TabIndex = 4
         '
         'Label1
         '
@@ -114,7 +114,7 @@ Partial Class FormularioClientes
         Me.txtDireccion.Location = New System.Drawing.Point(338, 136)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(277, 26)
-        Me.txtDireccion.TabIndex = 23
+        Me.txtDireccion.TabIndex = 5
         '
         'lblDireccion
         '
@@ -139,7 +139,7 @@ Partial Class FormularioClientes
         Me.btnAgregar.Location = New System.Drawing.Point(181, 17)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(252, 35)
-        Me.btnAgregar.TabIndex = 19
+        Me.btnAgregar.TabIndex = 9
         Me.btnAgregar.Text = "AGREGAR CLIENTE"
         Me.btnAgregar.UseVisualStyleBackColor = False
         '
@@ -149,7 +149,7 @@ Partial Class FormularioClientes
         Me.txtMail.Location = New System.Drawing.Point(338, 207)
         Me.txtMail.Name = "txtMail"
         Me.txtMail.Size = New System.Drawing.Size(277, 26)
-        Me.txtMail.TabIndex = 20
+        Me.txtMail.TabIndex = 7
         '
         'txtTel
         '
@@ -157,7 +157,7 @@ Partial Class FormularioClientes
         Me.txtTel.Location = New System.Drawing.Point(338, 67)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(277, 26)
-        Me.txtTel.TabIndex = 19
+        Me.txtTel.TabIndex = 3
         '
         'txtDNICliente
         '
@@ -165,7 +165,7 @@ Partial Class FormularioClientes
         Me.txtDNICliente.Location = New System.Drawing.Point(15, 67)
         Me.txtDNICliente.Name = "txtDNICliente"
         Me.txtDNICliente.Size = New System.Drawing.Size(277, 26)
-        Me.txtDNICliente.TabIndex = 18
+        Me.txtDNICliente.TabIndex = 2
         '
         'lblNombreProv
         '
@@ -229,7 +229,7 @@ Partial Class FormularioClientes
         Me.Panel1.Location = New System.Drawing.Point(33, 97)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(635, 287)
-        Me.Panel1.TabIndex = 780
+        Me.Panel1.TabIndex = 1
         '
         'PictureBox7
         '
@@ -333,7 +333,7 @@ Partial Class FormularioClientes
         Me.Panel6.Location = New System.Drawing.Point(33, 401)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(635, 67)
-        Me.Panel6.TabIndex = 781
+        Me.Panel6.TabIndex = 8
         '
         'FormularioClientes
         '

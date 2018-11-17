@@ -8,6 +8,7 @@
         logo()
         contadores()
         cargarGrillas()
+        btn_inicio.BackColor = Color.OrangeRed
 
 
     End Sub
@@ -19,10 +20,10 @@
 
         tabla_productos.DataSource = Funciones.llenarGrilla(sql)
 
-        sql = "select descripcion Descripcion, fecha Fecha, montoTotal Monto from ventas order by fecha desc limit 10"
+        sql = "select fecha Fecha, montoTotal Monto from ventas order by fecha desc limit 10"
         tablaventas.DataSource = Funciones.llenarGrilla(sql)
 
-        sql = "select descripcion Descripcion, fecha Fecha, montoTotal Monto from compras order by fecha desc limit 10"
+        sql = "select fecha Fecha, montoTotal Monto from compras order by fecha desc limit 10"
         tablacompras.DataSource = Funciones.llenarGrilla(sql)
 
 
@@ -67,33 +68,6 @@
         End If
     End Sub
 
-    Private Sub Panel3_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
-
-    End Sub
-
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Clientes.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Clientes.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Clientes.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
     Private Sub Label5_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
         Me.Close()
         Clientes.Show()
@@ -104,7 +78,7 @@
         Clientes.Show()
     End Sub
 
-    Private Sub Panel11_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel11.Paint
+    Private Sub Panel11_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel11.Click
         Me.Close()
         Clientes.Show()
     End Sub
@@ -114,15 +88,14 @@
         Clientes.Show()
     End Sub
 
-    Private Sub Panel16_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel16.Paint
+    Private Sub Panel16_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel16.Click
         Me.Close()
         Clientes.Show()
     End Sub
 
-    Private Sub Panel10_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel10.Paint
+    Private Sub Panel10_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel10.Click
         Me.Close()
         Compras.Show()
-
     End Sub
 
     Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
@@ -140,16 +113,14 @@
         Compras.Show()
     End Sub
 
-    Private Sub Panel13_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel13.Paint
+    Private Sub Panel13_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel13.Click
         Me.Close()
         Compras.Show()
     End Sub
 
     Private Sub lblventascont_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblventascont.Click
-
         Me.Close()
         Ventas.Show()
-
     End Sub
 
     Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
@@ -157,7 +128,7 @@
         Ventas.Show()
     End Sub
 
-    Private Sub Panel8_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel8.Paint
+    Private Sub Panel8_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel8.Click
         Me.Close()
         Ventas.Show()
     End Sub
@@ -167,7 +138,7 @@
         Ventas.Show()
     End Sub
 
-    Private Sub Panel12_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel12.Paint
+    Private Sub Panel12_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel12.Click
         Me.Close()
         Ventas.Show()
     End Sub

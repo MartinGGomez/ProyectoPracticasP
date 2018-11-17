@@ -53,5 +53,7 @@ Public Class DetalleCompra
 
     Private Sub DetalleCompra_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         logo()
+        lblTitulo.Text = "Gestionar Compras  >  Detalle de la Compra"
+        btn_compras.BackColor = Color.OrangeRed
     End Sub
 End Class

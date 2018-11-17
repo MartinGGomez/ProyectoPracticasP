@@ -9,7 +9,7 @@
     End Sub
 
     Private Sub Clientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblTitulo.Text = "GESTIÓN DE CLIENTES"
+        lblTitulo.Text = "Gestion de los Clientes"
         logo()
         btn_clientes.BackColor = Color.OrangeRed
         cargarClientes()
@@ -30,6 +30,7 @@
 
     Private Sub btnAgregar_Click(sender As System.Object, e As System.EventArgs) Handles btnAgregar.Click
         FormularioClientes.limpiarFormularioClientes()
+        FormularioClientes.pantallaAnterior = Me
         Me.Enabled = False
         FormularioClientes.Show()
         FormularioClientes.lblTitulo.Text = "Cargar Cliente"
@@ -61,6 +62,7 @@
 
             Me.Enabled = False
             FormularioClientes.Show()
+            FormularioClientes.pantallaAnterior = Me
             FormularioClientes.lblTitulo.Text = "Editar Cliente"
             FormularioClientes.btnAgregar.Text = "EDITAR CLIENTE"
         End If

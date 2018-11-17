@@ -41,6 +41,7 @@ Partial Class FormularioBase
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
         Me.btn_minimizar.TabIndex = 4
+        Me.btn_minimizar.Text = "90"
         Me.btn_minimizar.UseVisualStyleBackColor = False
         '
         'lblTitulo
@@ -67,7 +68,7 @@ Partial Class FormularioBase
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(103, 35)
         Me.btnVolver.TabIndex = 20
-        Me.btnVolver.Text = "VOLVER"
+        Me.btnVolver.Text = "91"
         Me.btnVolver.UseVisualStyleBackColor = False
         '
         'FormularioBase

@@ -5,14 +5,6 @@
 
     Private Sub Registros_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         logo()
-
-    End Sub
-
-    Private Sub cboRegistros_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboRegistros.SelectedIndexChanged
-        Dim seleccion As String = ""
-
-        seleccion = cboRegistros.Text
-
         sql = "select count(*) from ventas"
         rs = Funciones.consulta(sql)
 
@@ -56,7 +48,7 @@
             End If
         End If
 
-        sql = "select count(*) from ProductosProveedor"
+        sql = "select count(*) from ProductoProveedor"
         rs = Funciones.consulta(sql)
 
         If rs.Read = True Then
@@ -91,22 +83,31 @@
                 cboRegistros.Items.Add("TipoTrabajo")
             End If
         End If
-        sql = "select count(*) from DetalleVenta"
+        sql = "select count(*) from DetalleVentas"
         rs = Funciones.consulta(sql)
 
         If rs.Read = True Then
             If rs(0) > 0 Then
-                cboRegistros.Items.Add("DetalleVenta")
+                cboRegistros.Items.Add("DetalleVentas")
             End If
         End If
-        sql = "select count(*) from DetalleCompra"
+        sql = "select count(*) from DetalleCompras"
         rs = Funciones.consulta(sql)
 
         If rs.Read = True Then
             If rs(0) > 0 Then
-                cboRegistros.Items.Add("DetalleCompra")
+                cboRegistros.Items.Add("DetalleCompras")
             End If
         End If
+    End Sub
+
+    Private Sub cboRegistros_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboRegistros.SelectedIndexChanged
+
+
+
+        Dim seleccion As String = ""
+
+        seleccion = cboRegistros.Text
 
         If seleccion.Equals("Ventas") Then
             sql = "select * from ventas"
@@ -134,8 +135,9 @@
 
         ElseIf seleccion.Equals("Productos") Then
             sql = "select * from Productos"
+            lblRegistros.Text = "Registro de Productos"
 
-        ElseIf seleccion.Equals("ProductoProveedor") Then
+        ElseIf seleccion.Equals("ProductosProveedor") Then
             sql = "select * from ProductoProveedor"
             lblRegistros.Text = "Registro de Productos del Proveedor"
 
@@ -145,7 +147,7 @@
 
         ElseIf seleccion.Equals("DetalleCompras") Then
             sql = "select * from DetalleCompras"
-            lblRegistros.Text = "Detalle de Compras"
+            lblRegistros.Text = "Registro de Detalle de Compras"
 
         ElseIf seleccion.Equals("DetalleVentas") Then
             sql = "select * from DetalleVentas"

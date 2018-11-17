@@ -14,7 +14,8 @@ Public Class GenerarCompra
         logo()
         btnRegistrar.Visible = True
         btnEditar.Visible = False
-        lblTitulo.Text = "Generar Compra"
+        lblTitulo.Text = "Gestionar Compras  >  Generar Compra"
+        btn_compras.BackColor = Color.OrangeRed
         rdbFinalizada.Checked = True
 
         sql = "select Nombre from Proveedores where estado = 'Activo'"
@@ -251,4 +252,6 @@ Public Class GenerarCompra
 
         End If
     End Sub
+
+
 End Class

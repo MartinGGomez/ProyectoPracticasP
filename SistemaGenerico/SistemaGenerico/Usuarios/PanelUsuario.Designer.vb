@@ -24,6 +24,7 @@ Partial Class PanelUsuario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PanelUsuario))
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -50,6 +51,7 @@ Partial Class PanelUsuario
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btncambios = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
@@ -64,9 +66,8 @@ Partial Class PanelUsuario
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,12 +75,11 @@ Partial Class PanelUsuario
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel7
@@ -114,7 +114,17 @@ Partial Class PanelUsuario
         Me.Panel7.Location = New System.Drawing.Point(298, 68)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(370, 488)
-        Me.Panel7.TabIndex = 55
+        Me.Panel7.TabIndex = 1
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(10, 4)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 792
+        Me.PictureBox11.TabStop = False
         '
         'imgError
         '
@@ -203,7 +213,7 @@ Partial Class PanelUsuario
         Me.btndescartar.Location = New System.Drawing.Point(59, 429)
         Me.btndescartar.Name = "btndescartar"
         Me.btndescartar.Size = New System.Drawing.Size(242, 35)
-        Me.btndescartar.TabIndex = 35
+        Me.btndescartar.TabIndex = 8
         Me.btndescartar.Text = "DESCARTAR CAMBIOS"
         Me.btndescartar.UseVisualStyleBackColor = False
         Me.btndescartar.Visible = False
@@ -214,7 +224,7 @@ Partial Class PanelUsuario
         Me.txtdni.Location = New System.Drawing.Point(59, 264)
         Me.txtdni.Name = "txtdni"
         Me.txtdni.Size = New System.Drawing.Size(250, 26)
-        Me.txtdni.TabIndex = 29
+        Me.txtdni.TabIndex = 5
         Me.txtdni.Visible = False
         '
         'lbldni
@@ -255,7 +265,7 @@ Partial Class PanelUsuario
         Me.txtmail.Location = New System.Drawing.Point(57, 200)
         Me.txtmail.Name = "txtmail"
         Me.txtmail.Size = New System.Drawing.Size(250, 26)
-        Me.txtmail.TabIndex = 27
+        Me.txtmail.TabIndex = 4
         Me.txtmail.Visible = False
         '
         'txtape
@@ -264,7 +274,7 @@ Partial Class PanelUsuario
         Me.txtape.Location = New System.Drawing.Point(57, 133)
         Me.txtape.Name = "txtape"
         Me.txtape.Size = New System.Drawing.Size(250, 26)
-        Me.txtape.TabIndex = 26
+        Me.txtape.TabIndex = 3
         Me.txtape.Visible = False
         '
         'txtnombre
@@ -273,7 +283,7 @@ Partial Class PanelUsuario
         Me.txtnombre.Location = New System.Drawing.Point(57, 68)
         Me.txtnombre.Name = "txtnombre"
         Me.txtnombre.Size = New System.Drawing.Size(250, 26)
-        Me.txtnombre.TabIndex = 25
+        Me.txtnombre.TabIndex = 2
         Me.txtnombre.Visible = False
         '
         'lbl_usuario
@@ -299,7 +309,7 @@ Partial Class PanelUsuario
         Me.btneditar.Location = New System.Drawing.Point(134, 404)
         Me.btneditar.Name = "btneditar"
         Me.btneditar.Size = New System.Drawing.Size(103, 35)
-        Me.btneditar.TabIndex = 31
+        Me.btneditar.TabIndex = 7
         Me.btneditar.Text = "EDITAR"
         Me.btneditar.UseVisualStyleBackColor = False
         '
@@ -391,7 +401,7 @@ Partial Class PanelUsuario
         Me.btncambios.Location = New System.Drawing.Point(59, 381)
         Me.btncambios.Name = "btncambios"
         Me.btncambios.Size = New System.Drawing.Size(242, 35)
-        Me.btncambios.TabIndex = 33
+        Me.btncambios.TabIndex = 6
         Me.btncambios.Text = "CONFIRMAR CAMBIOS"
         Me.btncambios.UseVisualStyleBackColor = False
         Me.btncambios.Visible = False
@@ -417,7 +427,17 @@ Partial Class PanelUsuario
         Me.Panel4.Location = New System.Drawing.Point(748, 70)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(321, 364)
-        Me.Panel4.TabIndex = 58
+        Me.Panel4.TabIndex = 9
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(8, 5)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 793
+        Me.PictureBox7.TabStop = False
         '
         'PictureBox10
         '
@@ -475,7 +495,7 @@ Partial Class PanelUsuario
         Me.btnver.Location = New System.Drawing.Point(288, 5)
         Me.btnver.Name = "btnver"
         Me.btnver.Size = New System.Drawing.Size(26, 23)
-        Me.btnver.TabIndex = 59
+        Me.btnver.TabIndex = 10
         Me.btnver.UseVisualStyleBackColor = False
         '
         'Label6
@@ -510,7 +530,7 @@ Partial Class PanelUsuario
         Me.txtnuevacontrarep.Name = "txtnuevacontrarep"
         Me.txtnuevacontrarep.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtnuevacontrarep.Size = New System.Drawing.Size(219, 26)
-        Me.txtnuevacontrarep.TabIndex = 32
+        Me.txtnuevacontrarep.TabIndex = 13
         '
         'txtnuevacontra
         '
@@ -519,7 +539,7 @@ Partial Class PanelUsuario
         Me.txtnuevacontra.Name = "txtnuevacontra"
         Me.txtnuevacontra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtnuevacontra.Size = New System.Drawing.Size(219, 26)
-        Me.txtnuevacontra.TabIndex = 31
+        Me.txtnuevacontra.TabIndex = 12
         '
         'txtviejacontra
         '
@@ -528,7 +548,7 @@ Partial Class PanelUsuario
         Me.txtviejacontra.Name = "txtviejacontra"
         Me.txtviejacontra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtviejacontra.Size = New System.Drawing.Size(219, 26)
-        Me.txtviejacontra.TabIndex = 30
+        Me.txtviejacontra.TabIndex = 11
         '
         'Label9
         '
@@ -553,7 +573,7 @@ Partial Class PanelUsuario
         Me.Button2.Location = New System.Drawing.Point(51, 294)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 35)
-        Me.Button2.TabIndex = 33
+        Me.Button2.TabIndex = 14
         Me.Button2.Text = "CAMBIAR CONTRASEÑA"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -579,26 +599,6 @@ Partial Class PanelUsuario
         Me.Label16.TabIndex = 29
         Me.Label16.Text = "Nueva Contraseña"
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(8, 5)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 793
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(10, 4)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox11.TabIndex = 792
-        Me.PictureBox11.TabStop = False
-        '
         'PanelUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -612,6 +612,7 @@ Partial Class PanelUsuario
         Me.Controls.SetChildIndex(Me.Panel4, 0)
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -620,12 +621,11 @@ Partial Class PanelUsuario
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

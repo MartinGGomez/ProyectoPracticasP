@@ -6,9 +6,10 @@
 
     Private Sub Ventas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         logo()
-        lblTitulo.Text = "Gestion de Ventas"
+        lblTitulo.Text = "Gestionar Ventas"
         cargarVentas()
         btnverVentas.Visible = False
+        btn_ventas.BackColor = Color.OrangeRed
 
     End Sub
 
