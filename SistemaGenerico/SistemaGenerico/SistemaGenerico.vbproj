@@ -133,6 +133,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Funciones.vb" />
+    <Compile Include="Gastos\Gastos.Designer.vb">
+      <DependentUpon>Gastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gastos\Gastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
@@ -234,12 +240,6 @@
     <Compile Include="Ventas\GenerarVenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registros.Designer.vb">
-      <DependentUpon>Registros.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Registros.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Ventas\Ventas.designer.vb">
       <DependentUpon>Ventas.vb</DependentUpon>
     </Compile>
@@ -268,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\GenerarCompra.resx">
       <DependentUpon>GenerarCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastos\Gastos.resx">
+      <DependentUpon>Gastos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
@@ -317,9 +320,6 @@
     <EmbeddedResource Include="Ventas\GenerarVenta.resx">
       <DependentUpon>GenerarVenta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registros.resx">
-      <DependentUpon>Registros.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>
     </EmbeddedResource>
@@ -337,7 +337,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Estadisticas\" />
-    <Folder Include="Gastos\" />
     <Folder Include="Personalizacion\" />
     <Folder Include="Presupuesto\" />
   </ItemGroup>

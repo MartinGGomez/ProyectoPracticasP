@@ -27,6 +27,7 @@
 
 
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+        Me.Close()
         GenerarVenta.Show()
         GenerarVenta.cargarClientes()
         GenerarVenta.cargarProductos()
@@ -97,6 +98,10 @@
             MsgBox("Seleccione una venta", MsgBoxStyle.Exclamation, "ATENCION")
 
         Else
+
+            GenerarVenta.dgvGrilla.Rows.Clear()
+            GenerarVenta.dgvGrilla2.Rows.Clear()
+
             sql = "select d.idProducto ID, p.Descripcion, d.cantidad from Productos p , detalleventas d  where (p.idProducto=d.idProducto) and idVenta= " & ip
             rs = consulta(sql)
 

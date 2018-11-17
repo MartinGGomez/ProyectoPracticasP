@@ -46,6 +46,9 @@ Partial Class DetalleCompra
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
+        Me.idp = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.desc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.canti = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
@@ -274,6 +277,7 @@ Partial Class DetalleCompra
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvProductos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvProductos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idp, Me.desc, Me.canti})
         Me.dgvProductos.Cursor = System.Windows.Forms.Cursors.Default
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
@@ -306,6 +310,24 @@ Partial Class DetalleCompra
         Me.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProductos.Size = New System.Drawing.Size(868, 328)
         Me.dgvProductos.TabIndex = 67
+        '
+        'idp
+        '
+        Me.idp.HeaderText = "ID"
+        Me.idp.Name = "idp"
+        Me.idp.ReadOnly = True
+        '
+        'desc
+        '
+        Me.desc.HeaderText = "Descripcion"
+        Me.desc.Name = "desc"
+        Me.desc.ReadOnly = True
+        '
+        'canti
+        '
+        Me.canti.HeaderText = "Cantidad"
+        Me.canti.Name = "canti"
+        Me.canti.ReadOnly = True
         '
         'DetalleCompra
         '
@@ -356,4 +378,7 @@ Partial Class DetalleCompra
     Friend WithEvents lblMontoTotal As System.Windows.Forms.Label
     Friend WithEvents lblEstado As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents idp As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents desc As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents canti As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

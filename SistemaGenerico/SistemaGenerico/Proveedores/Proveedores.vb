@@ -24,7 +24,7 @@
         End If
     End Sub
     Private Sub btnAgregar_Click(sender As System.Object, e As System.EventArgs) Handles btnAgregar.Click
-        FormularioProveedores.pantallaAnterior = Me
+
         Me.Enabled = False
         FormularioProveedores.Show()
         FormularioProveedores.lblTitulo.Text = "Cargar Proveedor"
