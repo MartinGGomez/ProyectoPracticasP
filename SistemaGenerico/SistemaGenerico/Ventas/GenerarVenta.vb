@@ -13,10 +13,11 @@ Public Class GenerarVenta
 
     Private Sub GenerarVenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargarClientes()
-        'cargarProductos()
         logo()
 
     End Sub
+
+
     Public Sub cargarClientes()
         sql = "select idCliente, nombre, apellido from clientes where estado = 'Activo' "
         rs = Funciones.consulta(sql)
@@ -302,22 +303,11 @@ Public Class GenerarVenta
     End Sub
 
    
-    Private Sub btnAgregarClieEspecial_Click(sender As System.Object, e As System.EventArgs) Handles btnAgregarClieEspecial.Click
-        FormularioClientes.txtNombre.Text = ""
-        FormularioClientes.txtApellido.Text = ""
+    Private Sub btnAgregarClieEspecial_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarClieEspecial.Click
+        FormularioClientes.lblTitulo.Text = "Cargar Cliente"
         FormularioClientes.Show()
-        MsgBox("Atencion este cliente podra ser agregado como un cliente especial", MsgBoxStyle.Information, "ATENCION")
-
-        If String.IsNullOrEmpty(apellido) Then
-            FormularioClientes.txtNombre.Text = txtClientes.Text
-        Else
-            FormularioClientes.txtNombre.Text = nombre
-            FormularioClientes.txtApellido.Text = apellido
-            nombre = ""
-            apellido = ""
-        End If
-
-
+        Me.Enabled = False
+        FormularioClientes.pantallaAnterior = Me
 
     End Sub
 
@@ -363,9 +353,10 @@ Public Class GenerarVenta
     End Sub
 
     Private Sub btnDescartarC_Click(sender As System.Object, e As System.EventArgs) Handles btnDescartarC.Click
-        Me.Hide()
+        Me.Close()
         Ventas.Show()
         limpiar()
         Ventas.cargarVentas()
     End Sub
+
 End Class

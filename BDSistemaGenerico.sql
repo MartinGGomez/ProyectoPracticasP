@@ -121,13 +121,18 @@ constraint FK_DetalleVentas1 foreign key (idProducto) references Productos (idPr
 create table Gastos (
 idGasto int auto_increment,
 descripcion varchar(100),
-tipo varchar(50),
-monto float,
-año year,
-mes varchar(10),
 constraint PK_Gastos primary key (idGasto)
 )ENGINE=InnoDB;
 
+create table RegistroGastos(
+idRegistroGasto int auto_increment,
+idGasto int,
+monto float,
+año year,
+mes varchar(10),
+constraint PK_RegistroGastos primary key (idRegistroGasto),
+constraint FK_RegistroGastos foreign key (idGasto) references Gastos (idGasto)
+)ENGINE=InnoDB;
 
 
 insert into Proveedores values 
@@ -135,13 +140,13 @@ insert into Proveedores values
 ('', "Proveedor 2" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
 ('', "Proveedor 3" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo");
 
-insert into compras values ('',1,"Compra", "2017/01/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2018/03/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2018/01/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2012/01/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2015/01/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2016/01/01",200,"Estado");
-insert into compras values ('',1,"Compra", "2011/01/01",200,"Estado");
+insert into compras values ('',1,"2017/01/01",200,"Estado");
+insert into compras values ('',1, "2018/03/01",200,"Estado");
+insert into compras values ('',1, "2018/01/01",200,"Estado");
+insert into compras values ('',1, "2012/01/01",200,"Estado");
+insert into compras values ('',1, "2015/01/01",200,"Estado");
+insert into compras values ('',1, "2016/01/01",200,"Estado");
+insert into compras values ('',1, "2011/01/01",200,"Estado");
 
 INSERT INTO `productos` (`idProducto`, `Descripcion`, `Stock`, `PuntoPedido`, `Precio`, `Estado`) VALUES
 (1, 'Producto 1', 100, 10, 50, 'Activo'),
@@ -164,6 +169,6 @@ INSERT INTO `productoproveedor` (`idProducto`, `idProveedor`) VALUES
 
 
 insert into gastos values
-('',"Agua","tipo",200,2018,"Febrero"),
-('',"Luz","tipo",300,2018,"Enero"),
-('',"Gas","tipo",100,2018,"Febrero");
+('',"Agua"),
+('',"Luz"),
+('',"Gas");

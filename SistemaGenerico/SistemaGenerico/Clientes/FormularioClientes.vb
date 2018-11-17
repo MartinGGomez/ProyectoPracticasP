@@ -2,10 +2,7 @@
     Inherits FormularioBase
 
     Dim sql As String
-    Private Sub FormularioClientes_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        conexion()
-        pantallaAnterior = Clientes
-    End Sub
+
 
     Public Sub limpiarFormularioClientes()
 
@@ -29,13 +26,16 @@
             Else
 
                 sql = "insert into clientes values ('', '" & txtDNICliente.Text & "', '" & txtNombre.Text & "', '" & txtApellido.Text & "', '" & txtTel.Text & "',  '" & txtDireccion.Text & "', '" & txtMail.Text & "', 'Activo')"
-                Funciones.consulta(Sql)
+                Funciones.consulta(sql)
                 Clientes.cargarClientes()
                 Me.Close()
                 Clientes.Enabled = True
                 Clientes.idCliente = 0
                 lblError.Text = ""
-
+                If (pantallaAnterior.Equals(GenerarVenta)) Then
+                    GenerarVenta.cargarClientes()
+                    GenerarVenta.Enabled = True
+                End If
             End If
         Else
 
@@ -44,7 +44,7 @@
                 imgError.Visible = True
             Else
                 sql = "update clientes set Nombre = '" & txtNombre.Text & "', TEL = '" & txtTel.Text & "', Mail = '" & txtMail.Text & "', Direccion = '" & txtDireccion.Text & "',  Apellido = '" & txtApellido.Text & "',  DNI = '" & txtDNICliente.Text & "' where idCliente =" & Clientes.idCliente
-                consulta(Sql)
+                consulta(sql)
                 Clientes.cargarClientes()
                 Me.Close()
                 Clientes.Enabled = True

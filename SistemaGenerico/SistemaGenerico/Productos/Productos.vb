@@ -63,14 +63,10 @@ Public Class Productos
 
     End Sub
 
-    Private Sub dgvGrilla_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+    Private Sub dgvGrilla_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvGrilla.CellClick
         Try
             idProducto = dgvGrilla.Rows(e.RowIndex).Cells(0).Value.ToString
         Catch ex As Exception
         End Try
-    End Sub
-
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs)
-
     End Sub
 End Class

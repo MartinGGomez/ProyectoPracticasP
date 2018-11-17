@@ -53,25 +53,32 @@ Partial Class GenerarVenta
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.dgvGrilla2 = New System.Windows.Forms.DataGridView()
+        Me.idd = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.de = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cant = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvGrilla = New System.Windows.Forms.DataGridView()
+        Me.id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.d = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pr = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtBuscador
@@ -95,7 +102,7 @@ Partial Class GenerarVenta
         Me.btnDer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDer.ForeColor = System.Drawing.Color.Transparent
-        Me.btnDer.Location = New System.Drawing.Point(422, 225)
+        Me.btnDer.Location = New System.Drawing.Point(420, 143)
         Me.btnDer.Name = "btnDer"
         Me.btnDer.Size = New System.Drawing.Size(38, 70)
         Me.btnDer.TabIndex = 44
@@ -114,7 +121,7 @@ Partial Class GenerarVenta
         Me.btnIzq.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIzq.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIzq.ForeColor = System.Drawing.Color.Transparent
-        Me.btnIzq.Location = New System.Drawing.Point(417, 143)
+        Me.btnIzq.Location = New System.Drawing.Point(417, 225)
         Me.btnIzq.Name = "btnIzq"
         Me.btnIzq.Size = New System.Drawing.Size(40, 70)
         Me.btnIzq.TabIndex = 43
@@ -266,7 +273,7 @@ Partial Class GenerarVenta
         Me.txtClientes.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txtClientes.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.txtClientes.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClientes.Location = New System.Drawing.Point(157, 59)
+        Me.txtClientes.Location = New System.Drawing.Point(139, 20)
         Me.txtClientes.Name = "txtClientes"
         Me.txtClientes.Size = New System.Drawing.Size(150, 26)
         Me.txtClientes.TabIndex = 33
@@ -275,9 +282,9 @@ Partial Class GenerarVenta
         '
         Me.txtMontoT.Enabled = False
         Me.txtMontoT.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMontoT.Location = New System.Drawing.Point(139, 19)
+        Me.txtMontoT.Location = New System.Drawing.Point(166, 59)
         Me.txtMontoT.Name = "txtMontoT"
-        Me.txtMontoT.Size = New System.Drawing.Size(168, 26)
+        Me.txtMontoT.Size = New System.Drawing.Size(130, 26)
         Me.txtMontoT.TabIndex = 32
         '
         'Label6
@@ -374,6 +381,7 @@ Partial Class GenerarVenta
         Me.Panel4.Controls.Add(Me.btnCancelar)
         Me.Panel4.Controls.Add(Me.btnDescartarC)
         Me.Panel4.Controls.Add(Me.btnConfirmar)
+        Me.Panel4.Controls.Add(Me.txtClientes)
         Me.Panel4.Controls.Add(Me.PictureBox2)
         Me.Panel4.Controls.Add(Me.btnGuardar)
         Me.Panel4.Controls.Add(Me.txtMontoT)
@@ -381,21 +389,10 @@ Partial Class GenerarVenta
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.btnAgregarClieEspecial)
         Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.txtClientes)
         Me.Panel4.Location = New System.Drawing.Point(252, 517)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(877, 106)
         Me.Panel4.TabIndex = 64
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(65, 23)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 63
-        Me.PictureBox2.TabStop = False
         '
         'Label8
         '
@@ -417,6 +414,16 @@ Partial Class GenerarVenta
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 67
         Me.PictureBox4.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(65, 23)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 63
+        Me.PictureBox2.TabStop = False
         '
         'Label4
         '
@@ -449,26 +456,6 @@ Partial Class GenerarVenta
         Me.Panel5.Size = New System.Drawing.Size(877, 358)
         Me.Panel5.TabIndex = 64
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(32, 18)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 72
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(537, 21)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 73
-        Me.PictureBox5.TabStop = False
-        '
         'dgvGrilla2
         '
         Me.dgvGrilla2.AllowUserToAddRows = False
@@ -487,6 +474,7 @@ Partial Class GenerarVenta
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvGrilla2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvGrilla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvGrilla2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idd, Me.de, Me.cant})
         Me.dgvGrilla2.Cursor = System.Windows.Forms.Cursors.Default
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
@@ -520,6 +508,24 @@ Partial Class GenerarVenta
         Me.dgvGrilla2.Size = New System.Drawing.Size(313, 283)
         Me.dgvGrilla2.TabIndex = 75
         '
+        'idd
+        '
+        Me.idd.HeaderText = "ID"
+        Me.idd.Name = "idd"
+        Me.idd.ReadOnly = True
+        '
+        'de
+        '
+        Me.de.HeaderText = "Descripcion"
+        Me.de.Name = "de"
+        Me.de.ReadOnly = True
+        '
+        'cant
+        '
+        Me.cant.HeaderText = "Cantidad"
+        Me.cant.Name = "cant"
+        Me.cant.ReadOnly = True
+        '
         'dgvGrilla
         '
         Me.dgvGrilla.AllowUserToAddRows = False
@@ -538,6 +544,7 @@ Partial Class GenerarVenta
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvGrilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvGrilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvGrilla.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.d, Me.Stock, Me.pr})
         Me.dgvGrilla.Cursor = System.Windows.Forms.Cursors.Default
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
@@ -571,6 +578,55 @@ Partial Class GenerarVenta
         Me.dgvGrilla.Size = New System.Drawing.Size(313, 283)
         Me.dgvGrilla.TabIndex = 74
         '
+        'id
+        '
+        Me.id.FillWeight = 71.06599!
+        Me.id.HeaderText = "ID"
+        Me.id.MinimumWidth = 20
+        Me.id.Name = "id"
+        Me.id.ReadOnly = True
+        '
+        'd
+        '
+        Me.d.FillWeight = 109.6447!
+        Me.d.HeaderText = "Descripcion"
+        Me.d.Name = "d"
+        Me.d.ReadOnly = True
+        '
+        'Stock
+        '
+        Me.Stock.FillWeight = 109.6447!
+        Me.Stock.HeaderText = "Stock"
+        Me.Stock.Name = "Stock"
+        Me.Stock.ReadOnly = True
+        '
+        'pr
+        '
+        Me.pr.FillWeight = 109.6447!
+        Me.pr.HeaderText = "Precio"
+        Me.pr.Name = "pr"
+        Me.pr.ReadOnly = True
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(537, 21)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 73
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(32, 18)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 72
+        Me.PictureBox7.TabStop = False
+        '
         'GenerarVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -588,14 +644,14 @@ Partial Class GenerarVenta
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -630,4 +686,11 @@ Partial Class GenerarVenta
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents dgvGrilla2 As System.Windows.Forms.DataGridView
     Friend WithEvents dgvGrilla As System.Windows.Forms.DataGridView
+    Friend WithEvents idd As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents de As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cant As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents id As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents d As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Stock As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents pr As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

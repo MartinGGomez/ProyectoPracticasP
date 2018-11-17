@@ -139,12 +139,12 @@ Public Class MenuBase
     End Sub
 
     Private Sub btn_gastos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_gastos.Click
-        'If Not Me.Equals(Gastos) Then
-        'Me.Hide()
-        ' Gastos.Show()
-        ' Gastos.lbl_nom_user.Text = Utilidades.nombreUsuario
-        ' Gastos.lbl_tipo_trab.Text = Utilidades.tipoUsuario
-        ' End If
+        If Not Me.Equals(Gastos) Then
+            Me.Hide()
+            Gastos.Show()
+            Gastos.lbl_nom_user.Text = Utilidades.nombreUsuario
+            Gastos.lbl_tipo_trab.Text = Utilidades.tipoUsuario
+        End If
     End Sub
 
     Private Sub btn_ventas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_ventas.Click

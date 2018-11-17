@@ -38,6 +38,7 @@ Partial Class FormularioClientes
         Me.lblTel = New System.Windows.Forms.Label()
         Me.lblMail = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -47,8 +48,8 @@ Partial Class FormularioClientes
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +58,6 @@ Partial Class FormularioClientes
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtApellido
@@ -105,9 +105,8 @@ Partial Class FormularioClientes
         Me.lblError.ForeColor = System.Drawing.Color.Tomato
         Me.lblError.Location = New System.Drawing.Point(36, 253)
         Me.lblError.Name = "lblError"
-        Me.lblError.Size = New System.Drawing.Size(52, 20)
+        Me.lblError.Size = New System.Drawing.Size(0, 20)
         Me.lblError.TabIndex = 24
-        Me.lblError.Text = "lblError"
         '
         'txtDireccion
         '
@@ -135,7 +134,7 @@ Partial Class FormularioClientes
         Me.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnAgregar.FlatAppearance.BorderSize = 0
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Font = New System.Drawing.Font("Gobold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnAgregar.Location = New System.Drawing.Point(181, 17)
         Me.btnAgregar.Name = "btnAgregar"
@@ -232,6 +231,16 @@ Partial Class FormularioClientes
         Me.Panel1.Size = New System.Drawing.Size(635, 287)
         Me.Panel1.TabIndex = 780
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(10, 6)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(17, 17)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 791
+        Me.PictureBox7.TabStop = False
+        '
         'imgError
         '
         Me.imgError.Image = CType(resources.GetObject("imgError.Image"), System.Drawing.Image)
@@ -326,16 +335,6 @@ Partial Class FormularioClientes
         Me.Panel6.Size = New System.Drawing.Size(635, 67)
         Me.Panel6.TabIndex = 781
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(10, 6)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 791
-        Me.PictureBox7.TabStop = False
-        '
         'FormularioClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -348,6 +347,7 @@ Partial Class FormularioClientes
         Me.Controls.SetChildIndex(Me.Panel6, 0)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -356,9 +356,7 @@ Partial Class FormularioClientes
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents txtApellido As System.Windows.Forms.TextBox

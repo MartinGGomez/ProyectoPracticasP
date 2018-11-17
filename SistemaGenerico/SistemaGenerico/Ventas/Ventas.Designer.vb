@@ -58,7 +58,7 @@ Partial Class Ventas
         Me.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVerDetalle.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVerDetalle.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnVerDetalle.Location = New System.Drawing.Point(48, 16)
+        Me.btnVerDetalle.Location = New System.Drawing.Point(54, 17)
         Me.btnVerDetalle.Name = "btnVerDetalle"
         Me.btnVerDetalle.Size = New System.Drawing.Size(219, 35)
         Me.btnVerDetalle.TabIndex = 14
@@ -74,9 +74,9 @@ Partial Class Ventas
         Me.btnverVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnverVentas.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnverVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnverVentas.Location = New System.Drawing.Point(44, 17)
+        Me.btnverVentas.Location = New System.Drawing.Point(95, 4)
         Me.btnverVentas.Name = "btnverVentas"
-        Me.btnverVentas.Size = New System.Drawing.Size(219, 35)
+        Me.btnverVentas.Size = New System.Drawing.Size(122, 28)
         Me.btnverVentas.TabIndex = 22
         Me.btnverVentas.Text = "VER VENTAS"
         Me.btnverVentas.UseVisualStyleBackColor = False
@@ -140,7 +140,6 @@ Partial Class Ventas
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.btnverVentas)
         Me.Panel5.Controls.Add(Me.btnVerDetalle)
         Me.Panel5.Controls.Add(Me.btnEliminar)
         Me.Panel5.Controls.Add(Me.txtEditar)
@@ -185,6 +184,7 @@ Partial Class Ventas
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.btnverVentas)
         Me.Panel4.Controls.Add(Me.PictureBox2)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.dgvGrilla)
