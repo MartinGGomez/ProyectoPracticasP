@@ -11,6 +11,7 @@ Public Class GenerarCompra
 
 
     Private Sub GenerarCompra_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        logo()
         btnRegistrar.Visible = True
         btnEditar.Visible = False
         lblTitulo.Text = "Generar Compra"
