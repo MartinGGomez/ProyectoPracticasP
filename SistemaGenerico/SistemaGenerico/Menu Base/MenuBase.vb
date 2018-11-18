@@ -156,4 +156,11 @@ Public Class MenuBase
     End Sub
 
 
+    Private Sub btn_estadisticas_Click(sender As System.Object, e As System.EventArgs) Handles btn_estadisticas.Click
+        If Not Me.Equals(Estadisticas) Then
+            Me.Hide()
+            Estadisticas.cargarEstadisticas()
+            Estadisticas.Show()
+        End If
+    End Sub
 End Class
