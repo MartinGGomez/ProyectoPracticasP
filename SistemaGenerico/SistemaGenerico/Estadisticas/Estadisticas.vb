@@ -17,6 +17,11 @@
         sql = "select p.nombre Nombre, count(c.idProveedor) Cantidad, sum(montoTotal) Concepto from proveedores p, compras c where (c.idProveedor=p.idProveedor) "
         Funciones.llenarGrilla(sql, dgvGrilla2)
 
+        sql = "select p.descripcion Descripcion, p.stock Stock , count(dv.cantidad) Vendidos, (select count(dc.cantidad)   from detallecompras dc, productos p where (p.idProducto=dc.idProducto) group by dc.idProducto) Comprados from Productos p ,  detalleventas dv where (p.idProducto=dv.idProducto)  group by dv.idProducto"
+        Funciones.llenarGrilla(sql, dgvGrilla3)
+
+
+
     End Sub
 
 End Class
