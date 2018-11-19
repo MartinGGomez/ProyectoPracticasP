@@ -18,13 +18,6 @@ Public Class GenerarCompra
         btn_compras.BackColor = Color.OrangeRed
         rdbFinalizada.Checked = True
 
-        sql = "select Nombre from Proveedores where estado = 'Activo'"
-        rs = Funciones.consulta(sql)
-
-        Do While rs.Read
-            cboProveedores.Items.Add(rs(0))
-        Loop
-
     End Sub
 
     Private Sub btnSumarCant_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSumarCant.Click
@@ -156,7 +149,7 @@ Public Class GenerarCompra
     End Sub
 
     Private Sub btnRegistrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistrar.Click
-        If txtMonto.Text = 0 Then
+        If String.IsNullOrEmpty(txtMonto.Text) Then
             MsgBox("Debe completar el monto de la compra", MsgBoxStyle.Critical)
         ElseIf dgvProductosCompra.Rows.Count = 0 Then
             MsgBox("Debe haber al menos 1 producto para efectuar la compra", MsgBoxStyle.Critical)
@@ -212,7 +205,7 @@ Public Class GenerarCompra
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
-        If txtMonto.Text = 0 Then
+        If String.IsNullOrEmpty(txtMonto.Text) Then
             MsgBox("Debe completar el monto de la compra", MsgBoxStyle.Critical)
         ElseIf dgvProductosCompra.Rows.Count = 0 Then
             MsgBox("Debe haber al menos 1 producto para efectuar la compra", MsgBoxStyle.Critical)
@@ -253,5 +246,20 @@ Public Class GenerarCompra
         End If
     End Sub
 
+    Public Sub refreshData()
+        cboProveedores.Items.Clear()
+        dgvProductos.Rows.Clear()
+        dgvProductosCompra.Rows.Clear()
+        txtCant.Text = "1"
+        txtMonto.Clear()
+
+        sql = "select Nombre from Proveedores where estado = 'Activo'"
+        rs = Funciones.consulta(sql)
+
+        Do While rs.Read
+            cboProveedores.Items.Add(rs(0))
+        Loop
+
+    End Sub
 
 End Class

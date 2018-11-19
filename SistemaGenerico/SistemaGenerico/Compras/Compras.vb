@@ -60,6 +60,7 @@ Public Class Compras
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarCompra.Click
+        GenerarCompra.refreshData()
         GenerarCompra.Show()
         Me.Close()
     End Sub
@@ -93,6 +94,7 @@ Public Class Compras
             MsgBox("Seleccione una compra", MsgBoxStyle.Critical)
         Else
             GenerarCompra.Show()
+            GenerarCompra.refreshData()
             GenerarCompra.cargarDatosCompra(idCompra)
             Me.Close()
         End If

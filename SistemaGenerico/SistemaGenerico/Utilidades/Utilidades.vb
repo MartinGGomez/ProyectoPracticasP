@@ -105,6 +105,10 @@ Module Utilidades
                 Registros.img_logo.BackgroundImage.Dispose()
             End If
 
+            If Utilidades.estaAbiertoElFormulario("Estadisticas") Then
+                Registros.img_logo.BackgroundImage.Dispose()
+            End If
+
             File.Delete(Utilidades.pathLogo)
 
             refrescarLogo()
