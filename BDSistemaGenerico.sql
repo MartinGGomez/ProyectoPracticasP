@@ -130,6 +130,7 @@ idGasto int,
 monto float,
 año year,
 mes varchar(10),
+fecha date,
 constraint PK_RegistroGastos primary key (idRegistroGasto),
 constraint FK_RegistroGastos foreign key (idGasto) references Gastos (idGasto)
 )ENGINE=InnoDB;
@@ -140,13 +141,13 @@ insert into Proveedores values
 ('', "Proveedor 2" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo"),
 ('', "Proveedor 3" , "45686926", "ejemplo@mail.com","Direccion 123", "Activo");
 
-insert into compras values ('',1,"2017/01/01",200,"Estado");
+/*insert into compras values ('',1,"2017/01/01",200,"Estado");
 insert into compras values ('',1, "2018/03/01",200,"Estado");
 insert into compras values ('',1, "2018/01/01",200,"Estado");
 insert into compras values ('',1, "2012/01/01",200,"Estado");
 insert into compras values ('',1, "2015/01/01",200,"Estado");
 insert into compras values ('',1, "2016/01/01",200,"Estado");
-insert into compras values ('',1, "2011/01/01",200,"Estado");
+insert into compras values ('',1, "2011/01/01",200,"Estado");*/
 
 INSERT INTO `productos` (`idProducto`, `Descripcion`, `Stock`, `PuntoPedido`, `Precio`, `Estado`) VALUES
 (1, 'Producto 1', 100, 10, 50, 'Activo'),
