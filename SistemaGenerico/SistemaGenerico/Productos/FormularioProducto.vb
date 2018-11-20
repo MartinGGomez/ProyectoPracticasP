@@ -65,7 +65,7 @@ Public Class FormularioProducto
                     sql = "insert into productoproveedor values (" & id & ", " & proveedor & ")"
                     Funciones.consulta(sql)
                 Next
-
+                Productos.Show()
                 Me.Close()
                 Productos.cargarProductos()
                 Productos.Enabled = True
@@ -210,11 +210,10 @@ Public Class FormularioProducto
                 sql = "insert into productoproveedor values (" & idProducto & ", " & proveedor & ")"
                 Funciones.consulta(sql)
             Next
-
-            Me.Close()
             Productos.cargarProductos()
-            Productos.Show()
             Productos.Enabled = True
+            Productos.Show()
+            Me.Close()
 
         End If
 

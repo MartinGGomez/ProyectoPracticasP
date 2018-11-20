@@ -26,6 +26,8 @@
         sql = "select fecha Fecha, montoTotal Monto from compras order by fecha desc limit 10"
         tablacompras.DataSource = Funciones.llenarGrilla(sql)
 
+        sql = "select g.descripcion, gr.monto, gr.mes, gr.año from gastos g, RegistroGastos gr where g.idGasto = gr.idGasto order by fecha desc limit 10"
+        tabla_gastos.DataSource = Funciones.llenarGrilla(sql)
 
     End Sub
 

@@ -28,8 +28,9 @@
                 sql = "insert into proveedores values ('', '" & txtNombreProv.Text & "', '" & txtTel.Text & "', '" & txtMail.Text & "', '" & txtDireccion.Text & "', 'Activo')"
                 Funciones.consulta(sql)
                 Proveedores.cargarProveedores()
-                Me.Close()
                 Proveedores.Enabled = True
+                Proveedores.Show()
+                Me.Close()
                 Proveedores.idProveedor = 0
                 lblError.Text = ""
 
@@ -43,8 +44,9 @@
                 sql = "update proveedores set nombre = '" & txtNombreProv.Text & "', telefono = '" & txtTel.Text & "', mail = '" & txtMail.Text & "', direccion = '" & txtDireccion.Text & "' where idProveedor =" & Proveedores.idProveedor
                 consulta(sql)
                 Proveedores.cargarProveedores()
-                Me.Close()
                 Proveedores.Enabled = True
+                Proveedores.Show()
+                Me.Close()
                 Proveedores.idProveedor = 0
                 lblError.Text = ""
                 imgError.Visible = False

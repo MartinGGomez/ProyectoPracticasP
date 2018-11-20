@@ -25,8 +25,8 @@ Partial Class Gastos
         Me.components = New System.ComponentModel.Container()
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gastos))
         Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gastos))
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.linearChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -50,6 +50,8 @@ Partial Class Gastos
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel17.SuspendLayout()
         CType(Me.linearChart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
@@ -61,12 +63,15 @@ Partial Class Gastos
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel17
         '
         Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel17.Controls.Add(Me.PictureBox7)
         Me.Panel17.Controls.Add(Me.linearChart)
+        Me.Panel17.Controls.Add(Me.Label3)
         Me.Panel17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel17.Location = New System.Drawing.Point(240, 77)
         Me.Panel17.Name = "Panel17"
@@ -126,7 +131,7 @@ Partial Class Gastos
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(21, 5)
+        Me.PictureBox6.Location = New System.Drawing.Point(13, 8)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(17, 17)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -138,7 +143,7 @@ Partial Class Gastos
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(42, 4)
+        Me.Label2.Location = New System.Drawing.Point(34, 7)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(128, 20)
         Me.Label2.TabIndex = 798
@@ -148,7 +153,7 @@ Partial Class Gastos
         '
         Me.dtpFechaPie.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
         Me.dtpFechaPie.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFechaPie.Location = New System.Drawing.Point(21, 26)
+        Me.dtpFechaPie.Location = New System.Drawing.Point(13, 29)
         Me.dtpFechaPie.Name = "dtpFechaPie"
         Me.dtpFechaPie.Size = New System.Drawing.Size(183, 26)
         Me.dtpFechaPie.TabIndex = 797
@@ -196,7 +201,7 @@ Partial Class Gastos
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEditar.Location = New System.Drawing.Point(111, 194)
+        Me.btnEditar.Location = New System.Drawing.Point(120, 194)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(196, 35)
         Me.btnEditar.TabIndex = 797
@@ -246,7 +251,7 @@ Partial Class Gastos
         Me.btnAgregarGasto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregarGasto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarGasto.ForeColor = System.Drawing.Color.Transparent
-        Me.btnAgregarGasto.Location = New System.Drawing.Point(373, 82)
+        Me.btnAgregarGasto.Location = New System.Drawing.Point(373, 75)
         Me.btnAgregarGasto.Name = "btnAgregarGasto"
         Me.btnAgregarGasto.Size = New System.Drawing.Size(25, 25)
         Me.btnAgregarGasto.TabIndex = 793
@@ -284,7 +289,7 @@ Partial Class Gastos
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(58, 58)
+        Me.PictureBox3.Location = New System.Drawing.Point(58, 51)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -296,7 +301,7 @@ Partial Class Gastos
         Me.cboGastos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboGastos.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboGastos.FormattingEnabled = True
-        Me.cboGastos.Location = New System.Drawing.Point(60, 81)
+        Me.cboGastos.Location = New System.Drawing.Point(60, 74)
         Me.cboGastos.Name = "cboGastos"
         Me.cboGastos.Size = New System.Drawing.Size(307, 28)
         Me.cboGastos.TabIndex = 787
@@ -306,7 +311,7 @@ Partial Class Gastos
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(84, 58)
+        Me.Label5.Location = New System.Drawing.Point(84, 51)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 20)
         Me.Label5.TabIndex = 786
@@ -317,7 +322,7 @@ Partial Class Gastos
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(14, 8)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 785
         Me.PictureBox2.TabStop = False
@@ -327,11 +332,11 @@ Partial Class Gastos
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
         Me.Label6.CausesValidation = False
-        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(45, 10)
+        Me.Label6.Location = New System.Drawing.Point(34, 8)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(128, 23)
+        Me.Label6.Size = New System.Drawing.Size(105, 20)
         Me.Label6.TabIndex = 784
         Me.Label6.Text = "Registrar Gasto"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -340,6 +345,27 @@ Partial Class Gastos
         '
         Me.ErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.ErrorProvider.ContainerControl = Me
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(13, 8)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 802
+        Me.PictureBox7.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(34, 7)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(127, 20)
+        Me.Label3.TabIndex = 801
+        Me.Label3.Text = "Historial de Gastos"
         '
         'Gastos
         '
@@ -355,6 +381,7 @@ Partial Class Gastos
         Me.Controls.SetChildIndex(Me.Panel7, 0)
         Me.Controls.SetChildIndex(Me.Panel17, 0)
         Me.Panel17.ResumeLayout(False)
+        Me.Panel17.PerformLayout()
         CType(Me.linearChart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
@@ -367,6 +394,7 @@ Partial Class Gastos
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -393,4 +421,6 @@ Partial Class Gastos
     Friend WithEvents dtpFechaPie As System.Windows.Forms.DateTimePicker
     Friend WithEvents lblRegistros As System.Windows.Forms.Label
     Friend WithEvents ErrorProvider As System.Windows.Forms.ErrorProvider
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

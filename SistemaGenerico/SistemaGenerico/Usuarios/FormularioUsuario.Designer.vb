@@ -140,7 +140,7 @@ Partial Class FormularioUsuario
         Me.btnagregar.Name = "btnagregar"
         Me.btnagregar.Size = New System.Drawing.Size(252, 35)
         Me.btnagregar.TabIndex = 88
-        Me.btnagregar.Text = "9"
+        Me.btnagregar.Text = "AGREGAR USUARIO"
         Me.btnagregar.UseVisualStyleBackColor = False
         '
         'Button3
@@ -156,7 +156,7 @@ Partial Class FormularioUsuario
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(193, 28)
         Me.Button3.TabIndex = 777
-        Me.Button3.Text = "7"
+        Me.Button3.Text = "GESTIONAR TIPOS DE TRABAJO"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'cmbtrabajo
