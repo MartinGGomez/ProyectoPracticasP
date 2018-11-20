@@ -17,6 +17,7 @@ Public Class MenuBase
             Me.Hide()
             Inicio.lbl_nom_user.Text = Utilidades.nombreUsuario
             Inicio.lbl_tipo_trab.Text = Utilidades.tipoUsuario
+            Inicio.cargarGrillas()
 
         End If
 

@@ -40,8 +40,7 @@ Partial Class FormularioBase
         Me.btn_minimizar.Location = New System.Drawing.Point(668, 5)
         Me.btn_minimizar.Name = "btn_minimizar"
         Me.btn_minimizar.Size = New System.Drawing.Size(20, 20)
-        Me.btn_minimizar.TabIndex = 4
-        Me.btn_minimizar.Text = "90"
+        Me.btn_minimizar.TabIndex = 91
         Me.btn_minimizar.UseVisualStyleBackColor = False
         '
         'lblTitulo

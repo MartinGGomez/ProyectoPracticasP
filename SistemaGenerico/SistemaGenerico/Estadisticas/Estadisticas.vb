@@ -6,6 +6,7 @@
         lblTitulo.Text = "Estadisticas"
         logo()
         cargarEstadisticas()
+        btn_estadisticas.BackColor = Color.OrangeRed
 
     End Sub
 

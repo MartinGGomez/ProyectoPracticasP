@@ -106,7 +106,7 @@ Module Utilidades
             End If
 
             If Utilidades.estaAbiertoElFormulario("Estadisticas") Then
-                Registros.img_logo.BackgroundImage.Dispose()
+                Estadisticas.img_logo.BackgroundImage.Dispose()
             End If
 
             File.Delete(Utilidades.pathLogo)
@@ -135,6 +135,7 @@ Module Utilidades
         Gastos.logo()
         Proveedores.logo()
         Registros.logo()
+        Estadisticas.logo()
     End Sub
 
 
