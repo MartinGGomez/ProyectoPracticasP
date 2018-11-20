@@ -68,7 +68,7 @@ Partial Class FormularioBase
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(103, 35)
         Me.btnVolver.TabIndex = 20
-        Me.btnVolver.Text = "91"
+        Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = False
         '
         'FormularioBase
