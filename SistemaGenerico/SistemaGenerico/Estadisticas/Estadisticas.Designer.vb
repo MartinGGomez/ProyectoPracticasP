@@ -30,6 +30,10 @@ Partial Class Estadisticas
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -44,12 +48,16 @@ Partial Class Estadisticas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.dgvGrilla4 = New System.Windows.Forms.DataGridView()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel17.SuspendLayout()
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         CType(Me.dgvGrilla3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvGrilla4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel17
@@ -177,6 +185,7 @@ Partial Class Estadisticas
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.Panel6.Controls.Add(Me.dgvGrilla4)
         Me.Panel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel6.Location = New System.Drawing.Point(705, 364)
         Me.Panel6.Name = "Panel6"
@@ -202,42 +211,42 @@ Partial Class Estadisticas
         Me.dgvGrilla2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.dgvGrilla2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.dgvGrilla2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.MenuBar
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvGrilla2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.MenuBar
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dgvGrilla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvGrilla2.Cursor = System.Windows.Forms.Cursors.Default
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvGrilla2.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvGrilla2.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgvGrilla2.EnableHeadersVisualStyles = False
         Me.dgvGrilla2.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.dgvGrilla2.Location = New System.Drawing.Point(15, 18)
         Me.dgvGrilla2.Name = "dgvGrilla2"
         Me.dgvGrilla2.ReadOnly = True
         Me.dgvGrilla2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.InfoText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvGrilla2.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.InfoText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla2.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgvGrilla2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        Me.dgvGrilla2.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black
+        Me.dgvGrilla2.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.dgvGrilla2.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.dgvGrilla2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvGrilla2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -271,17 +280,80 @@ Partial Class Estadisticas
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(701, 43)
+        Me.Label5.Location = New System.Drawing.Point(716, 43)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(171, 23)
         Me.Label5.TabIndex = 68
         Me.Label5.Text = "Mejores Proveedores"
+        '
+        'dgvGrilla4
+        '
+        Me.dgvGrilla4.AllowUserToAddRows = False
+        Me.dgvGrilla4.AllowUserToDeleteRows = False
+        Me.dgvGrilla4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvGrilla4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
+        Me.dgvGrilla4.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgvGrilla4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dgvGrilla4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.MenuBar
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgvGrilla4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvGrilla4.Cursor = System.Windows.Forms.Cursors.Default
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvGrilla4.DefaultCellStyle = DataGridViewCellStyle10
+        Me.dgvGrilla4.EnableHeadersVisualStyles = False
+        Me.dgvGrilla4.GridColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.dgvGrilla4.Location = New System.Drawing.Point(15, 18)
+        Me.dgvGrilla4.Name = "dgvGrilla4"
+        Me.dgvGrilla4.ReadOnly = True
+        Me.dgvGrilla4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.InfoText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGrilla4.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.dgvGrilla4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
+        Me.dgvGrilla4.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgvGrilla4.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dgvGrilla4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dgvGrilla4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvGrilla4.Size = New System.Drawing.Size(410, 223)
+        Me.dgvGrilla4.TabIndex = 68
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(715, 338)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(153, 23)
+        Me.Label3.TabIndex = 69
+        Me.Label3.Text = "Mejores Productos"
         '
         'Estadisticas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1152, 640)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
@@ -298,12 +370,15 @@ Partial Class Estadisticas
         Me.Controls.SetChildIndex(Me.Label4, 0)
         Me.Controls.SetChildIndex(Me.Label2, 0)
         Me.Controls.SetChildIndex(Me.Label5, 0)
+        Me.Controls.SetChildIndex(Me.Label3, 0)
         Me.Panel17.ResumeLayout(False)
         CType(Me.dgvGrilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         CType(Me.dgvGrilla3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel6.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         CType(Me.dgvGrilla2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvGrilla4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -318,4 +393,6 @@ Partial Class Estadisticas
     Friend WithEvents dgvGrilla3 As System.Windows.Forms.DataGridView
     Friend WithEvents dgvGrilla2 As System.Windows.Forms.DataGridView
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents dgvGrilla4 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
