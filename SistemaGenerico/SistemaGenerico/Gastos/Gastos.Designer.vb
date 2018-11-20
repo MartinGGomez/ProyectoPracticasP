@@ -22,6 +22,7 @@ Partial Class Gastos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Gastos))
@@ -48,6 +49,7 @@ Partial Class Gastos
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Panel17.SuspendLayout()
         CType(Me.linearChart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
@@ -58,6 +60,7 @@ Partial Class Gastos
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel17
@@ -72,9 +75,18 @@ Partial Class Gastos
         '
         'linearChart
         '
+        Me.linearChart.BackColor = System.Drawing.Color.Transparent
         ChartArea1.Name = "ChartArea1"
         Me.linearChart.ChartAreas.Add(ChartArea1)
+        Legend1.BackColor = System.Drawing.Color.Transparent
+        Legend1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Legend1.ForeColor = System.Drawing.Color.White
+        Legend1.HeaderSeparatorColor = System.Drawing.Color.White
+        Legend1.IsTextAutoFit = False
+        Legend1.ItemColumnSeparatorColor = System.Drawing.Color.White
         Legend1.Name = "Legend1"
+        Legend1.TitleForeColor = System.Drawing.Color.White
+        Legend1.TitleSeparatorColor = System.Drawing.Color.White
         Me.linearChart.Legends.Add(Legend1)
         Me.linearChart.Location = New System.Drawing.Point(29, 30)
         Me.linearChart.Name = "linearChart"
@@ -143,11 +155,12 @@ Partial Class Gastos
         '
         'pieChart
         '
+        Me.pieChart.BackColor = System.Drawing.Color.Transparent
         ChartArea2.Name = "ChartArea1"
         Me.pieChart.ChartAreas.Add(ChartArea2)
         Me.pieChart.Location = New System.Drawing.Point(57, 65)
         Me.pieChart.Name = "pieChart"
-        Me.pieChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen
+        Me.pieChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones
         Me.pieChart.Size = New System.Drawing.Size(338, 183)
         Me.pieChart.TabIndex = 2
         Me.pieChart.Text = "Gastos "
@@ -323,6 +336,11 @@ Partial Class Gastos
         Me.Label6.Text = "Registrar Gasto"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ErrorProvider
+        '
+        Me.ErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
+        Me.ErrorProvider.ContainerControl = Me
+        '
         'Gastos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -348,6 +366,7 @@ Partial Class Gastos
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -373,4 +392,5 @@ Partial Class Gastos
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents dtpFechaPie As System.Windows.Forms.DateTimePicker
     Friend WithEvents lblRegistros As System.Windows.Forms.Label
+    Friend WithEvents ErrorProvider As System.Windows.Forms.ErrorProvider
 End Class

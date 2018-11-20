@@ -282,7 +282,7 @@ Partial Class GenerarVenta
         '
         Me.txtMontoT.Enabled = False
         Me.txtMontoT.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMontoT.Location = New System.Drawing.Point(166, 59)
+        Me.txtMontoT.Location = New System.Drawing.Point(159, 59)
         Me.txtMontoT.Name = "txtMontoT"
         Me.txtMontoT.Size = New System.Drawing.Size(130, 26)
         Me.txtMontoT.TabIndex = 14

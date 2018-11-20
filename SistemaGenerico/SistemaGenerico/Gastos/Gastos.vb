@@ -19,6 +19,12 @@ Public Class Gastos
         cargarTiposGastos()
         cargarGraficos()
 
+
+
+
+
+
+
     End Sub
 
     Private Sub btnAgregarGasto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregarGasto.Click
@@ -62,6 +68,15 @@ Public Class Gastos
         linearChart.ChartAreas(0).AxisY.MajorGrid.LineDashStyle = DataVisualization.Charting.ChartDashStyle.Dot
         linearChart.ChartAreas(0).AxisX.IsMarginVisible = False
         linearChart.ChartAreas(0).AxisY.IsMarginVisible = False
+        linearChart.ChartAreas(0).BackColor = Color.Transparent
+        linearChart.ChartAreas(0).AxisX.LabelStyle.ForeColor = Color.White
+        linearChart.ChartAreas(0).AxisY.LabelStyle.ForeColor = Color.White
+        linearChart.ChartAreas(0).AxisX.MajorGrid.LineColor = Color.Black
+        linearChart.ChartAreas(0).AxisY.MajorGrid.LineColor = Color.Black
+        linearChart.ChartAreas(0).AxisX.LineColor = Color.Black
+        linearChart.ChartAreas(0).AxisY.LineColor = Color.Black
+
+
 
         ' Elegir inclinacion de los labels
         'linearChart.ChartAreas(0).AxisX.LabelStyle.Angle = -40
@@ -82,6 +97,7 @@ Public Class Gastos
 
                 linearChart.Series(serieIndex).Points.AddXY(abreviarMes(rsRegistros(2)) & " - " & rsRegistros(1), rsRegistros(0))
 
+
             Loop
             serieIndex = serieIndex + 1
         Loop
@@ -97,7 +113,10 @@ Public Class Gastos
 
     Private Sub cargarGraficoPie()
         pieChart.Series.Clear()
+        pieChart.ChartAreas(0).BackColor = Color.Transparent
         pieChart.Series.Add("Serie 1").ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        pieChart.Series(0).LabelForeColor = Color.White
+
 
         sql = "select descripcion, monto from registrogastos r, gastos g where r.idgasto = g.idgasto and mes = '" & DateAndTime.MonthName(dtpFechaPie.Value.Month) & "' and año = " & dtpFechaPie.Value.Year & " "
         rs = Funciones.consulta(sql)
@@ -207,4 +226,15 @@ Public Class Gastos
     Private Sub dtpFechaPie_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpFechaPie.ValueChanged
         cargarGraficoPie()
     End Sub
+
+    Private Sub txtMonto_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtMonto.TextChanged
+        If Not IsNumeric(txtMonto.Text) And txtMonto.Text <> "" Then
+            ErrorProvider.SetError(txtMonto, "Solo pueden ser datos numericos.")
+            btnEditar.Enabled = False
+        Else
+            ErrorProvider.SetError(txtMonto, "")
+            btnEditar.Enabled = True
+        End If
+    End Sub
 End Class
+

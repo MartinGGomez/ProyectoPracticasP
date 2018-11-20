@@ -262,4 +262,7 @@ Public Class GenerarCompra
 
     End Sub
 
+    Private Sub txtMonto_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtMonto.TextChanged
+        onlyNum(e)
+    End Sub
 End Class
